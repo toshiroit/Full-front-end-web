@@ -1,0 +1,16 @@
+@keyframes slider {
+  10% {
+    transform: translateX(0px);
+  }
+  45% {
+    transform: translateX(-750px);
+  }
+  90% {
+    transform: translateX(-1500px);
+  }
+}
+@mixin sliderAnimation {
+  animation-name: slider;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}

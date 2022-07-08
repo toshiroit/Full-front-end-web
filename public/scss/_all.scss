@@ -1,0 +1,385 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+@mixin fontAllWeb {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.breadcrumb {
+  &__content {
+    padding: 10px;
+    .main {
+      &__item {
+        display: inline-block;
+        color: #acacac;
+        font-size: 0.92rem;
+
+        &:not(:last-child)::after {
+          padding-left: 3px;
+          content: "/";
+        }
+      }
+    }
+  }
+}
+.fa-scale-1 {
+  transform: rotate(90deg);
+}
+.mySlides {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+.fixedLogin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: flex;
+  &__inner {
+    position: relative;
+    margin: auto;
+    background-color: $sp-background-color-white;
+    border-radius: 8px;
+    padding: 24px 96px;
+    width: 650px;
+    .prev {
+      position: absolute;
+      cursor: pointer;
+      left: 15px;
+      top: 15px;
+      .fa-size {
+        font-size: 1.7rem;
+      }
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      .fa-size {
+        font-size: 1.7rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .logo {
+      text-align: center;
+      border-bottom: 1px solid #f6f6f6;
+      img {
+        width: 60px;
+      }
+    }
+    .content {
+      margin-top: 10px;
+      h4 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #333333;
+        font-family: "Roboto", sans-serif;
+      }
+      p {
+        text-align: center;
+        margin-top: 7px;
+      }
+    }
+    .inputLogin {
+      .regUser {
+        margin-top: 10px;
+        &__item {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          input {
+            padding: 9px 20px;
+            margin-top: 8px;
+            font-size: 1.2rem;
+            border-radius: 6px;
+            border: 1px solid $sp-color-text-primary;
+            width: 100%;
+            outline: none;
+          }
+        }
+      }
+      &__code {
+        justify-content: center;
+        display: flex;
+        &___item {
+          margin: 10px;
+          & > .codew1 {
+            border-radius: 10px;
+            border: 1px solid rgba(168, 168, 168, 0.867);
+            outline: none;
+            text-align: center;
+            font-size: 2.5rem;
+            width: 70px;
+            height: 90px;
+            &:focus {
+              border: 1px solid $sp-color-text-primary;
+            }
+          }
+        }
+      }
+      .reg {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .w {
+          background-color: #ddd;
+          padding: 10px 15px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          font-family: "Roboto", sans-serif;
+          color: $sp-color-text-primary;
+          img {
+            padding-right: 5px;
+            width: 35px;
+          }
+        }
+        input {
+          outline: none;
+          margin-left: 7px;
+          padding: 0 12px;
+          width: 100%;
+          font-size: 1.2rem;
+          border-radius: 10px;
+          border: 2px solid $sp-color-text-primary;
+          &::-webkit-input-placeholder {
+            font-size: 0.96rem;
+          }
+          &::-webkit-inner-spin-button {
+            display: none;
+          }
+        }
+      }
+    }
+    .btnLogin {
+      margin-top: 20px;
+      text-align: center;
+      .sendCode {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: $sp-color-text-primary;
+      }
+
+      button[type="submit"],
+      [type="button"] {
+        margin-top: 10px;
+        border: none;
+
+        background-color: $sp-background-color-danger;
+        color: $sp-color-text-white;
+        border-radius: 8px;
+        font-family: "Roboto", sans-serif;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.96rem;
+        cursor: pointer;
+      }
+    }
+    .twLogin {
+      margin-top: 20px;
+      text-align: center;
+      .unline {
+        border-top: 1px solid #ebebebdd;
+        margin-bottom: -10px;
+      }
+      .tw {
+        font-weight: 400;
+        color: #9c9c9c;
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+    }
+    .orLogin {
+      text-align: center;
+      margin-top: 10px;
+      & > button {
+        padding: 15px 17px;
+        color: #f6f6f6;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: "Roboto", sans-serif;
+      }
+      & > button.loginFacebook {
+        background-color: #4064ac;
+      }
+      & > button.loginGoogle {
+        background-color: #ea4335;
+      }
+    }
+  }
+}
+.product {
+  &__wp {
+    display: flex;
+    flex-wrap: wrap;
+    &___item {
+      cursor: pointer;
+      border-radius: 7px;
+      position: relative;
+      margin: 6px;
+      width: calc(16.66666666% - 12px);
+      box-shadow: 0 0 15px #ddd;
+      .freeShip {
+        position: absolute;
+        right: -7px;
+        bottom: 55px;
+        z-index: 999;
+        img {
+          transform: rotate(18deg);
+          width: 100px;
+        }
+      }
+      .point {
+        position: absolute;
+        right: 0;
+        background-color: $sp-color-text-primary;
+        color: $sp-color-text-white;
+        padding: 6px;
+        z-index: 999;
+        border-radius: 50%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 550;
+      }
+      .image {
+        border-radius: 7px;
+        overflow: hidden;
+
+        &:hover > img {
+          transform: scale(1.1);
+        }
+        img {
+          transition: all 0.3s;
+          border-radius: 7px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          width: 100%;
+          height: 170px;
+        }
+      }
+      .sellable {
+        padding: 6px;
+        display: flex;
+        align-items: flex-end;
+        h4 {
+          font-size: 0.87rem;
+        }
+        b {
+          line-height: 1;
+          margin-left: 2.5px;
+          font-family: "Roboto", sans-serif;
+          font-size: 0.92rem;
+        }
+      }
+      .name {
+        padding: 6px;
+        p {
+          font-family: "Roboto", sans-serif;
+          width: 100%;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+      .price {
+        padding: 5px;
+        margin-top: 5px;
+        .text {
+          font-weight: 400;
+          font-family: "Roboto", sans-serif;
+        }
+        .t1 {
+          text-decoration: line-through;
+          font-size: 0.88rem;
+          color: #787878;
+        }
+      }
+      .description {
+        padding: 6px;
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+
+        .lw {
+          padding-right: 8px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .addressLength {
+          display: flex;
+          align-items: center;
+          h4 {
+            color: $sp-color-text-danger;
+          }
+          .fa-size {
+            color: $sp-background-color-primary-2;
+            padding-right: 2px;
+          }
+        }
+      }
+      .btn {
+        padding: 5px;
+        margin-top: 10px;
+        button[type="button"],
+        [type="submit"] {
+          text-align: center;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 8px;
+          font-family: "Roboto", sans-serif;
+          font-size: 1rem;
+          outline: none;
+          border: none;
+          color: $sp-color-text-dark;
+          background-color: #ebebebdd;
+          width: 100%;
+          .fa-size {
+            color: rgb(255, 112, 16);
+          }
+        }
+      }
+    }
+  }
+  .btnShow {
+    text-align: center;
+    margin-top: 10px;
+    .show {
+      background: none;
+      border: none;
+
+      font-size: 1.1rem;
+      line-height: 21px;
+      font-style: normal;
+      color: $sp-color-text-dark;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .fa-size {
+      font-weight: bold;
+      line-height: 22px;
+    }
+  }
+}
