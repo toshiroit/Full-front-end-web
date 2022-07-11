@@ -6,6 +6,116 @@
 @mixin fontAllWeb {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.productCart__nameMobile {
+  display: none;
+}
+.menuFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #ffff;
+  &__inner {
+    padding: 15px;
+    &___header {
+      display: flex;
+      align-items: center;
+      .avatar {
+        width: 60px;
+        img {
+          max-width: 60px;
+          border-radius: 50%;
+        }
+      }
+      .flexUser {
+        margin-left: 9px;
+        button {
+          border: 1px solid $sp-background-color-primary-2;
+          background: none;
+          padding: 7px 20px;
+        }
+      }
+    }
+  }
+}
+.fixedHelp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  &__content {
+    position: relative;
+    &___wp {
+      position: relative;
+      .setting {
+        position: absolute;
+        z-index: -1;
+        left: -6px;
+        top: -6px;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+
+        .fa-size {
+          transition: all 0.3s;
+          font-size: 4.5rem;
+          width: 100%;
+          color: $sp-background-color-primary-2;
+        }
+      }
+      &____image {
+        width: 60px;
+        height: 60px;
+        background-color: #ffc739;
+        border-radius: 50%;
+
+        img {
+          padding: 8px;
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .menu {
+        display: none;
+        position: absolute;
+        right: 66px;
+        bottom: 0;
+        width: 200px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        background-color: $sp-background-color-white;
+        &__item {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          &:hover {
+            background-color: rgba(245, 245, 245, 0.5);
+          }
+          .fa-size {
+          }
+          .fa-error-ico {
+            color: $sp-color-text-danger;
+          }
+          .fa-chat-ico {
+            color: $sp-color-text-primary;
+          }
+          .fa-support-ico {
+            color: $sp-color-text-info;
+          }
+          .fa-contact-ico {
+            color: $sp-color-text-warning;
+          }
+          span {
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+}
 .breadcrumb {
   &__content {
     padding: 10px;

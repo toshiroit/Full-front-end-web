@@ -36,3 +36,47 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+@mixin activeCategorySearch {
+  &:checked + label::before {
+    border: 2px solid #fff;
+    border-radius: 0.3em;
+    background: $sp-background-color-primary-2;
+    box-shadow: 2px 1px 0 #7eccff;
+  }
+}
+@mixin pagination() {
+  .pagination {
+    margin-top: 20px;
+    &___main {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .prev {
+        border: 2px solid $sp-color-text-danger !important;
+        color: $sp-color-text-danger !important;
+      }
+      .next {
+        border: 2px solid $sp-color-text-danger !important;
+        color: $sp-color-text-danger !important;
+      }
+      .active {
+        border: 2px solid $sp-color-text-primary !important;
+      }
+      .item {
+        padding: 5px 12px;
+        color: $sp-color-text-primary;
+        margin-right: 2px;
+        border: 1px solid #ddd;
+        border-width: 2px;
+        border-color: transparent;
+        cursor: pointer;
+        &:hover {
+          border: 2px solid $sp-color-text-primary !important;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
