@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="./public/plugins/fontawesome.6.1.1/css/all.css"
     />
-   <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
     <title>Tim kiem san pham</title>
   </head>
   <body>
@@ -326,7 +326,10 @@
               <div class="search__content___flex">
                 <div class="filterSearchIdx search__content___flex____left">
                   <div class="wp">
-                    <div class="close">
+                    <div style="display: none" class="show showFilterSearch">
+                      <i class="fa-solid fa-play fa-size"></i>
+                    </div>
+                    <div id="closeFilterSearchIdx" class="close">
                       <i class="fa-solid fa-circle-xmark fa-size"></i>
                     </div>
                     <div class="wp__title">
@@ -453,8 +456,11 @@
                     <span>249194 sản phẩm được tìm thấy </span>
                   </div>
                   <div class="select">
-                    <div id="showFilterProduct" class="title"><i class="fa-solid fa-bars"></i> Mở lọc </div>
-                    <div class="title">Sắp xếp theo</div>
+                    <div id="showFilterLeft" class="title">
+                      <span
+                        ><i class="fa-solid fa-square-caret-down fa-size"></i
+                      ></span>
+                    </div>
                     <ul class="select__main">
                       <li class="select__main___item active">Liên quan</li>
                       <li class="select__main___item">Mới nhất</li>
@@ -902,6 +908,7 @@
             </div>
           </div>
         </div>
+        <div class="infoSw"></div>
       </div>
     </div>
   </body>

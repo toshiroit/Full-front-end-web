@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 1180) {
       make_slide(4);
-    } else if (window.innerWidth > 590) {
+    } else if (window.innerWidth < 1180) {
       make_slide(3);
     } else {
       make_slide(2);
@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   const media = [
     window.matchMedia("(min-width: 1180px)"),
+    window.matchMedia("(min-width:1179px)"),
     window.matchMedia("(min-width: 590px)"),
   ];
   if (media[0].matches) {
     make_slide(4);
-  } else if (media[1].matches) {
+  } else if (media[2].matches) {
     make_slide(3);
   } else {
     make_slide(2);
@@ -31,9 +32,9 @@ const make_slide = (amountSlideAppear) => {
   let widthAllBox = widthItemAndMargin * listBox.length;
   console.log(widthAllBox);
   wrapperBox.style.width = `${widthAllBox}px`;
-  listBox.forEach((elment) => {
-    elment.style.marginRight = "20px";
-    elment.style.width = `${widthItemAndMargin - 20}px`;
+  listBox.forEach((element) => {
+    element.style.marginRight = "20px";
+    element.style.width = `${widthItemAndMargin - 20}px`;
   });
 
   //handle Slide

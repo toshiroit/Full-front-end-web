@@ -9,23 +9,121 @@
       rel="stylesheet"
       href="./public/plugins/fontawesome.6.1.1/css/all.css"
     />
+    <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
     <title>Trang chủ</title>
   </head>
   <body>
-    <div class="menuFixed" style="display:none;">
-      <div class="menuFixed__inner">
-        <div class="menuFixed__inner___header">
-          <div class="avatar">
-            <img
-              src="https://i.pinimg.com/736x/5d/69/c5/5d69c5133c8a88d3247d4dec9f657d40.jpg"
-              alt=""
-            />
+    <div class="menuFixedIdx" style="">
+      <div class="menuFixedIdx__inner">
+        <div id="closeMenuFixedRootIdx" class="close">
+          <i class="fa-solid fa-circle-xmark fa-size"></i>
+        </div>
+        <div class="menuFixedIdx__inner___header">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-size"></i>
+            <input placeholder="Tìm kiếm sản phẩm " type="text" />
           </div>
-          <div class="flexUser">
-            <button>Đăng nhập</button>
-            <button>Đăng kí</button>
+          <div class="user">
+            <div class="avatar">
+              <img
+                src="https://i.pinimg.com/736x/5d/69/c5/5d69c5133c8a88d3247d4dec9f657d40.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flexUser">
+              <button>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập
+              </button>
+              <button><i class="fa-solid fa-user-plus"></i> Đăng kí</button>
+            </div>
           </div>
         </div>
+        <ul class="menuFixedIdx__inner___menu">
+          <div class="menuWp">
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-house fa-size"></i>
+              <span> Trang chủ </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Tài khoản </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-circle-question fa-size"></i>
+              <span> Thông tin tài khoản </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-key fa-size"></i>
+              <span> Thay đổi mật khẩu </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-heart fa-size"></i>
+              <span> Sản phẩm yêu thích </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-floppy-disk fa-size"></i>
+              <span> Sản phẩm đã lưu </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item item-cart">
+              <i class="fa-solid fa-truck fa-size"></i>
+              <span>Đơn hàng </span>
+              <b>14</b>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item item-cart">
+              <i class="fa-solid fa-cart-shopping fa-size"> </i>
+              <span class="item-cart">Giỏ hàng </span>
+              <b>14</b>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Cài đặt </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-volume-high fa-size"></i>
+              <span> Âm thanh </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-image fa-size"></i>
+              <span> Quảng cáo </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-circle-half-stroke fa-size"></i>
+              <span>Chủ đề Sáng / Tối </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Liên hệ / Hỗ trợ / Báo lỗi </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-facebook fa-size"></i>
+              <span> Facebook </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-google fa-size"></i>
+              <span> Google </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-house fa-size"></i>
+              <span> Zalo </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-youtube fa-size"></i>
+              <span> Youtube </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>---------------- </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-right-from-bracket fa-size"></i>
+              <span> Đăng xuất </span>
+            </li>
+          </div>
+        </ul>
       </div>
     </div>
 
@@ -237,10 +335,7 @@
               <div class="bottombar">
                 <div class="bottombar__left">
                   <div class="logo">
-                    <img
-                      src="./public/images/logo1.jpg"
-                      alt=""
-                    />
+                    <img src="./public/images/logo1.jpg" alt="" />
                   </div>
                   <div class="bottombar__left___group">
                     <ul class="menu">
@@ -412,7 +507,7 @@
                 </div>
                 <div class="bottombar__right">
                   <div class="bottombar__right___userMobile">
-                    <div class="menu">
+                    <div id="menuFixedRootIdx" class="menu">
                       <i class="fa-solid fa-bars fa-size"></i>
                     </div>
                   </div>
@@ -504,21 +599,7 @@
                     <li class="slider__item mySlides">
                       <img
                         class="imagewp"
-                        src="https://pasgo.vn/Upload/anh-slide-show/lau-nuong-gangbuk---buffet-quay-line-hap-dan-khu-bach-kinh-xay-116399051614.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <li class="slider__item mySlides">
-                      <img
-                        class="imagewp"
-                        src="https://pasgo.vn/Upload/anh-slide-show/ibiero-craft-beer-station---bia-thu-cong-cung-am-thuc-a--au-170417571610.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <li class="slider__item mySlides">
-                      <img
-                        class="imagewp"
-                        src="https://pasgo.vn/Upload/anh-slide-show/lau-nuong-gangbuk---buffet-quay-line-hap-dan-khu-bach-kinh-xay-116399051614.jpg"
+                        src="./public/images/Banner.png"
                         alt=""
                       />
                     </li>
@@ -535,19 +616,13 @@
                       ></iframe>
                     </div>
                     <div class="image__item">
-                      <img
-                        src="https://pasgo.vn/Upload/anh-slide-show/lau-nuong-gangbuk---buffet-quay-line-hap-dan-khu-bach-kinh-xay-116399051614.jpg"
-                        alt=""
-                      />
+                      <img src="./public/images/Banner.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div class="banner__image___w2">
                   <div class="item__image">
-                    <img
-                      src="https://cdn.quantrinhahang.edu.vn/wp-content/uploads/2019/06/fast-food-la-gi.jpg"
-                      alt=""
-                    />
+                    <img src="./public/images/Banner.png" alt="" />
                   </div>
                   <div class="item__image">
                     <img
@@ -574,7 +649,10 @@
             <div class="gift">
               <div class="gift__content">
                 <div class="gift__content___title">
-                  <h4>Mã giảm giá</h4>
+                  <h4>
+                    <img src="./public/images/discountCode.png" alt="" />Mã giảm
+                    giá
+                  </h4>
                   <div class="btn">
                     <div class="btn btnLeft">
                       <i class="fa-solid fa-angle-left fa-size fa-w-left"></i>
@@ -630,7 +708,10 @@
               <div class="main__wp1">
                 <div class="top">
                   <div class="main__wp1___title">
-                    <h4>Gợi ý Menu hôm nay</h4>
+                    <h4>
+                      <img src="./public/images/4813075.png" alt="" />Gợi ý Menu
+                      hôm nay
+                    </h4>
                   </div>
                   <div class="main__wp1___content">
                     <ul class="food">
@@ -1087,9 +1168,14 @@
               </div>
               <div class="main__wp1">
                 <div class="main__wp1___title">
-                  <h4>Khám phá quán mới</h4>
+                  <h4>
+                    <img
+                      src="./public/images/1200px-NewStar.svg.png"
+                      alt=""
+                    />Khám phá quán mới
+                  </h4>
                   <div class="alw">
-                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-size fa-solid fa-paperclip"></i>
                   </div>
                 </div>
                 <div class="product">
@@ -1511,9 +1597,14 @@
               </div>
               <div class="main__wp1">
                 <div class="main__wp1___title">
-                  <h4>Cửa hàng gần bạn</h4>
+                  <h4>
+                    <img
+                      src="./public/images/Online-shop-shopping-shop-logo-by-DEEMKA-STUDIO-3-580x406.jpg"
+                      alt=""
+                    />Cửa hàng gần bạn
+                  </h4>
                   <div class="alw">
-                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-paperclip fa-size"></i>
                   </div>
                 </div>
                 <div class="product">
@@ -1936,7 +2027,10 @@
               <div class="main__wp1">
                 <div class="trademark">
                   <div class="trademark__title">
-                    <h3>CÁC QUÁN NỔI TIẾNG</h3>
+                    <h3>
+                      <i class="fa-brands fa-hotjar fa-size"></i> CÁC QUÁN NỔI
+                      TIẾNG <i class="fa-brands fa-hotjar fa-size"></i>
+                    </h3>
                   </div>
                   <div class="trademark__content">
                     <ul class="trademark__content___main">
@@ -2020,6 +2114,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="main__wp1">
                 <div class="userShip">
                   <div class="userShip__title"></div>
@@ -2030,10 +2125,12 @@
                     />
                     <div class="wo">
                       <div class="t1">
-                        <h4>TRỞ THÀNH CHIẾN BINH SHIP - NHANH VÀ MIỄN PHÍ</h4>
+                        <h4>
+                          TRỞ THÀNH CHIẾN BINH SUPER FOOD - NHANH VÀ MIỄN PHÍ
+                        </h4>
                         <div class="text">
                           <p class="">
-                            Dễ dàng trở thành chiến binh của Loship
+                            Dễ dàng trở thành chiến binh của Super Food
                           </p>
                           <p class="">
                             Giao hàng nhanh chỏng chỉ trong 1 giờ đồng hồ
@@ -2043,6 +2140,43 @@
                       <div class="t2">
                         <button type="button">Đăng kí ngay</button>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main__wp1">
+                <div class="showApp">
+                  <div class="showApp__content">
+                    <div class="wd">
+                      <div class="showApp__content___title">
+                        <h4>Tải ứng dụng Super Food ngay</h4>
+                      </div>
+                      <div class="showApp__content___nd">
+                        <p class="w">
+                          <b>Ứng dụng Super Food là </b> ứng dụng quản lí , mua
+                          hàng 1 cách tiện lợi nhất
+                        </p>
+                        <p class="w">
+                          <b>Lợi ích khi sử dụng ứng dụng Super Food : </b> là 1
+                          ứng dụng cung cấp cho bạn đầy đủ các chức năng khi sử
+                          dụng trên website . Có thể biết vị trí , quãng đường
+                          .... đơn hàng của bạn . Các mã giảm giá khi mua hàng
+                          tại Super Food và các chức năng khác . Phổ biến nhất
+                          là mua hàng thanh toán nhanh chóng qua các công thanh
+                          toán online
+                        </p>
+                      </div>
+                      <div class="btnDown">
+                        <button>
+                          <i class="fa-solid fa-download"></i> TẢI NGAY
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="https://ahitcorp.net/wp-content/uploads/2021/11/tinh-nang-app-food-delivery.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -2216,4 +2350,5 @@
   </body>
   <script src="./public/js/slider.js"></script>
   <script src="./public/js/main.js"></script>
+  <script src="./public/js/animation.min.js"></script>
 </html>
