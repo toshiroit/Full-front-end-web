@@ -28,31 +28,33 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const make_slide = (amountSlideAppear) => {
-  const widthItemAndMargin = giftContent.offsetWidth / amountSlideAppear;
-  let widthAllBox = widthItemAndMargin * listBox.length;
-  console.log(widthAllBox);
-  wrapperBox.style.width = `${widthAllBox}px`;
-  listBox.forEach((element) => {
-    element.style.marginRight = "20px";
-    element.style.width = `${widthItemAndMargin - 20}px`;
-  });
+  if (giftContent) {
+    const widthItemAndMargin = giftContent.offsetWidth / amountSlideAppear;
+    let widthAllBox = widthItemAndMargin * listBox.length;
+    console.log(widthAllBox);
+    wrapperBox.style.width = `${widthAllBox}px`;
+    listBox.forEach((element) => {
+      element.style.marginRight = "20px";
+      element.style.width = `${widthItemAndMargin - 20}px`;
+    });
 
-  //handle Slide
+    //handle Slide
 
-  let count = 0;
-  let spacing = widthAllBox - amountSlideAppear * widthItemAndMargin;
-  btnRight.addEventListener("click", () => {
-    count += widthItemAndMargin;
-    if (count > spacing) {
-      count = 0;
-    }
-    wrapperBox.style.transform = `translateX(${-count}px)`;
-  });
-  btnLeft.addEventListener("click", () => {
-    count -= widthItemAndMargin;
-    if (count < spacing) {
-      count = 0;
-    }
-    wrapperBox.style.transform = `translateX(${0}px)`;
-  });
+    let count = 0;
+    let spacing = widthAllBox - amountSlideAppear * widthItemAndMargin;
+    btnRight.addEventListener("click", () => {
+      count += widthItemAndMargin;
+      if (count > spacing) {
+        count = 0;
+      }
+      wrapperBox.style.transform = `translateX(${-count}px)`;
+    });
+    btnLeft.addEventListener("click", () => {
+      count -= widthItemAndMargin;
+      if (count < spacing) {
+        count = 0;
+      }
+      wrapperBox.style.transform = `translateX(${0}px)`;
+    });
+  }
 };

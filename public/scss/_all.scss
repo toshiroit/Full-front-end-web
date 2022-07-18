@@ -4,13 +4,109 @@
   position: relative;
 }
 @mixin fontAllWeb {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 .productCart__nameMobile {
   display: none;
 }
 .fullWidth {
   width: 100% !important;
+}
+
+.fixedSearchEarth {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  &__inner {
+    display: flex;
+    max-width: 500px;
+    background-color: $sp-background-color-white;
+    height: calc(100vh - 120px);
+    position: sticky;
+    overflow-y: scroll;
+    margin: 17px auto;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $sp-background-color-primary;
+    }
+
+    .search {
+      width: 100%;
+      position: relative;
+      .close {
+        position: absolute;
+        top: 3px;
+        left: 10px;
+        &:hover .fa-size {
+          transform: rotate(180deg);
+          cursor: pointer;
+        }
+        .fa-size {
+          transition: all 0.3s;
+
+          font-size: 1.3rem;
+          color: $sp-color-text-danger;
+        }
+      }
+      .header {
+        text-align: center;
+        padding: 10px;
+        label {
+          text-align: center;
+          width: 100%;
+          font-size: 1.2rem;
+        }
+        input {
+          margin-top: 7px;
+          outline: none;
+          padding: 7px 10px;
+          border: 1px solid #ddd;
+
+          width: 100%;
+        }
+      }
+      .listEarth {
+        margin-top: 10px;
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 300;
+          padding: 7px;
+          font-size: 0.89rem;
+          border: 1px solid #ddd;
+          border-bottom: 0;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #ddd;
+          }
+          &:last-child {
+            border-bottom: 1px solid #ddd;
+          }
+          .fa-size {
+            color: $sp-background-color-success;
+          }
+          .fa-size-w {
+            color: #4064ac;
+            margin-right: 6px;
+          }
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 .menuFixedIdx {
   display: none;

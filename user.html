@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="./public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Tài khoản</title>
+  </head>
+  <body>
+    <div class="menuFixedIdx" style="">
+      <div class="menuFixedIdx__inner">
+        <div id="closeMenuFixedRootIdx" class="close">
+          <i class="fa-solid fa-circle-xmark fa-size"></i>
+        </div>
+        <div class="menuFixedIdx__inner___header">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-size"></i>
+            <input placeholder="Tìm kiếm sản phẩm " type="text" />
+          </div>
+          <div class="user">
+            <div class="avatar">
+              <img
+                src="https://i.pinimg.com/736x/5d/69/c5/5d69c5133c8a88d3247d4dec9f657d40.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flexUser">
+              <button>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập
+              </button>
+              <button><i class="fa-solid fa-user-plus"></i> Đăng kí</button>
+            </div>
+          </div>
+        </div>
+        <ul class="menuFixedIdx__inner___menu">
+          <div class="menuWp">
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-house fa-size"></i>
+              <span> Trang chủ </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Tài khoản </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-circle-question fa-size"></i>
+              <span> Thông tin tài khoản </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-key fa-size"></i>
+              <span> Thay đổi mật khẩu </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-heart fa-size"></i>
+              <span> Sản phẩm yêu thích </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-floppy-disk fa-size"></i>
+              <span> Sản phẩm đã lưu </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item item-cart">
+              <i class="fa-solid fa-truck fa-size"></i>
+              <span>Đơn hàng </span>
+              <b>14</b>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item item-cart">
+              <i class="fa-solid fa-cart-shopping fa-size"> </i>
+              <span class="item-cart">Giỏ hàng </span>
+              <b>14</b>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Cài đặt </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-volume-high fa-size"></i>
+              <span> Âm thanh </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-image fa-size"></i>
+              <span> Quảng cáo </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-circle-half-stroke fa-size"></i>
+              <span>Chủ đề Sáng / Tối </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Liên hệ / Hỗ trợ / Báo lỗi </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-facebook fa-size"></i>
+              <span> Facebook </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-google fa-size"></i>
+              <span> Google </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-house fa-size"></i>
+              <span> Zalo </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-youtube fa-size"></i>
+              <span> Youtube </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>---------------- </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-right-from-bracket fa-size"></i>
+              <span> Đăng xuất </span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="fixedSearchEarth" style="display: none">
+      <div class="fixedSearchEarth__inner">
+        <div class="search">
+          <div id="closeSearchEarth" class="close">
+            <i class="fa-solid fa-xmark fa-size"></i>
+          </div>
+          <div class="header">
+            <label for="">Tìm kiếm quốc gia </label>
+            <input
+              type="text"
+              name=""
+              id=""
+              value="Việt nam "
+              placeholder="Tìm kiếm "
+            />
+          </div>
+          <ul class="listEarth">
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+              <i class="fa-solid fa-check fa-size"></i>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="body" class="wrapper">
+      <div class="desktop supership">
+        <div class="navbar">
+          <div class="navbar__top">
+            <div class="container">
+              <ul class="topbar">
+                <li class="topbar__item">
+                  <p class="topbar__item___text">
+                    Trở thành đổi tác với Super Shipping
+                  </p>
+                  <i class="fa-solid fa-handshake fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Tiết kiệp hơn với ứng dụng</p>
+                  <i class="fa-solid fa-mobile-screen fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Chăm sóc khách hàng</p>
+                  <i class="fa-solid fa-mug-hot fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Khám phá</p>
+                  <i class="fa-solid fa-basket-shopping fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Trợ giúp</p>
+                  <i class="fa-solid fa-circle-question fa-size"></i>
+                </li>
+                <li class="topbar__item language">
+                  <img
+                    src="./public/images/vi_VN.png"
+                    class="img-language"
+                    alt=""
+                  />
+                  <p class="topbar__item___text">Việt nam</p>
+                  <i class="fa-solid fa-caret-down fa-size fa-scale-1"></i>
+                  <ul class="list">
+                    <li class="list__item">
+                      <img
+                        src="./public/images/vi_VN.png"
+                        class="img-language"
+                        alt=""
+                      />
+                      <p>Tiếng việt</p>
+                      <i class="fa-solid fa-check fa-size"></i>
+                    </li>
+                    <li class="list__item">
+                      <img
+                        src="./public/images/en_US.png"
+                        class="img-language"
+                        alt=""
+                      />
+                      <p>Tiếng anh</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar__bottom">
+            <div class="container">
+              <div class="bottombar">
+                <div class="bottombar__left">
+                  <div class="logo">
+                    <img src="./public/images/logo1.jpg" alt="" />
+                  </div>
+                  <div class="bottombar__left___group">
+                    <ul class="menu">
+                      <li class="menu__item address">
+                        <h4 class="info">Địa chỉ</h4>
+                        <p>Đăk Lăk</p>
+                        <i class="fa-solid fa-angle-down fa-size"></i>
+                      </li>
+                      <li class="menu__item">
+                        <p>Bộ sưu tập</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Ăn uống</p>
+                        <i class="fa-solid fa-angle-down fa-size"></i>
+                        <ul class="menu__lv">
+                          <li class="menu__lv___item">
+                            <p>Đồ ăn nhật cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Trà sữa</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Đồ ăn nhật cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Trà sữa</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Đồ ăn nhật cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Trà sữa</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Đồ ăn nhật cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Trà sữa</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Đồ ăn nhật cao cấp</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Trà sữa</p>
+                          </li>
+                          <li class="menu__lv___item">
+                            <p>Cao cấp</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu__item">
+                        <p>Khám phá</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Tin tức</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Giao hàng</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Chi nhánh</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Hõ trợ</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Báo lỗi</p>
+                      </li>
+                    </ul>
+                    <div class="search">
+                      <input
+                        type="search"
+                        name=""
+                        placeholder="Tìm kiếm sản phẩm ........... "
+                        id=""
+                      />
+                      <i
+                        class="fa-solid fa-magnifying-glass fa-size fa-search-sett"
+                      ></i>
+                      <div class="search__list">
+                        <div class="wp">
+                          <div class="title">Tìm kiếm sản phẩm</div>
+                          <ul class="search__list___wp">
+                            <li class="search__list___wp____item">
+                              <div class="text">
+                                <i
+                                  class="fa-solid fa-magnifying-glass fa-size"
+                                ></i>
+                                <p>Tai nghe chơi game gaming</p>
+                              </div>
+                              <i class="fa-solid fa-xmark"></i>
+                            </li>
+                            <div class="search__list___wp____show">
+                              <p>Xem thêm</p>
+                              <i class="fa-solid fa-chevron-down fa-size"></i>
+                            </div>
+                          </ul>
+                        </div>
+                        <div class="wp">
+                          <div class="title">Từ khóa tìm kiếm phổ biến</div>
+                          <ul class="keyword">
+                            <li class="keyword__item">Sản phẩm hot</li>
+                            <li class="keyword__item">Sản phẩm hot</li>
+                            <li class="keyword__item">
+                              Sản phẩm đang bán chạy
+                            </li>
+                            <li class="keyword__item">Gà đông tảo</li>
+                            <li class="keyword__item">Trà sữa</li>
+                            <li class="keyword__item">Cơm chiên</li>
+                            <li class="keyword__item">Cơm sinh viên</li>
+                            <li class="keyword__item">Cơm 0đ</li>
+                          </ul>
+                        </div>
+                        <div class="wp">
+                          <div class="title">Danh mục phổ biến</div>
+                          <ul class="category">
+                            <li class="category__item">
+                              <img
+                                src="https://statics.vinpearl.com/com-tam-ngon-o-sai-gon-0_1630562640.jpg"
+                                alt=""
+                              />
+                              <p class="text">Cơm</p>
+                            </li>
+                            <li class="category__item">
+                              <img
+                                src="https://suckhoehangngay.mediacdn.vn/zoom/700_438/154880486097817600/2021/8/29/an-thit-ga-nhieu-co-tot-khong-2-16302301251131276160424-0-97-512-916-crop-16302301919781076935074.jpg"
+                                alt=""
+                              />
+                              <p class="text">Thịt gà</p>
+                            </li>
+                            <li class="category__item">
+                              <img
+                                src="https://statics.vinpearl.com/com-tam-ngon-o-sai-gon-0_1630562640.jpg"
+                                alt=""
+                              />
+                              <p class="text">Cơm</p>
+                            </li>
+                            <li class="category__item">
+                              <img
+                                src="https://statics.vinpearl.com/com-tam-ngon-o-sai-gon-0_1630562640.jpg"
+                                alt=""
+                              />
+                              <p class="text">Cơm</p>
+                            </li>
+                            <li class="category__item">
+                              <img
+                                src="https://statics.vinpearl.com/com-tam-ngon-o-sai-gon-0_1630562640.jpg"
+                                alt=""
+                              />
+                              <p class="text">Cơm</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottombar__right">
+                  <div class="bottombar__right___userMobile">
+                    <div id="menuFixedRootIdx" class="menu">
+                      <i class="fa-solid fa-bars fa-size"></i>
+                    </div>
+                  </div>
+                  <div class="bottombar__right___user">
+                    <div class="text cart">
+                      <i class="fa-solid fa-basket-shopping fa-size"></i>
+                      <p>Giỏ hàng</p>
+                      <h4 class="quality">14</h4>
+                    </div>
+                    <div class="text user">
+                      <div class="owp-w1" style="display: none">
+                        <i class="fa-size fa-solid fa-user"></i>
+                        <p>Tài khoản</p>
+                      </div>
+                      <div class="owp-w1">
+                        <i class="fa-size fa-solid fa-user"></i>
+                        <div class="inner">
+                          <span class="name">Đâu Văn Nam </span>
+                          <div class="woi">
+                            <li class="woi__item">Số dư : 0</li>
+                          </div>
+                        </div>
+                        <ul class="info" style="display: none">
+                          <li class="info__item">
+                            <i class="fa-solid fa-info fa-size-1"></i>
+                            <p>Thông tin tài khoản</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí thanh toán</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí địa chỉ</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí thông tin</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Đồng bộ</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Nạp tiền +</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí thanh toán</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user">
+          <div class="container">
+            <div class="user__content breadcrum">
+              <div class="user__content___breadcrumb breadcrumb__content">
+                <ul class="main">
+                  <li class="main__item">SuperFood</li>
+                  <li class="main__item">Tài khoản</li>
+                  <li class="main__item">Thông tin</li>
+                </ul>
+              </div>
+
+              <div class="user__content___flex">
+                <div id="userMenuLeftIdx" class="user__content___flex____left">
+                  <div class="content">
+                    <ul class="content__main">
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Tài khoản </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-shop fa-size"></i>
+                          <span>Thông tin Shop </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-money-bill fa-size"></i>
+                          <span>Số dư </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Giao dịch </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-truck-fast fa-size"></i>
+                          <span>Đơn hàng </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-bag-shopping fa-size"></i>
+                          <span> Đã mua </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-money-bills fa-size"></i>
+                          <span>Đã thanh toán </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Địa chỉ / Thanh toán </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Bảo mật </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Thông báo </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  id="userMenuRightIdx"
+                  class="user__content___flex____right"
+                >
+                  <div class="content">
+                    <div class="title">
+                      <h4>Thông tin tài khoản</h4>
+                      <i id="showMenuUserIdx" class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="wp">
+                      <div class="avatar inline">
+                        <img src="./public/images/avatar_nam.jpg" alt="" />
+                        <i class="fa-solid fa-pen fa-size"></i>
+                      </div>
+                      <ul class="infoUser inline">
+                        <li class="infoUser__item">
+                          <label for="">
+                            <i class="fa-solid fa-signature fa-size"></i>Tên
+                            người dùng
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="Thêm tên người dùng "
+                          />
+                        </li>
+                        <li class="infoUser__item">
+                          <label for=""
+                            ><i class="fa-solid fa-calendar-days fa-size"></i>
+                            Ngày sinh
+                          </label>
+                          <div class="date">
+                            <select name="" id="">
+                              <option value="1">Ngày</option>
+                            </select>
+                            <select name="" id="">
+                              <option value="1">Tháng</option>
+                            </select>
+                            <select name="" id="">
+                              <option value="1">Năm</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li class="infoUser__item">
+                          <label for=""
+                            ><i class="fa-solid fa-genderless fa-size"></i>Giới
+                            tính
+                          </label>
+                          <div class="checkSex">
+                            <div class="checkSex__item">
+                              <input type="radio" name="" id="" />
+
+                              <span>Nam </span>
+                            </div>
+                            <div class="checkSex__item">
+                              <input type="radio" name="" id="" />
+                              <span>Nữ </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="infoUser__item">
+                          <div class="qt">
+                            <label for=""
+                              ><i class="fa-solid fa-earth-africa fa-size"></i
+                              >Quốc tịch
+                            </label>
+                            <input
+                              type="text"
+                              name=""
+                              disabled
+                              placeholder="Tìm quốc tịch "
+                            />
+                            <button id="showEarthAddress">CHỌN QUỐC GIA</button>
+                          </div>
+                        </li>
+                        <div class="save">
+                          <button>
+                            <i class="fa-solid fa-floppy-disk fa-size"></i>Cập
+                            nhật thông tin
+                          </button>
+                        </div>
+                      </ul>
+                      <ul class="infoUser inline">
+                        <div class="bow">
+                          <span class="textFxBow"
+                            >Số điện thoại / Thư điện tử
+                          </span>
+                          <li class="infoUser__item">
+                            <label for="">
+                              <i
+                                class="fa-solid fa-square-envelope fa-size"
+                              ></i>
+                              Địa chỉ thư điện tử
+                            </label>
+                            <div class="ipn">
+                              <input type="text" value="Đậu Văn Nam " />
+                              <button type="button">Cập nhât</button>
+                            </div>
+                          </li>
+                          <li class="infoUser__item">
+                            <label for=""
+                              ><i class="fa-solid fa-phone fa-size"></i> Số điện
+                              thoại
+                            </label>
+                            <div class="ipn">
+                              <input type="text" value="Đậu Văn Nam " />
+                              <button type="button">Cập nhật</button>
+                            </div>
+                          </li>
+                        </div>
+                        <div class="bow">
+                          <span class="textFxBow"
+                            >Bảo mật / Bảo mật cấp 2
+                          </span>
+                          <li class="infoUser__item">
+                            <label for="">
+                              <i class="fa-solid fa-lock fa-size"></i>
+                              Mật khẩu cấp 1
+                            </label>
+                            <div class="ipn">
+                              <input
+                                type="password"
+                                value="##########"
+                                disabled
+                              />
+                              <button type="button">Thiết lập</button>
+                            </div>
+                          </li>
+                          <li class="infoUser__item">
+                            <label for="">
+                              <i class="fa-solid fa-lock fa-size"></i>
+                              Mật khẩu cấp 2
+                            </label>
+                            <div class="ipn">
+                              <input
+                                type="password"
+                                value="##########"
+                                disabled
+                              />
+                              <button type="button">Thiết lập</button>
+                            </div>
+                          </li>
+                        </div>
+                        <div class="bow">
+                          <span class="textFxBow">Liên kết mạng xã hội </span>
+                          <li class="infoUser__item">
+                            <div class="ipn mxh">
+                              <h4 class="lkmxh face">
+                                <i class="fa-brands fa-facebook fa-size"></i>
+                                Facebook
+                              </h4>
+                              <button type="button">Cập nhât</button>
+                            </div>
+                          </li>
+                          <li class="infoUser__item">
+                            <div class="ipn mxh">
+                              <h4 class="lkmxh zalo">
+                                <i class="fa-solid fa-comment fa-size"></i>Zalo
+                              </h4>
+                              <button type="button">Cập nhât</button>
+                            </div>
+                          </li>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./public/js/slider.js"></script>
+  <script src="./public/js/main.js"></script>
+  <script src="./public/js/animation.min.js"></script>
+  <script src="./public/js/menu.min.js"></script>
+</html>

@@ -601,3 +601,157 @@
     }
   }
 }
+@media only screen and (max-width: 966px) {
+  .user {
+    &__content {
+      &___flex {
+        &____right {
+          .content {
+            .wp {
+              .avatar {
+                width: 100% !important;
+              }
+              .infoUser {
+                margin-top: 20px;
+                width: calc(49% - 4px) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 595px) {
+  .user {
+    &__content {
+      &___flex {
+        &____right {
+          .content {
+            .wp {
+              .avatar {
+                width: 100% !important;
+              }
+              .infoUser {
+                margin-left: 0 !important;
+                width: 100% !important;
+                input {
+                  max-width: 100% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and(max-width:500px) {
+  .user {
+    &__content {
+      &___flex {
+        &____left {
+        }
+        &____right {
+          width: 100% !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user {
+    &__content {
+      &___flex {
+        &____right {
+          .content {
+            .wp {
+              &__list {
+                &___item {
+                  width: calc(50.33333% - 17px) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 824px) {
+  .user {
+    &__content {
+      &___flex {
+        &____right {
+          .content {
+            &__order {
+              &___infoW {
+                .statusMain {
+                  &__item {
+                    width: calc(34.33333% - 15px) !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  .user {
+    &__content {
+      &___flex {
+        &____right {
+          .content {
+            &__order {
+              &___infoW {
+                .statusMain {
+                  &__item {
+                    width: calc(54.33333% - 15px) !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 513px) {
+  .user {
+    &__content {
+      &___flex {
+        &____right {
+          .content {
+            &__order {
+              &___imageName {
+                flex-direction: column;
+                img {
+                  margin: auto;
+                }
+              }
+              &___infoW {
+                .show {
+                  &__infoBuy {
+                    &___item {
+                      width: 100% !important;
+                      margin: 0 !important;
+                    }
+                    &___wd {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

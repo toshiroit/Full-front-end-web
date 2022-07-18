@@ -80,3 +80,9 @@
     }
   }
 }
+
+@mixin fontAwesomeCode($code) {
+  content: $code;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}

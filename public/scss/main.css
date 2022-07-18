@@ -1,8 +1,7 @@
 /* Background Color */
 /* Background Color */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import "../fonts/Roboto_Medium/stylesheet.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -15,6 +14,97 @@
 
 .fullWidth {
   width: 100% !important;
+}
+
+.fixedSearchEarth {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.fixedSearchEarth__inner {
+  display: flex;
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  height: calc(100vh - 120px);
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-y: scroll;
+  margin: 17px auto;
+}
+.fixedSearchEarth__inner::-webkit-scrollbar {
+  width: 6px;
+}
+.fixedSearchEarth__inner::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 123, 255);
+}
+.fixedSearchEarth__inner .search {
+  width: 100%;
+  position: relative;
+}
+.fixedSearchEarth__inner .search .close {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+}
+.fixedSearchEarth__inner .search .close:hover .fa-size {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.fixedSearchEarth__inner .search .close .fa-size {
+  transition: all 0.3s;
+  font-size: 1.3rem;
+  color: #dc3545;
+}
+.fixedSearchEarth__inner .search .header {
+  text-align: center;
+  padding: 10px;
+}
+.fixedSearchEarth__inner .search .header label {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.fixedSearchEarth__inner .search .header input {
+  margin-top: 7px;
+  outline: none;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+.fixedSearchEarth__inner .search .listEarth {
+  margin-top: 10px;
+}
+.fixedSearchEarth__inner .search .listEarth__item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  padding: 7px;
+  font-size: 0.89rem;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  cursor: pointer;
+}
+.fixedSearchEarth__inner .search .listEarth__item:hover {
+  background-color: #ddd;
+}
+.fixedSearchEarth__inner .search .listEarth__item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.fixedSearchEarth__inner .search .listEarth__item .fa-size {
+  color: rgb(40, 167, 69);
+}
+.fixedSearchEarth__inner .search .listEarth__item .fa-size-w {
+  color: #4064ac;
+  margin-right: 6px;
+}
+.fixedSearchEarth__inner .search .listEarth__item span {
+  margin-left: 10px;
 }
 
 .menuFixedIdx {
@@ -685,6 +775,22 @@
     left: 0;
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (max-width: 1180px) {
   .navbar__top .topbar {
     flex-wrap: wrap;
@@ -1012,6 +1118,93 @@
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 966px) {
+  .user__content___flex____right .content .wp .avatar {
+    width: 100% !important;
+  }
+  .user__content___flex____right .content .wp .infoUser {
+    margin-top: 20px;
+    width: calc(49% - 4px) !important;
+  }
+}
+@media only screen and (max-width: 595px) {
+  .user__content___flex____right .content .wp .avatar {
+    width: 100% !important;
+  }
+  .user__content___flex____right .content .wp .infoUser {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .user__content___flex____right .content .wp .infoUser input {
+    max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .user__content___flex____right {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user__content___flex____right .content .wp__list___item {
+    width: calc(50.33333% - 17px) !important;
+  }
+}
+@media only screen and (max-width: 824px) {
+  .user__content___flex____right .content__order___infoW .statusMain__item {
+    width: calc(34.33333% - 15px) !important;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .user__content___flex____right .content__order___infoW .statusMain__item {
+    width: calc(54.33333% - 15px) !important;
+  }
+}
+@media only screen and (max-width: 513px) {
+  .user__content___flex____right .content__order___imageName {
+    flex-direction: column;
+  }
+  .user__content___flex____right .content__order___imageName img {
+    margin: auto;
+  }
+  .user__content___flex____right .content__order___infoW .show__infoBuy___item {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .user__content___flex____right .content__order___infoW .show__infoBuy___wd {
+    display: none;
+  }
+}
+/* Background Color */
+.loading-ellipsis .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  border-color: #007bff transparent #007bff transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 li,
 a,
 ul {
@@ -1019,11 +1212,15 @@ ul {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 .wrapper .supership {
@@ -2143,6 +2340,7 @@ ul {
 .wrapper .supership .detail__content___product .info__basic .categorywp .wp {
   display: inline-block;
   font-size: 0.89rem;
+  font-weight: 300;
 }
 .wrapper .supership .detail__content___product .info__basic .categorywp .wp:not(:last-child)::after {
   content: " | ";
@@ -2152,6 +2350,13 @@ ul {
   font-weight: 500;
 }
 .wrapper .supership .detail__content___product .info .title {
+  margin-top: 7px;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 1.3rem;
   color: #333333;
 }
@@ -2170,21 +2375,30 @@ ul {
 }
 .wrapper .supership .detail__content___product .info .starBuy .star p {
   margin-left: 3px;
+  font-weight: 300;
+  font-size: 0.9rem;
   color: #8a8a8a;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .wrapper .supership .detail__content___product .info .starBuy .buy::before {
   color: #8a8a8a;
   content: " | ";
 }
 .wrapper .supership .detail__content___product .info .starBuy .buy span {
+  font-weight: 300;
+  font-size: 0.9rem;
   color: #8a8a8a;
 }
 .wrapper .supership .detail__content___product .info .pricex {
   display: flex;
   align-items: baseline;
-  margin-top: 10px;
   background-color: rgb(245, 245, 245);
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   position: relative;
   font-family: "Roboto", sans-serif;
 }
@@ -2239,6 +2453,7 @@ ul {
 }
 .wrapper .supership .detail__content___product .info .selectProduct h4 {
   font-size: 1.2rem;
+  font-weight: 400;
 }
 .wrapper .supership .detail__content___product .info .selectProduct__main {
   margin-top: 15px;
@@ -2259,7 +2474,7 @@ ul {
 }
 .wrapper .supership .detail__content___product .info .selectProduct__main .itemSelect b {
   font-size: 0.92rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 .wrapper .supership .detail__content___product .info .selectProduct__main .itemSelect .fa-size {
   position: absolute;
@@ -2404,6 +2619,9 @@ ul {
 }
 .wrapper .supership .detail__content___product .info .btnProduct__main {
   padding: 10px;
+}
+.wrapper .supership .detail__content___product .info .btnProduct__main .btn {
+  font-weight: 500;
 }
 .wrapper .supership .detail__content___product .info .btnProduct__main .btn .fa-size {
   font-size: 1.2rem;
@@ -2627,6 +2845,7 @@ ul {
   border-bottom-right-radius: 0;
   border: 1px solid #ddd;
   border-left: 0;
+  font-size: 0.95rem;
 }
 .wrapper .supership .detail__content___wop .table__content {
   margin-left: 10px;
@@ -2634,6 +2853,7 @@ ul {
 }
 .wrapper .supership .detail__content___wop .table__content p {
   line-height: 2;
+  font-weight: 300;
 }
 .wrapper .supership .detail__content___comment {
   margin-top: 15px;
@@ -2741,6 +2961,7 @@ ul {
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .left .content .name .w {
   font-size: 0.92rem;
+  font-weight: 400;
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .left .content .name .star .not-active {
   color: rgba(221, 221, 221, 0.8666666667) !important;
@@ -2753,9 +2974,14 @@ ul {
   margin-top: 5px;
   color: rgb(139, 139, 139);
   font-size: 0.92rem;
+  font-weight: 400;
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .left .content .like {
   margin-top: 1px;
+}
+.wrapper .supership .detail__content___comment .evaluate__point___user .left .content .like:hover .fa-size {
+  color: #007bff;
+  cursor: pointer;
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .left .content .like .fa-size {
   color: rgb(187, 184, 184);
@@ -2859,6 +3085,8 @@ ul {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.9;
+  font-weight: 400;
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .right .comment__image {
   margin-top: 10px;
@@ -2968,7 +3196,8 @@ ul {
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .right .repComment__content .title b {
   color: #787878;
-  font-size: 0.89rem;
+  font-size: 0.87rem;
+  font-weight: 400;
 }
 .wrapper .supership .detail__content___comment .evaluate__point___user .right .repComment__content .text__comment {
   width: 100%;
@@ -4428,6 +4657,840 @@ ul {
 }
 .wrapper .supership .checkout__content___main____wp .right .footer .buy button:hover {
   background-color: rgba(255, 66, 78, 0.8);
+}
+.wrapper .supership .user__content___title {
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+}
+.wrapper .supership .user__content___title h4 {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper .supership .user__content___title h4 .fa-size {
+  line-height: 18px;
+  margin-right: 6px;
+}
+.wrapper .supership .user__content___flex {
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+.wrapper .supership .user__content___flex____left {
+  background-color: #fff;
+  width: 25%;
+  border-right: 1px solid rgba(221, 221, 221, 0.8666666667);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp .nameFx {
+  position: absolute;
+  top: -12px;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #007bff;
+  left: 25px;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp .nameFx span {
+  font-size: 0.85rem;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp____item {
+  padding: 10px 5px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 6px;
+  align-items: baseline;
+  margin-top: 10px;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp____item .fa-size {
+  width: 25px;
+  color: #007bff;
+  text-align: center;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp____item span {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.wrapper .supership .user__content___flex____left .content__main___wp____item:hover {
+  background-color: #f7f7f7;
+}
+.wrapper .supership .user__content___flex____right {
+  width: calc(75% - 15px);
+  background-color: rgb(255, 255, 255);
+  margin-left: 15px;
+}
+.wrapper .supership .user__content___flex____right .content__order {
+  margin-top: 10px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+.wrapper .supership .user__content___flex____right .content__order___item:hover {
+  border-top: 1px solid #007bff;
+  border-bottom: 1px solid #007bff;
+}
+.wrapper .supership .user__content___flex____right .content__order___item:last-child {
+  margin-bottom: 0;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____dateIsShip {
+  position: relative;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____dateIsShip span {
+  font-weight: 300;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -19px;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____dateIsShip .fxLeft {
+  left: 10px;
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____dateIsShip .fxRight {
+  right: 10px;
+  border: 1px solid #ddd;
+  font-weight: 400;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 2px;
+  color: #28a745;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp .wp__left {
+  margin-right: 8px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw {
+  display: flex;
+  align-items: flex-start;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .image {
+  width: 100px;
+  border-radius: 7px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .image img {
+  border-radius: 7px;
+  width: 100%;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name {
+  margin-left: 10px;
+  line-height: 23px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name h4 {
+  font-weight: 400;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 300px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name .category {
+  margin-left: 5px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name .category span {
+  font-weight: 300;
+  color: #686868;
+  font-size: 0.8rem;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name .category span .fa-size {
+  margin-right: 5px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name .price__w1 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #858080;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____nameImage .tw .name .price__w2 {
+  color: #dc3545;
+  font-weight: 500;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____ifop {
+  margin-top: 5px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____ifop .tw .tl {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____ifop .tw .tl__price {
+  color: #dc3545;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____ifop .tw .tl__card {
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____ifop .tw .tl span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: auto;
+}
+.wrapper .supership .user__content___flex____right .content__order___item____wp_____ifop .tw .tl b {
+  line-height: 13px;
+  font-weight: 400;
+  margin-left: 4px;
+  font-size: 0.92rem;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW {
+  padding-bottom: 8px;
+  transition: all 0.3s;
+  margin-top: 8px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item {
+  display: inline-block;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item span {
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item span .fa-size {
+  margin-right: 4px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item span .fa-size-phone {
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item span .fa-size-time {
+  color: #f1b500;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item span b {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 12px;
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item::after {
+  padding-left: 4px;
+  padding-right: 4px;
+  content: " - ";
+}
+.wrapper .supership .user__content___flex____right .content__order___item .infoW__item:last-child::after {
+  content: "";
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName {
+  display: flex;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName img {
+  width: 250px;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice {
+  line-height: 1.9;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice h4 {
+  font-weight: 400;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice h4 .fa-size {
+  width: 20px;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .tag {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #686868;
+  margin-left: 4px;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .tag .fa-size {
+  text-align: center;
+  width: 20px;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .grpPro {
+  font-weight: 400;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .grpPro span {
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .grpPro span .fa-size {
+  width: 20px;
+  text-align: center;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .grpPro b {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .price {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .price__w1 {
+  font-size: 0.95rem;
+  color: #787878;
+  text-decoration: line-through;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .price__w2 {
+  font-size: 1.3rem;
+  color: #dc3545;
+  font-weight: 500;
+}
+.wrapper .supership .user__content___flex____right .content__order___imageName .namePrice .price__w2 b {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #343a40;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW {
+  margin-top: 15px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain {
+  border-top: 1px solid #f1efef;
+  padding: 15px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain .fxNd {
+  position: absolute;
+  top: -15px;
+  left: 45px;
+  font-size: 0.75rem;
+  background-color: #fff;
+  padding: 5px 9px 5px 9px;
+  border: 1px solid #f1efef;
+  color: #28a745;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain .active {
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain .active:not(:last-child)::after {
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain__item {
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+  width: calc(25% - 15px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #959595;
+  cursor: pointer;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain__item .fa-size {
+  margin-right: 6px;
+  text-align: center;
+  width: 15px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .statusMain__item .fa-size-waitLoad {
+  color: #dc3545;
+  text-align: center;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .gifOrder {
+  border-bottom: 1px solid #f1efef;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .gifOrder__image {
+  width: 200px;
+  margin: auto;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .gifOrder__image img {
+  width: 100%;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show {
+  position: relative;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoFx {
+  font-size: 0.87rem;
+  line-height: 2;
+  padding: 7px;
+  background-color: #fff;
+  color: #ed9000;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__title {
+  padding: 10px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__title h4 {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: #787878;
+  font-size: 1.2rem;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__title h4 .fa-size {
+  margin-right: 6px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy {
+  display: flex;
+  border-top: 1px solid #e7e7e7;
+  max-height: 100%;
+  flex-wrap: wrap;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___wd {
+  width: 1px;
+  background-color: #e7e7e7;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item {
+  margin-top: 5px;
+  padding: 15px;
+  width: calc(50% - 15px);
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item:first-child {
+  margin-right: 5px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item:last-child {
+  margin-left: 5px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .title__shop {
+  color: #dc3545;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .title__shipper {
+  color: #28a745;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .title h4 {
+  text-align: center;
+  font-weight: 400;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .nd {
+  margin-top: 10px;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .nd__item {
+  line-height: 2;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .nd__item span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .nd__item span .fa-size {
+  width: 25px;
+  color: #007bff;
+  text-align: center;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .nd__item span b {
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+.wrapper .supership .user__content___flex____right .content__order___infoW .show__infoBuy___item .nd__item p {
+  font-size: 1rem;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 300;
+}
+.wrapper .supership .user__content___flex____right .content > .title {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .supership .user__content___flex____right .content > .title h4 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.wrapper .supership .user__content___flex____right .content .wp {
+  padding: 10px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .inline {
+  transition: all 0.3s;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrapper .supership .user__content___flex____right .content .wp .avatar {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.wrapper .supership .user__content___flex____right .content .wp .avatar:hover::after {
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 50%;
+}
+.wrapper .supership .user__content___flex____right .content .wp .avatar img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .avatar .fa-size {
+  bottom: 20px;
+  position: absolute;
+  right: 5px;
+  background-color: #343a40;
+  color: white;
+  padding: 4.5px;
+  line-height: 1;
+  font-size: 0.5rem;
+  border-radius: 50%;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser {
+  margin-left: 4px;
+  width: calc(40% - 4px);
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser .save button {
+  width: 100%;
+  border: 2px solid #59a9ff;
+  background: none;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser .save button .fa-size {
+  margin-right: 5px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser .bow {
+  border-top: 1px solid #ddd;
+  position: relative;
+  padding-top: 20px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser .bow .textFxBow {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #007bff;
+  top: -9px;
+  left: 20px;
+  font-size: 0.85rem;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser:last-child {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item {
+  margin-bottom: 15px;
+  text-align: start;
+  padding: 7px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .mxh {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item label {
+  width: 100%;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: start;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item label .fa-size {
+  color: #007bff;
+  margin-right: 3px;
+  width: 18px;
+  text-align: center;
+  font-size: 1rem;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .date {
+  margin-top: 7px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item select {
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: 1px solid #d5d5d5;
+  background: none;
+  outline: none;
+  margin-right: 6px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item select:last-child {
+  margin-right: 0;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item h4.lkmxh {
+  padding: 9px 10px;
+  font-weight: 400;
+  font-size: 0.97rem;
+  text-align: start;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item h4.lkmxh .fa-size {
+  margin-right: 13px;
+  text-align: center;
+  width: 7px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .face,
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .zalo {
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item input[type=text],
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item [type=number],
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item [type=email],
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item [type=password] {
+  margin-top: 7px;
+  border: 1px solid #d5d5d5;
+  outline: none;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 3px;
+  padding: 9px 10px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item button[type=submit],
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item [type=button] {
+  padding: 6px;
+  background: none;
+  border: 1px solid #007bff;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .checkSex {
+  margin-top: 7px;
+  display: flex;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .checkSex__item {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .checkSex__item:last-child {
+  margin-right: 0;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .checkSex__item span {
+  margin-left: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.wrapper .supership .user__content___flex____right .content .wp .infoUser__item .checkSex__item input[type=radio] {
+  width: 15px;
+  height: 15px;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list {
+  border-top: 1px solid #ebebeb;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  position: relative;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list .ndFx {
+  position: absolute;
+  top: -8px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #248eff;
+  font-size: 0.9rem;
+  left: 25px;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item {
+  padding: 15px;
+  text-align: start;
+  vertical-align: top;
+  width: calc(33.33333% - 17px);
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item h4 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item h4 .fa-size-coin {
+  color: #f9ae00 !important;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item h4 .fa-size-card,
+.wrapper .supership .user__content___flex____right .content .wp__list___item h4 .fa-size {
+  color: #007bff;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item h4 .fa-size {
+  width: 20px;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item button {
+  margin-top: 5px;
+  padding: 7px;
+  background: none;
+  border: 1px solid #248eff;
+  border-radius: 6px;
+  color: #343a40;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item button:hover {
+  background-color: rgba(27, 168, 255, 0.1);
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item button .fa-size {
+  margin-right: 3px;
+  line-height: 4px;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item span {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+.wrapper .supership .user__content___flex____right .content .wp__list___item span b {
+  font-weight: 500;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF {
+  margin-top: 15px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF p {
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF .listNot {
+  margin-top: 10px;
+  position: relative;
+  border-top: 1px solid #ddd;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF .listNot__text {
+  position: absolute;
+  font-size: 1rem;
+  top: -8px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 8px;
+  padding-right: 8px;
+  left: 25px;
+  color: #dc3545;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF .listNot__item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF .listNot__item b {
+  font-weight: 400;
+}
+.wrapper .supership .user__content___flex____right .content .wp .ndF .listNot__item p {
+  margin-left: 5px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb {
+  display: flex;
+  width: 100%;
+  max-height: 350px;
+  height: 350px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form {
+  margin: auto;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .title {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .title p {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .ipn {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .ipn .fa-size {
+  border: 2px solid #59a9ff;
+  padding: 8.5px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .ipn .fa-size:first-child {
+  color: #dc3545;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .ipn .fa-size:last-child {
+  color: #007bff;
+  border-left: 0;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .ipn .fa-size:last-child:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb form .ipn input {
+  padding: 9px 10px;
+  border: 2px solid #59a9ff;
+  border-left: 0;
+  outline: none;
+  width: 100%;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .fx {
+  margin: auto;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop {
+  text-align: center;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop .iw {
+  font-weight: 400;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop .shop-lock {
+  color: #dc3545;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop p {
+  margin-top: 7px;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop button {
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  background: none;
+  border: 1px solid #007bff;
+  font-size: 0.85rem;
+  color: #343a40;
+  padding: 10px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop button:hover {
+  background-color: rgba(89, 169, 255, 0.2);
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .userShop button .fa-size {
+  margin-left: 5px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .success {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .success img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 450px;
+  height: 250px;
+}
+.wrapper .supership .user__content___flex____right .completionFx__formSb .success span {
+  padding-bottom: 10px;
 }
 .wrapper .bannerFooter {
   margin-top: 20px;
