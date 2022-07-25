@@ -419,163 +419,28 @@
                 >
                   <div class="content">
                     <div class="title">
-                      <h4>Thông tin tài khoản</h4>
+                      <h4>
+                        <i class="fa-solid fa-key fa-size"></i>Thay đổi mật khẩu
+                      </h4>
                       <i id="showMenuUserIdx" class="fa-solid fa-bars"></i>
                     </div>
-                    <div class="wp">
-                      <div class="avatar inline">
-                        <img src="./public/images/avatar_nam.jpg" alt="" />
-                        <i class="fa-solid fa-pen fa-size"></i>
+                    <div class="content__restPass">
+                      <div class="content__restPass___main">
+                        <div class="title">
+                          <label for=""
+                            ><i class="fa-solid fa-passport fa-size"></i>Xác
+                            nhận đó là bạn
+                          </label>
+                          <p>
+                            Vui lòng nhập mật khẩu cấp 2 để thay đổi mật khẩu
+                            của bạn
+                          </p>
+                        </div>
+                        <div class="ipn">
+                          <input type="password" name="" id="" />
+                          <button>Xác nhận</button>
+                        </div>
                       </div>
-                      <ul class="infoUser inline">
-                        <li class="infoUser__item">
-                          <label for="">
-                            <i class="fa-solid fa-signature fa-size"></i>Tên
-                            người dùng
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Thêm tên người dùng "
-                          />
-                        </li>
-                        <li class="infoUser__item">
-                          <label for=""
-                            ><i class="fa-solid fa-calendar-days fa-size"></i>
-                            Ngày sinh
-                          </label>
-                          <div class="date">
-                            <select name="" id="">
-                              <option value="1">Ngày</option>
-                            </select>
-                            <select name="" id="">
-                              <option value="1">Tháng</option>
-                            </select>
-                            <select name="" id="">
-                              <option value="1">Năm</option>
-                            </select>
-                          </div>
-                        </li>
-                        <li class="infoUser__item">
-                          <label for=""
-                            ><i class="fa-solid fa-genderless fa-size"></i>Giới
-                            tính
-                          </label>
-                          <div class="checkSex">
-                            <div class="checkSex__item">
-                              <input type="radio" name="" id="" />
-
-                              <span>Nam </span>
-                            </div>
-                            <div class="checkSex__item">
-                              <input type="radio" name="" id="" />
-                              <span>Nữ </span>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="infoUser__item">
-                          <div class="qt">
-                            <label for=""
-                              ><i class="fa-solid fa-earth-africa fa-size"></i
-                              >Quốc tịch
-                            </label>
-                            <input
-                              type="text"
-                              name=""
-                              disabled
-                              placeholder="Tìm quốc tịch "
-                            />
-                            <button id="showEarthAddress">CHỌN QUỐC GIA</button>
-                          </div>
-                        </li>
-                        <div class="save">
-                          <button>
-                            <i class="fa-solid fa-floppy-disk fa-size"></i>Cập
-                            nhật thông tin
-                          </button>
-                        </div>
-                      </ul>
-                      <ul class="infoUser inline">
-                        <div class="bow">
-                          <span class="textFxBow"
-                            >Số điện thoại / Thư điện tử
-                          </span>
-                          <li class="infoUser__item">
-                            <label for="">
-                              <i
-                                class="fa-solid fa-square-envelope fa-size"
-                              ></i>
-                              Địa chỉ thư điện tử
-                            </label>
-                            <div class="ipn">
-                              <input type="text" value="Đậu Văn Nam " />
-                              <button type="button">Cập nhât</button>
-                            </div>
-                          </li>
-                          <li class="infoUser__item">
-                            <label for=""
-                              ><i class="fa-solid fa-phone fa-size"></i> Số điện
-                              thoại
-                            </label>
-                            <div class="ipn">
-                              <input type="text" value="Đậu Văn Nam " />
-                              <button type="button">Cập nhật</button>
-                            </div>
-                          </li>
-                        </div>
-                        <div class="bow">
-                          <span class="textFxBow"
-                            >Bảo mật / Bảo mật cấp 2
-                          </span>
-                          <li class="infoUser__item">
-                            <label for="">
-                              <i class="fa-solid fa-lock fa-size"></i>
-                              Mật khẩu cấp 1
-                            </label>
-                            <div class="ipn">
-                              <input
-                                type="password"
-                                value="##########"
-                                disabled
-                              />
-                              <button type="button">Thiết lập</button>
-                            </div>
-                          </li>
-                          <li class="infoUser__item">
-                            <label for="">
-                              <i class="fa-solid fa-lock fa-size"></i>
-                              Mật khẩu cấp 2
-                            </label>
-                            <div class="ipn">
-                              <input
-                                type="password"
-                                value="##########"
-                                disabled
-                              />
-                              <button type="button">Thiết lập</button>
-                            </div>
-                          </li>
-                        </div>
-                        <div class="bow">
-                          <span class="textFxBow">Liên kết mạng xã hội </span>
-                          <li class="infoUser__item">
-                            <div class="ipn mxh">
-                              <h4 class="lkmxh face">
-                                <i class="fa-brands fa-facebook fa-size"></i>
-                                Facebook
-                              </h4>
-                              <button type="button">Cập nhât</button>
-                            </div>
-                          </li>
-                          <li class="infoUser__item">
-                            <div class="ipn mxh">
-                              <h4 class="lkmxh zalo">
-                                <i class="fa-solid fa-comment fa-size"></i>Zalo
-                              </h4>
-                              <button type="button">Cập nhât</button>
-                            </div>
-                          </li>
-                        </div>
-                      </ul>
                     </div>
                   </div>
                 </div>

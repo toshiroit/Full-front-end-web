@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="../public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="../public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Quản trị</title>
+  </head>
+  <body>
+    <div id="menuBarFxAdmin" class="menuFxBar">
+      <div class="logoBox">
+        <img src="../public/images/logo-sm.png" alt="" />
+      </div>
+      <div class="menuFxBar__content">
+        <ul class="menuFxBar__content___main">
+          <div class="opw">
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-gauge fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-shop fa-size"></i>
+              <ul class="menu">
+                <div class="menu__title">
+                  <h4>Cửa hàng</h4>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="bd">
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-user fa-size"></i>
+              <ul class="menu">
+                <div class="menu__title">
+                  <h4>Cửa hàng</h4>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="bd">
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <div>
+                      <span>Lorem ipsum</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-truck-ramp-box fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-layer-group fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-truck-fast fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-tags fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-comment-dots fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-bell fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-basket-shopping fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-bug fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-address-book fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-headset fa-size"></i>
+            </li>
+            <li class="menuFxBar__content___main____item">
+              <i class="fa-solid fa-gear fa-size"></i>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapperAdmin" id="bodyAdmin">
+      <header id="page__topbar" class="topBar">
+        <div class="topBar__navbar">
+          <div class="topBar__navbar___mws">
+            <div id="showMenuBar" class="menuBar">
+              <i class="fa-solid fa-bars fa-size"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-size"></i>
+              <input type="text" name="" id="" placeholder="Tìm kiếm " />
+            </div>
+          </div>
+          <div class="topBar__navbar___otw">
+            <ul class="main">
+              <li class="main__item">
+                <span class="qualityFx">14</span>
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__user">
+                <div class="main__user___avatar">
+                  <img
+                    src="../public/images/Cap-nhat-cho-cac-ban-Hinh-dai-dien-avatar-nu-cute.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main__user___name">
+                  <h4 class="wp1">DAU-NAM-PC</h4>
+                  <span>Free</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="desktop admin page">
+        <div class="page__main">
+          <div class="page__main___title">
+            <h4 class="page__main___title____name">BẢNG QUẢN TRỊ</h4>
+            <ul class="page__main___title____breadcrumb">
+              <li class="page__main___title____breadcrumb_____item">
+                Trang tổng quan
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                bảng điều khiển
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="content__header">
+              <div class="content__header___wop">
+                <h4 class="w">Chào buổi sáng Văn Nam</h4>
+                <p>Hãy kiếm tra các đơn hàng hôm nay nhé</p>
+              </div>
+              <div class="content__header___pow">
+                <ul class="main">
+                  <li class="main__item date">
+                    <input
+                      type="text"
+                      value="04 Jan, 2022 to 06 Jan, 2022"
+                      name=""
+                      disabled
+                      id=""
+                    />
+                    <div class="ipn">
+                      <label for=""
+                        ><i class="fa-solid fa-calendar-days fa-size"></i>
+                      </label>
+                      <input type="date" name="" id="" />
+                    </div>
+                  </li>
+                  <li class="main__item">
+                    <button class="btn-add">
+                      <i class="fa-solid fa-plus fa-size"></i> Thêm sản phẩm
+                    </button>
+                  </li>
+                  <li class="main__item">
+                    <button class="btn-show">
+                      <i class="fa-solid fa-angles-right fa-size"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="content__mw">
+              <div class="owp">
+                <span class="w"
+                  ><i class="fa-solid fa-shop"></i> Hoạt động của Shop
+                </span>
+                <ul class="content__mw___main">
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Tình trạng Shop </span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i
+                          class="fa-solid fa-truck-ramp-box fa-size fa-size-product"
+                        ></i>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Đơn hàng đang giao </span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i class="fa-solid fa-comments fa-size"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Đơn hàng giao thanh công </span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i class="fa-solid fa-comments fa-size"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Đơn hàng giao không thanh công </span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i class="fa-solid fa-comments fa-size"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="owp">
+                <span class="w"
+                  ><i class="fa-solid fa-shop"></i> Sản phẩm / đơn hàng / thông
+                  báo
+                </span>
+                <ul class="content__mw___main">
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Sản phẩm đang bán </span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i
+                          class="fa-solid fa-truck-ramp-box fa-size fa-size-product"
+                        ></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Đơn hàng chưa xác nhận </span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i class="fa-solid fa-bag-shopping fa-size"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="content__mw___main____item">
+                    <div class="header">
+                      <span class="name">Đơn hàng đang giao</span>
+                      <span class="status status-up">
+                        <i class="fa-solid fa-arrow-trend-up fa-size"></i>
+                        <b>14.6%</b>
+                      </span>
+                    </div>
+                    <div class="bo">
+                      <span
+                        ><i class="fa-solid fa-angles-right fa-size"></i>
+                        495.194K</span
+                      >
+                    </div>
+                    <div class="fo">
+                      <a href="" class="fo__show">Xem danh sách ngay </a>
+                      <div class="image">
+                        <i class="fa-solid fa-truck-fast fa-size"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content__mw___char">
+                <div class="charBar"></div>
+                <div class="charLocation"></div>
+              </div>
+              <div class="content__mw___table">
+                <div class="prdTable">
+                  <div class="prdTable__header">
+                    <span class="title"
+                      ><i class="fa-solid fa-boxes-stacked"></i> Danh sách sản
+                      phẩm đã bán chạy
+                    </span>
+                    <div class="sort">
+                      <span>Sắp xếp : </span>
+                      <select name="" id="">
+                        <option value="ToDay">Today</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="prdTable__bdx">
+                    <table class="prdTable__bdx___main">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="prdTable__pagination">
+                    <span class="tow"
+                      ><i class="fa-solid fa-eye"></i> Hiện thị 5 trên 125 kết
+                      quả
+                    </span>
+                    <ul class="main">
+                      <li class="main__item arrow">
+                        <i class="fa-solid fa-angle-left"></i>
+                      </li>
+                      <li class="main__item active">1</li>
+
+                      <li class="main__item">2</li>
+
+                      <li class="main__item">3</li>
+
+                      <li class="main__item arrow">
+                        <i class="fa-solid fa-angle-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="prdTable">
+                  <div class="prdTable__header">
+                    <span class="title"
+                      ><i class="fa-solid fa-boxes-stacked"></i> Danh sách sản
+                      phẩm đã bán chạy
+                    </span>
+                    <div class="sort">
+                      <span>Sắp xếp : </span>
+                      <select name="" id="">
+                        <option value="ToDay">Today</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="prdTable__bdx">
+                    <table class="prdTable__bdx___main">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="flexBd">
+                              <div class="image">
+                                <img
+                                  src="https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="dateNae">
+                                <h5 class="name">Cơm hà đùi chiên góc tư</h5>
+                                <span> 24 Apr 2021</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="vw">48.841K</h5>
+                            <span
+                              ><i class="fa-solid fa-dollar-sign"></i> Giá</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">194</h5>
+                            <span
+                              ><i class="fa-solid fa-truck-fast"></i> Đặt
+                              hàng</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">941</h5>
+                            <span
+                              ><i class="fa-solid fa-star"></i> Đánh giá
+                              5s</span
+                            >
+                          </td>
+                          <td>
+                            <h5 class="vw">1.681.714tr</h5>
+                            <span
+                              ><i class="fa-solid fa-money-bill"></i> Tổng tiền
+                              đã bán
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="prdTable__pagination">
+                    <span class="tow"
+                      ><i class="fa-solid fa-eye"></i> Hiện thị 5 trên 125 kết
+                      quả
+                    </span>
+                    <ul class="main">
+                      <li class="main__item arrow">
+                        <i class="fa-solid fa-angle-left"></i>
+                      </li>
+                      <li class="main__item active">1</li>
+
+                      <li class="main__item">2</li>
+
+                      <li class="main__item">3</li>
+
+                      <li class="main__item arrow">
+                        <i class="fa-solid fa-angle-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+  <script src="../public/js/menu.min.js"></script>
+  <script src="../public/js/slider.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/animation.min.js"></script>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="./public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Tài khoản</title>
+  </head>
+  <body>
+    <div class="menuFixedIdx" style="">
+      <div class="menuFixedIdx__inner">
+        <div id="closeMenuFixedRootIdx" class="close">
+          <i class="fa-solid fa-circle-xmark fa-size"></i>
+        </div>
+        <div class="menuFixedIdx__inner___header">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-size"></i>
+            <input placeholder="Tìm kiếm sản phẩm " type="text" />
+          </div>
+          <div class="user">
+            <div class="avatar">
+              <img
+                src="https://i.pinimg.com/736x/5d/69/c5/5d69c5133c8a88d3247d4dec9f657d40.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flexUser">
+              <button>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập
+              </button>
+              <button><i class="fa-solid fa-user-plus"></i> Đăng kí</button>
+            </div>
+          </div>
+        </div>
+        <ul class="menuFixedIdx__inner___menu">
+          <div class="menuWp">
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-house fa-size"></i>
+              <span> Trang chủ </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Tài khoản </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-circle-question fa-size"></i>
+              <span> Thông tin tài khoản </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-key fa-size"></i>
+              <span> Thay đổi mật khẩu </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-heart fa-size"></i>
+              <span> Sản phẩm yêu thích </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-floppy-disk fa-size"></i>
+              <span> Sản phẩm đã lưu </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item item-cart">
+              <i class="fa-solid fa-truck fa-size"></i>
+              <span>Đơn hàng </span>
+              <b>14</b>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item item-cart">
+              <i class="fa-solid fa-cart-shopping fa-size"> </i>
+              <span class="item-cart">Giỏ hàng </span>
+              <b>14</b>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Cài đặt </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-volume-high fa-size"></i>
+              <span> Âm thanh </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-image fa-size"></i>
+              <span> Quảng cáo </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-circle-half-stroke fa-size"></i>
+              <span>Chủ đề Sáng / Tối </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>Liên hệ / Hỗ trợ / Báo lỗi </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-facebook fa-size"></i>
+              <span> Facebook </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-google fa-size"></i>
+              <span> Google </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-house fa-size"></i>
+              <span> Zalo </span>
+            </li>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-brands fa-youtube fa-size"></i>
+              <span> Youtube </span>
+            </li>
+          </div>
+          <div class="menuWp">
+            <div class="menuWp__nameFix">
+              <span>---------------- </span>
+            </div>
+            <li class="menuFixedIdx__inner___menu____item">
+              <i class="fa-solid fa-right-from-bracket fa-size"></i>
+              <span> Đăng xuất </span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="fixedSearchEarth" style="display: none">
+      <div class="fixedSearchEarth__inner">
+        <div class="search">
+          <div id="closeSearchEarth" class="close">
+            <i class="fa-solid fa-xmark fa-size"></i>
+          </div>
+          <div class="header">
+            <label for="">Tìm kiếm quốc gia </label>
+            <input
+              type="text"
+              name=""
+              id=""
+              value="Việt nam "
+              placeholder="Tìm kiếm "
+            />
+          </div>
+          <ul class="listEarth">
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+              <i class="fa-solid fa-check fa-size"></i>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+            <li class="listEarth__item">
+              <span
+                ><i class="fa-solid fa-earth-americas fa-size-w"></i> Việt nam
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="body" class="wrapper">
+      <div class="desktop supership">
+        <div class="user">
+          <div class="container">
+            <div class="user__content breadcrum">
+              <div class="user__content___breadcrumb breadcrumb__content">
+                <ul class="main">
+                  <li class="main__item">SuperFood</li>
+                  <li class="main__item">Tài khoản</li>
+                  <li class="main__item">Thông tin</li>
+                </ul>
+              </div>
+
+              <div class="user__content___flex">
+                <div id="userMenuLeftIdx" class="user__content___flex____left">
+                  <div class="content">
+                    <ul class="content__main">
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Tài khoản </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-shop fa-size"></i>
+                          <span>Thông tin Shop </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-money-bill fa-size"></i>
+                          <span>Số dư </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Giao dịch </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-truck-fast fa-size"></i>
+                          <span>Đơn hàng </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-bag-shopping fa-size"></i>
+                          <span> Đã mua </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-money-bills fa-size"></i>
+                          <span>Đã thanh toán </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Địa chỉ / Thanh toán </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Bảo mật </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                      </div>
+                      <div class="content__main___wp">
+                        <div class="nameFx">
+                          <span>Thông báo </span>
+                        </div>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                        <li class="content__main___wp____item">
+                          <i class="fa-solid fa-house-user fa-size"></i>
+                          <span>Thông tin tài khoản </span>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  id="userMenuRightIdx"
+                  class="user__content___flex____right"
+                >
+                  <div class="content">
+                    <div class="title">
+                      <h4>
+                        <i class="fa-solid fa-key fa-size"></i>Thay đổi mật khẩu
+                      </h4>
+                      <i id="showMenuUserIdx" class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="content__restPass">
+                      <div class="content__restPass___main">
+                        <div class="title">
+                          <label for=""
+                            ><i class="fa-solid fa-passport fa-size"></i>
+                          </label>
+                          <p>
+                            Mật khẩu mới nên có các kí tự đặc biệt kèm chữ hóa
+                            để tăng độ bảo mật
+                          </p>
+                        </div>
+                        <div class="ipnPass">
+                          <div class="ipnPass__item">
+                            <label for=""
+                              ><i class="fa-solid fa-key fa-size"></i> Mật khẩu
+                              mới
+                            </label>
+                            <input type="password" name="" id="" />
+                          </div>
+                          <div class="ipnPass__item">
+                            <label for="">
+                              <i class="fa-solid fa-key fa-size"></i> Nhập lại
+                              mật khảu
+                            </label>
+                            <input type="password" name="" id="" />
+                          </div>
+                          <button>Xác nhận</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./public/js/slider.js"></script>
+  <script src="./public/js/main.js"></script>
+  <script src="./public/js/animation.min.js"></script>
+  <script src="./public/js/menu.min.js"></script>
+</html>

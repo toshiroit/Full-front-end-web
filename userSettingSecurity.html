@@ -12,6 +12,21 @@
     <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
   </head>
   <body>
+    <div id="fromConfirmPass" class="fxConfirm">
+      <div class="fxConfirm__inner">
+        <h4 class="title">
+          <i class="fa-solid fa-unlock"></i> Xác nhận mật khẩu của bạn
+        </h4>
+        <div class="ipn">
+          <input type="password" name="" id="" />
+          <i class="fa-solid fa-unlock fa-size"></i>
+        </div>
+        <div class="btn">
+          <button>Xác nhận</button>
+          <button>Hủy</button>
+        </div>
+      </div>
+    </div>
     <div id="body" class="wrapper">
       <div class="desktop supership">
         <div class="navbar">
@@ -414,126 +429,153 @@
                 <div class="content">
                   <div class="title">
                     <h4>
-                      <i class="fa-solid fa-location-dot fa-size"></i> Thanh
-                      toán
+                      <i class="fa-solid fa-shield fa-size"></i> Cài đặt bảo mật
                     </h4>
                     <i id="showMenuUserIdx" class="fa-solid fa-bars"></i>
                   </div>
-                  <div class="content__pay">
-                    <ul class="content__pay___main">
-                      <li class="content__pay___main____item">
+                  <div class="content__security">
+                    <div class="content__security___main">
+                      <div class="content__security___main____item">
                         <h4 class="title">
-                          <i class="fa-solid fa-hand-holding-dollar"></i>Nhận
-                          hàng khi thanh toán
+                          <i class="fa-solid fa-user-shield"></i>Tình trạng bảo
+                          mật tài khoản
                         </h4>
-                        <p class="wp">Trả tiền khi nhận được sản phẩm</p>
-                        <div class="status active">
-                          <span
-                            >ĐANG HOẠT ĐỘNG
-                            <i
-                              class="fa-solid fa-circle-check fa-size fa-size-status-yes"
-                            ></i>
-                          </span>
+                        <div class="content">
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Bảo mật cấp 1</span>
+                              <label id="switchActivePass" class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" checked />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Bảo mật cấp 2</span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Xác thức OTP khi thanh toán </span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" checked />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Xác thực khi đăng nhập qua OTP </span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
                         </div>
-                      </li>
-                      <li class="content__pay___main____item">
+                      </div>
+                      <div class="content__security___main____line"></div>
+                      <div class="content__security___main____item">
                         <h4 class="title">
-                          <i class="fa-solid fa-credit-card"></i>Thanh toán qua
-                          Internet/Banking - Thẻ nội địa
+                          <i class="fa-solid fa-key"></i>Tình trạng mật khẩu
                         </h4>
-                        <p class="wp">
-                          Thanh toán qua thiết bị di động của bạn
-                        </p>
-                        <div class="status active">
-                          <span
-                            >ĐANG HOẠT ĐỘNG
-                            <i
-                              class="fa-solid fa-circle-check fa-size fa-size-status-yes"
-                            ></i>
-                          </span>
+                        <div class="content">
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Mật khẩu cấp 1</span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                            <div style="display: none" class="inputPass">
+                              <input type="password" name="" id="" />
+                              <button>Xác nhận</button>
+                            </div>
+                          </div>
+
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Mật khẩu cấp 2</span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" checked />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Xác thức OTP khi thanh toán</span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="content__item">
+                            <div class="wp">
+                              <i class="fa-solid fa-shield"></i>
+                              <span>Xác thực khi đăng nhập qua OTP</span>
+                              <label class="switchActive">
+                                <span class="textHover">Kích hoạt ngay </span>
+                                <input type="checkbox" name="" id="" checked />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
                         </div>
-                      </li>
-                      <li class="content__pay___main____item">
-                        <h4 class="title">
-                          <i class="fa-solid fa-credit-card"></i>Thanh toán Momo
-                          / Zalo Pay / Viettel Pay
-                        </h4>
-                        <p class="wp">
-                          Thanh toán qua cổng điện của các nhà cung cấp trên
-                          được cho phép
-                        </p>
-                        <div class="status inActive">
-                          <span
-                            >KHÔNG HOẠT ĐỘNG
-                            <i
-                              class="fa-solid fa-ban fa-size fa-size-status-inActive"
-                            ></i>
-                          </span>
-                        </div>
-                      </li>
-                      <li class="content__pay___main____item">
-                        <h4 class="title">
-                          <i class="fa-solid fa-credit-card"></i>Thanh toán qua
-                          thẻ Visa
-                        </h4>
-                        <p class="wp">
-                          Thanh toán quả thẻ Visa cho mọi đối tượng ở các nước
-                          không phải Quốc Tịch Việt Nam
-                        </p>
-                        <div class="status inBlock">
-                          <span
-                            >BỊ KHÓA
-                            <i
-                              class="fa-solid fa-triangle-exclamation fa-size fa-size-status-inBlock"
-                            ></i>
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="content__pay___not">
-                      <h4 class="content__pay___not____title">
+                      </div>
+                    </div>
+                    <div class="content__security___not">
+                      <h4 class="content__security___not____title">
                         <i class="fa-solid fa-quote-left"></i> Lưu ý
                       </h4>
-                      <div class="content__pay___not____item">
+                      <div class="content__security___not____item">
                         <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Các
-                          cổng thanh toán hiện đang được hoạt động là 4
+                          <b><i class="fa-solid fa-angles-right"></i></b> Tình
+                          trạng bảo mật tài khoản của bạn sẽ được thông báo ngay
+                          tại đây.Hãy thường xuyên kiểm tra tình trạng tài khoản
+                          của bạn
                         </p>
                         <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Thanh
-                          toán khi nhận là khi bạn nhận hàng sẽ thanh toán cho
-                          Shipper đúng với tổng tiền mà bạn đặt hàng
+                          <b><i class="fa-solid fa-angles-right"></i></b>Hãy bật
+                          các lớp bảo vệ cho tài khoản của bạn để bảo mật tài
+                          khoản của bạn tốt hơn
                         </p>
                         <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Thanh
-                          toán qua Internet/Banking - Thẻ nội địa là thanh toán
-                          qua thiết bị di động của bạn có cài Internet/Banking
-                          và ngân hàng của bạn phải hỗ trợ cổng than hoán này
+                          <b><i class="fa-solid fa-angles-right"></i></b>Bạn nên
+                          bật thanh toán qua OTP khi thanh toán hoặc mua hàng để
+                          tránh việc kẻ gian phá hoại tài khoản của bạn
                         </p>
                         <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Thanh
-                          toán Momo / Zalo Pay / Viettel Pay là thanh toán qua
-                          cổng điện tử do bên thử 3 cung cấp cho bạn và hiện tại
-                          chỉ hỗ trợ qua các cổng điện tử gồm Momo / Zalo Pay /
-                          Vittel Pay
+                          <b><i class="fa-solid fa-angles-right"></i></b> Tài
+                          khoản ngân hàng của bạn được bảo vệ 1 cách tốt nhất
+                          khi đăng kí trên Web của chúng tôi
                         </p>
                         <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Thanh
-                          toán qua thẻ Visa là thanh toán qua cổng quốc tê phù
-                          hợp với người nước ngoài đang cư trú tại việt nam cũng
-                          có thể thanh toán và mua hàng được
-                        </p>
-                        <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Việc
-                          thanh toán hoặc cung cấp thông tin không hợp pháp bị
-                          phát hạn hiện sẽ bị khóa cổng thanh toán và mở lại khi
-                          cung cấp đúng lí do bạn đưa ra
-                        </p>
-                        <p>
-                          <b><i class="fa-solid fa-angles-right"></i></b>Nếu
-                          cổng thanh toán bị khóa không lí do , bạn vui lòng
-                          liên hệ tới hỗ trợ viên của chúng tôi để phán án tình
-                          trang hoặc gửi Email về abc@gmail.com
+                          <b><i class="fa-solid fa-angles-right"></i></b> Không
+                          cung cấp tài khoản mật khẩu ngân hàng với các đối
+                          tượng lạ qua việc nhắn tin và không cung cấp thông tin
+                          ngần hàng với nhân viên
                         </p>
                       </div>
                     </div>

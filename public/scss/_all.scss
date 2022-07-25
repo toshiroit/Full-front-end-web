@@ -3,6 +3,23 @@
   margin: 0 auto;
   position: relative;
 }
+.container-admin {
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.height-0-px {
+  height: 0px;
+}
+.tranForm-rotate-0 {
+  transform: rotate(0deg) !important;
+}
+.tranForm-rotate-90 {
+  transform: rotate(90deg) !important;
+}
+$boxShowCardBlack: 0 1px 2px rgb(56 65 74 / 15%);
 @mixin fontAllWeb {
   // font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -13,7 +30,81 @@
 .fullWidth {
   width: 100% !important;
 }
-
+.pageTopBar {
+  left: 230px;
+}
+.pageTopBarW {
+  left: 60px;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+.fxConfirm {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+  &__inner {
+    background-color: $sp-background-color-white;
+    width: 350px;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px auto;
+    padding: 10px 25px;
+    text-align: center;
+    .title {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .ipn {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      input {
+        padding: 12px;
+        width: calc(100% - 50px);
+        outline: none;
+        border: 1px solid #e7e7e7;
+        border-right: 0;
+      }
+      .fa-size {
+        width: 50px;
+        padding: 11.9px;
+        border: 1px solid #e7e7e7;
+        border-left: 0;
+      }
+    }
+    .btn {
+      margin-top: 5px;
+      button {
+        padding: 8px 12px;
+        width: calc(50% - 2px);
+        &:first-child {
+          background-color: $sp-background-color-primary;
+          border: none;
+          cursor: pointer;
+          color: $sp-color-text-white;
+        }
+        &:last-child {
+          background-color: $sp-background-color-danger;
+          border: none;
+          color: $sp-color-text-white;
+        }
+      }
+    }
+  }
+}
 .fixedSearchEarth {
   position: fixed;
   top: 0;
@@ -548,9 +639,9 @@
       transition: all 0.3s;
       border-radius: 7px;
       position: relative;
-      margin: 6px;
-      width: calc(16.66666666% - 12px);
-      box-shadow: 0 0 15px #ddd;
+      margin: 11px;
+      width: calc(16.66666666% - 22px);
+      box-shadow: 0 0 5px #ddd;
       .freeShip {
         position: absolute;
         right: -7px;
@@ -569,11 +660,11 @@
         padding: 6px;
         z-index: 999;
         border-radius: 50%;
-        font-family: "Roboto", sans-serif;
-        font-weight: 550;
+
+        font-weight: 500;
+        font-size: 0.8rem;
       }
       .image {
-        border-radius: 7px;
         overflow: hidden;
 
         &:hover > img {
@@ -581,11 +672,9 @@
         }
         img {
           transition: all 0.3s;
-          border-radius: 7px;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+
           width: 100%;
-          height: 170px;
+          height: 160px;
         }
       }
       .sellable {
@@ -594,8 +683,11 @@
         align-items: flex-end;
         h4 {
           font-size: 0.87rem;
+          font-weight: 400;
+          color: $sp-color-text-success;
         }
         b {
+          font-weight: 500;
           line-height: 1;
           margin-left: 2.5px;
           font-family: "Roboto", sans-serif;
@@ -626,6 +718,9 @@
           font-size: 0.88rem;
           color: #787878;
         }
+        .t2 {
+          font-weight: 500;
+        }
       }
       .description {
         padding: 6px;
@@ -645,8 +740,11 @@
           align-items: center;
           h4 {
             color: $sp-color-text-danger;
+            font-weight: 500;
+            font-size: 0.9rem;
           }
           .fa-size {
+            line-height: 9px;
             color: $sp-background-color-primary-2;
             padding-right: 2px;
           }
@@ -682,16 +780,18 @@
       background: none;
       border: none;
 
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 21px;
       font-style: normal;
       color: $sp-color-text-dark;
       padding: 10px 30px;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 500;
+      &:hover {
+        color: $sp-color-text-primary;
+      }
     }
     .fa-size {
-      font-weight: bold;
       line-height: 22px;
     }
   }

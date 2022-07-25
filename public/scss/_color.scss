@@ -21,6 +21,7 @@ $sp-color-text-black: #000;
 $sp-color-text-orange-1: #ffbd24;
 $sp-color-text-price: #f9ae00;
 $sp-color-star-yellow: #f1b500;
+
 /* Background Color */
 
 $sp-background-color-gray-1: #333333;
@@ -35,3 +36,13 @@ $sp-background-color-light: rgb(248, 249, 250);
 $sp-background-color-dark: rgb(52, 58, 64);
 $sp-background-color-white: rgb(255, 255, 255);
 $sp-background-color-white-3: rgb(246, 246, 246);
+
+$sp-background-color-transparent-table: transparent;
+$sp-background-color-white-admin-2: rgb(243, 243, 249);
+$sp-color-text-dark-admin-2: #404040;
+
+:root {
+  $sp-background-color-transparent-table: transparent;
+  $sp-background-color-white-admin-2: rgb(243, 243, 249);
+  $sp-color-text-dark-admin-2: #404040;
+}
