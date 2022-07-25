@@ -55,3 +55,34 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes menuSlideAdm {
+  from {
+    transform: translateX(0px);
+    transition-timing-function: ease-in;
+  }
+  to {
+    transform: translateX(653px);
+    transition-timing-function: ease-out;
+  }
+}
+
+@keyframes menuSlideOutAdm {
+  from {
+    transform: translateX(653px);
+    transition-timing-function: ease-in;
+  }
+  to {
+    transform: translateX(0px);
+    transition-timing-function: ease-out;
+  }
+}
+
+.slideInAdm {
+  animation: menuSlideAdm 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+.slideOutAdm {
+  animation: menuSlideOutAdm 0.5s 1;
+}

@@ -5239,16 +5239,21 @@ html {
   }
 }
 .menuFxBar {
+  // width: 100%;
   width: 60px;
-  background-color: rgb(17, 26, 51);
+  // background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   top: 0;
   bottom: 0;
   left: 0;
+  // left: -400px;
   z-index: calc(999 + 2);
   transition: all 0.3s;
-  box-shadow: 0 0 2px #000;
   position: fixed;
+  &__inner {
+    background-color: rgb(17, 26, 51);
+    box-shadow: 0 0 2px #000;
+  }
   .logoBox {
     padding: 1rem;
     text-align: center;
@@ -5394,13 +5399,13 @@ html {
           display: flex;
           align-items: center;
           &__item {
-            padding: 8px;
+            padding: 5px;
             margin-left: 9px;
             position: relative;
             transition: all 0.3s;
             .qualityFx {
               position: absolute;
-              right: 0;
+              right: -5px;
               top: -7px;
               font-size: 0.85rem;
               background-color: $sp-background-color-danger;
@@ -5410,7 +5415,7 @@ html {
             }
             .fa-size {
               transition: all 0.3s;
-              font-size: 1.1rem;
+              font-size: 0.8rem;
             }
             &:hover .fa-size {
               color: $sp-color-text-primary;
@@ -5573,6 +5578,7 @@ html {
           display: flex;
           align-items: center;
           &_____item {
+            cursor: pointer;
             font-size: 0.9rem;
             &:not(:last-child):after {
               content: "\f054";
@@ -5594,6 +5600,7 @@ html {
         padding: 15px;
         &__header {
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
           justify-content: space-between;
           &___wop {
@@ -5612,10 +5619,12 @@ html {
           &___pow {
             .main {
               display: flex;
+              flex-wrap: wrap;
               align-items: center;
               .date {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
               }
               &__item {
                 margin-right: 15px;
@@ -5624,7 +5633,9 @@ html {
                 }
                 input[type="text"] {
                   box-shadow: 0 2px 2px rgb(56 65 74 / 15%);
-                  width: 350px;
+                  max-width: 350px;
+
+                  resize: horizontal;
                   outline: none;
                   border: 1px solid #ffff;
                   padding: 10px 15px;
@@ -5721,10 +5732,10 @@ html {
             align-items: center;
             &____item {
               cursor: pointer;
-              flex-basis: calc(20% - 18px);
+              flex-basis: calc(20% - 36px);
               // margin: 16px 16px 16px 0;
               margin: 18px;
-              margin-left: 0;
+              // margin-left: 0;
               padding: 15px;
               border-radius: 4px;
               background-color: $sp-background-color-white;
@@ -5741,6 +5752,7 @@ html {
 
                 justify-content: space-between;
                 .name {
+                  @include textOverflow(2);
                   font-size: 0.95rem;
                   color: #5a5a5a;
                 }
@@ -5802,6 +5814,7 @@ html {
           }
           &___char {
             display: flex;
+            flex-wrap: wrap;
             .charBar {
               background-color: $sp-background-color-white;
               width: calc(60% - 25px);
@@ -5817,6 +5830,7 @@ html {
           &___table {
             margin-top: 25px;
             display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
             .prdTable {
               background-color: $sp-background-color-white;
@@ -5827,6 +5841,7 @@ html {
               }
 
               &__header {
+                flex-wrap: wrap;
                 padding: 10px;
                 display: flex;
                 justify-content: space-between;
@@ -5927,6 +5942,7 @@ html {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
                 padding: 10px;
                 .tow {
                   font-weight: 500;
