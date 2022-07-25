@@ -1461,6 +1461,44 @@ tr {
     margin-bottom: 17px !important;
   }
 }
+@media only screen and (max-width: 797px) {
+  .wrapperAdmin .admin .page__main .content__header___pow {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .wrapperAdmin .admin .page__main .content__header___pow .main {
+    width: 100% !important;
+  }
+  .wrapperAdmin .admin .page__main .content__header___pow .main .date {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .wrapperAdmin .admin .page__main .content__header___pow .main .date input {
+    margin-bottom: 15px;
+    width: 100% !important;
+  }
+  .wrapperAdmin .admin .page__main .content__header___pow .main .date .ipn {
+    margin-bottom: 10px !important;
+    width: 100% !important;
+  }
+  .wrapperAdmin .admin .page__main .content__header___pow .main .date .ipn label {
+    border-radius: 4px;
+    padding: 10px 0 !important;
+  }
+  .wrapperAdmin .admin .page__main .content__header___pow .main .date .ipn label .fa-size {
+    text-align: center;
+    width: 100%;
+  }
+  .wrapperAdmin .admin .page__main .content__header___pow .main .date .ipn input::-webkit-calendar-picker-indicator {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .wrapperAdmin .admin .page__main___title____breadcrumb {
+    margin-top: 10px;
+  }
+}
 /* Background Color */
 .loading-ellipsis .lds-dual-ring:after {
   content: " ";
@@ -6821,6 +6859,7 @@ html {
 }
 .wrapperAdmin .page__main___title {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 2px rgba(56, 65, 74, 0.15);
@@ -6831,6 +6870,7 @@ html {
 }
 .wrapperAdmin .page__main___title____breadcrumb {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .wrapperAdmin .page__main___title____breadcrumb_____item {

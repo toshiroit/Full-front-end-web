@@ -5567,6 +5567,7 @@ html {
       padding: calc(49px + 1.5rem) 0 0 0;
       &___title {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         background-color: $sp-background-color-white;
         box-shadow: 0 2px 2px rgb(56 65 74 / 15%);
@@ -5576,6 +5577,7 @@ html {
         }
         &____breadcrumb {
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
           &_____item {
             cursor: pointer;

@@ -1093,3 +1093,73 @@
     }
   }
 }
+@media only screen and (max-width: 797px) {
+  .wrapperAdmin {
+    .admin {
+      .page__main {
+        .content {
+          &__header {
+            &___pow {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 435px) {
+  .wrapperAdmin {
+    .admin {
+      .page__main {
+        .content {
+          &__header {
+            &___pow {
+              .main {
+                width: 100% !important;
+                .date {
+                  width: 100%;
+                  input {
+                    margin-bottom: 15px;
+                    width: 100% !important;
+                  }
+                  margin-bottom: 10px;
+                  .ipn {
+                    margin-bottom: 10px !important;
+                    width: 100% !important;
+                    label {
+                      border-radius: 4px;
+                      padding: 10px 0 !important;
+                      .fa-size {
+                        text-align: center;
+                        width: 100%;
+                      }
+                    }
+                    input {
+                      &::-webkit-calendar-picker-indicator {
+                        width: 100% !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .wrapperAdmin {
+    .admin {
+      .page__main {
+        &___title {
+          &____breadcrumb {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
