@@ -1390,6 +1390,12 @@ tr {
     left: 60px;
   }
 }
+@media only screen and (max-width: 768px) {
+  #page__topbar {
+    left: 60px !important;
+    width: calc(100% - 60px) !important;
+  }
+}
 @media only screen and (max-width: 1264px) {
   .wrapperAdmin .admin .page__main .content__mw___main____item {
     flex-basis: calc(25% - 36px) !important;
@@ -1411,7 +1417,7 @@ tr {
     display: none !important;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 663px) {
   .wrapperAdmin .topBar {
     left: 60px !important;
     width: calc(100% - 60px) !important;
@@ -1424,7 +1430,7 @@ tr {
     margin-bottom: 20px;
   }
 }
-@media only screen and (max-width: 784px) {
+@media only screen and (max-width: 850px) {
   .wrapperAdmin .admin .page__main .content__mw___main____item {
     flex-basis: calc(50% - 36px) !important;
   }
@@ -1442,6 +1448,9 @@ tr {
   .wrapperAdmin #page__topbar {
     width: 100% !important;
     left: 0 !important;
+  }
+  .wrapperAdmin .page__main .content {
+    padding: 5px !important;
   }
 }
 @media only screen and (max-width: 663px) {
@@ -1470,6 +1479,9 @@ tr {
   .wrapperAdmin .admin .page__main .content__header___pow .main {
     width: 100% !important;
   }
+  .wrapperAdmin .admin .page__main .content__header___pow .main__item {
+    margin-right: 0 !important;
+  }
   .wrapperAdmin .admin .page__main .content__header___pow .main .date {
     width: 100%;
     margin-bottom: 10px;
@@ -1496,6 +1508,55 @@ tr {
 }
 @media only screen and (max-width: 380px) {
   .wrapperAdmin .admin .page__main___title____breadcrumb {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .wrapperAdmin .admin .page__main .content__mw___char .charBar,
+.wrapperAdmin .admin .page__main .content__mw___char .charLocation {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .wrapperAdmin .admin .page__main .content__mw___char .charBar {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1206px) {
+  .wrapperAdmin .page__main .content__product___main .left {
+    width: 25% !important;
+  }
+  .wrapperAdmin .page__main .content__product___main .right {
+    width: calc(75% - 30px) !important;
+  }
+}
+@media only screen and (max-width: 956px) {
+  .wrapperAdmin .page__main .content__product___main .left {
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+  .wrapperAdmin .page__main .content__product___main .right {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 546px) {
+  .wrapperAdmin .page__main .content__product___main .right__inner___header____select .showDelete {
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .wrapperAdmin .page__main .content__product___main .right__inner___header____tow button {
+    width: 100% !important;
+  }
+  .wrapperAdmin .page__main .content__product___main .right__inner___header____tow .search {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 741px) {
+  .wrapperAdmin .page__main .content__product___main .right__inner___table____pagination_____main {
     margin-top: 10px;
   }
 }
@@ -7021,7 +7082,7 @@ html {
 }
 .wrapperAdmin .page__main .content__mw___main____item {
   cursor: pointer;
-  flex-basis: calc(20% - 36px);
+  flex-basis: calc(25% - 36px);
   margin: 18px;
   padding: 15px;
   border-radius: 4px;
@@ -7042,7 +7103,7 @@ html {
   width: 100%;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 0.95rem;
@@ -7572,6 +7633,7 @@ html {
 }
 .wrapperAdmin .page__main .content__product___main {
   display: flex;
+  flex-wrap: wrap;
 }
 .wrapperAdmin .page__main .content__product___main .left {
   width: 20%;
@@ -7585,6 +7647,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .wrapperAdmin .page__main .content__product___main .left__inner .title h4 {
   font-weight: 500;
@@ -7775,6 +7838,7 @@ html {
 .wrapperAdmin .page__main .content__product___main .right__inner___header____tow {
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -7798,6 +7862,7 @@ html {
 }
 .wrapperAdmin .page__main .content__product___main .right__inner___header____tow .search input {
   width: 260px;
+  resize: horizontal;
   padding: 8px 15px;
   border: none;
   outline: none;
@@ -7808,6 +7873,7 @@ html {
 .wrapperAdmin .page__main .content__product___main .right__inner___header____select {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -7857,12 +7923,19 @@ html {
   text-decoration: underline;
   font-weight: 500;
 }
+.wrapperAdmin .page__main .content__product___main .right__inner___table {
+  overflow: auto;
+}
 .wrapperAdmin .page__main .content__product___main .right__inner___table____main {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 .wrapperAdmin .page__main .content__product___main .right__inner___table____main thead {
   background-color: rgb(243, 243, 249);
+}
+.wrapperAdmin .page__main .content__product___main .right__inner___table____main thead th {
+  white-space: nowrap;
 }
 .wrapperAdmin .page__main .content__product___main .right__inner___table____main tbody td > span {
   padding-left: 12px;
@@ -8054,6 +8127,7 @@ html {
 .wrapperAdmin .page__main .content__product___main .right__inner___table____pagination {
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -8063,6 +8137,7 @@ html {
 .wrapperAdmin .page__main .content__product___main .right__inner___table____pagination_____main {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .wrapperAdmin .page__main .content__product___main .right__inner___table____pagination_____main .item-pw {
   padding: 4px 20px;

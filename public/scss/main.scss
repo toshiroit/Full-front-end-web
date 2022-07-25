@@ -5734,7 +5734,7 @@ html {
             align-items: center;
             &____item {
               cursor: pointer;
-              flex-basis: calc(20% - 36px);
+              flex-basis: calc(25% - 36px);
               // margin: 16px 16px 16px 0;
               margin: 18px;
               // margin-left: 0;
@@ -5754,7 +5754,7 @@ html {
 
                 justify-content: space-between;
                 .name {
-                  @include textOverflow(2);
+                  @include textOverflow(1);
                   font-size: 0.95rem;
                   color: #5a5a5a;
                 }
@@ -6312,6 +6312,7 @@ html {
         &__product {
           &___main {
             display: flex;
+            flex-wrap: wrap;
             .left {
               width: 20%;
 
@@ -6323,6 +6324,7 @@ html {
                   display: flex;
                   justify-content: space-between;
                   align-items: center;
+                  flex-wrap: wrap;
                   h4 {
                     font-weight: 500;
                     color: $sp-color-text-dark-admin-2;
@@ -6533,6 +6535,7 @@ html {
                   &____tow {
                     padding: 15px;
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: center;
                     button {
@@ -6554,6 +6557,7 @@ html {
                       }
                       input {
                         width: 260px;
+                        resize: horizontal;
                         padding: 8px 15px;
                         border: none;
                         outline: none;
@@ -6566,6 +6570,7 @@ html {
                   &____select {
                     margin-top: 20px;
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: center;
                     &_____item {
@@ -6621,11 +6626,16 @@ html {
                   }
                 }
                 &___table {
+                  overflow: auto;
                   &____main {
                     width: 100%;
+                    table-layout: fixed;
                     border-collapse: collapse;
                     thead {
                       background-color: $sp-background-color-white-admin-2;
+                      th {
+                        white-space: nowrap;
+                      }
                     }
                     tbody {
                       td {
@@ -6798,6 +6808,7 @@ html {
                   &____pagination {
                     padding: 15px;
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: center;
                     span {
@@ -6806,6 +6817,7 @@ html {
                     &_____main {
                       display: flex;
                       align-items: center;
+                      flex-wrap: wrap;
                       .item-pw {
                         padding: 4px 20px;
                         border-radius: 4px;

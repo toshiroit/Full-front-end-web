@@ -927,6 +927,12 @@
     left: 60px;
   }
 }
+@media only screen and (max-width: 768px) {
+  #page__topbar {
+    left: 60px !important;
+    width: calc(100% - 60px) !important;
+  }
+}
 
 @media only screen and (max-width: 1264px) {
   .wrapperAdmin {
@@ -991,7 +997,7 @@
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 663px) {
   .wrapperAdmin {
     .topBar {
       left: 60px !important;
@@ -1018,7 +1024,7 @@
     }
   }
 }
-@media only screen and (max-width: 784px) {
+@media only screen and (max-width: 850px) {
   .wrapperAdmin {
     .admin {
       .page__main {
@@ -1058,6 +1064,13 @@
     #page__topbar {
       width: 100% !important;
       left: 0 !important;
+    }
+    .page {
+      &__main {
+        .content {
+          padding: 5px !important;
+        }
+      }
     }
   }
 }
@@ -1117,6 +1130,9 @@
             &___pow {
               .main {
                 width: 100% !important;
+                &__item {
+                  margin-right: 0 !important;
+                }
                 .date {
                   width: 100%;
                   input {
@@ -1150,6 +1166,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 380px) {
   .wrapperAdmin {
     .admin {
@@ -1157,6 +1174,153 @@
         &___title {
           &____breadcrumb {
             margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .wrapperAdmin {
+    .admin {
+      .page__main {
+        .content {
+          &__mw {
+            &___char {
+              .charBar,
+              .charLocation {
+                width: 100% !important;
+                margin-right: 0 !important;
+              }
+              .charBar {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1206px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__product {
+            &___main {
+              .left {
+                width: 25% !important;
+              }
+              .right {
+                width: calc(75% - 30px) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 956px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__product {
+            &___main {
+              .left {
+                width: 100% !important;
+                margin-bottom: 25px;
+              }
+              .right {
+                margin-left: 0 !important;
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 546px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__product {
+            &___main {
+              .right {
+                &__inner {
+                  &___header {
+                    &____select {
+                      .showDelete {
+                        margin-left: 8px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 470px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__product {
+            &___main {
+              .right {
+                &__inner {
+                  &___header {
+                    &____tow {
+                      button {
+                        width: 100% !important;
+                      }
+                      .search {
+                        margin-top: 10px;
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 741px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__product {
+            &___main {
+              .right {
+                &__inner {
+                  &___table {
+                    &____pagination {
+                      &_____main {
+                        margin-top: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
