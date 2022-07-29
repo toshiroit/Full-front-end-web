@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="../public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script src="../public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Đơn hàng</title>
+  </head>
+  <body>
+    <div id="menuBarFxAdmin" class="menuFxBar">
+      <div class="menuFxBar__inner">
+        <div class="logoBox">
+          <img src="../public/images/logo-sm.png" alt="" />
+        </div>
+        <div class="menuFxBar__content">
+          <ul class="menuFxBar__content___main">
+            <div class="opw">
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gauge fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-shop fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-user fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-ramp-box fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-layer-group fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-fast fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-tags fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-comment-dots fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bell fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-basket-shopping fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bug fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-address-book fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-headset fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gear fa-size"></i>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperAdmin" id="bodyAdmin">
+      <header id="page__topbar" class="topBar">
+        <div class="topBar__navbar">
+          <div class="topBar__navbar___mws">
+            <div id="showMenuBar" class="menuBar">
+              <i class="fa-solid fa-bars fa-size"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-size"></i>
+              <input type="text" name="" id="" placeholder="Tìm kiếm " />
+            </div>
+          </div>
+          <div class="topBar__navbar___otw">
+            <ul class="main">
+              <li class="main__item">
+                <span class="qualityFx">14</span>
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__user">
+                <div class="main__user___avatar">
+                  <img
+                    src="../public/images/Cap-nhat-cho-cac-ban-Hinh-dai-dien-avatar-nu-cute.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main__user___name">
+                  <h4 class="wp1">DAU-NAM-PC</h4>
+                  <span>Free</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="desktop admin page">
+        <div class="page__main">
+          <div class="page__main___title">
+            <h4 class="page__main___title____name">Danh sách đơn hàng</h4>
+            <ul class="page__main___title____breadcrumb">
+              <li class="page__main___title____breadcrumb_____item">
+                Trang tổng quan
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                đơn hàng
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                danh sách đơn hàng
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="content__order">
+              <div class="content__order___main">
+                <div class="titleBt">
+                  <h4 class="titleBt__name">Danh sách đơn hàng</h4>
+                  <div class="titleBt__btn">
+                    <button class="btn btn-add">
+                      <i class="fa-solid fa-plus"></i> Tạo đơn hàng
+                    </button>
+                    <button class="btn btn-import">
+                      <i class="fa-solid fa-file-import"></i> Nhập dữ liệu
+                    </button>
+                    <button class="btn btn-remove">
+                      <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="flexSearch">
+                  <div class="flexSearch__item searchText">
+                    <div class="searchText__box">
+                      <i class="fa-solid fa-magnifying-glass fa-size"></i>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Tìm kiếm đơn hàng "
+                      />
+                    </div>
+                  </div>
+                  <div class="flexSearch__item searchDate">
+                    <div class="searchDate__box">
+                      <div class="selectDate">Lựa chọn ngày</div>
+                      <input type="date" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="flexSearch__item selectStatus">
+                    <div class="selectStatus__box">
+                      <div class="text">Tình trạng đơn nhàng</div>
+                    </div>
+                  </div>
+                  <div class="flexSearch__item selectPayment">
+                    <div class="selectPayment__box">
+                      <div class="text">Loại thanh toán</div>
+                    </div>
+                  </div>
+                  <div class="flexSearch__item selectGift">
+                    <div class="selectGift__box">
+                      <div class="text">Mã giảm giá / Gift Code</div>
+                    </div>
+                  </div>
+                  <div class="flexSearch__item btnFilter">
+                    <div class="btnFilter__btn">
+                      <button>
+                        <i class="fa-solid fa-filter fa-size"></i>Lọc
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+      console.error(error);
+    });
+    ClassicEditor.create(document.querySelector("#editor2")).catch((error) => {
+      console.error(error);
+    });
+  </script>
+  <script src="../public/js/editor.js"></script>
+  <script src="./main.js"></script>
+  <script src="../public/js/menu.min.js"></script>
+  <script src="../public/js/main.min.js"></script>
+
+  <script src="../public/js/slider.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/animation.min.js"></script>
+</html>

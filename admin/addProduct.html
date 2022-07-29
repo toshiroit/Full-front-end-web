@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="../public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script src="../public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Quản trị</title>
+  </head>
+  <body>
+    <div id="menuBarFxAdmin" class="menuFxBar">
+      <div class="menuFxBar__inner">
+        <div class="logoBox">
+          <img src="../public/images/logo-sm.png" alt="" />
+        </div>
+        <div class="menuFxBar__content">
+          <ul class="menuFxBar__content___main">
+            <div class="opw">
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gauge fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-shop fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-user fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-ramp-box fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-layer-group fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-fast fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-tags fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-comment-dots fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bell fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-basket-shopping fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bug fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-address-book fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-headset fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gear fa-size"></i>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperAdmin" id="bodyAdmin">
+      <header id="page__topbar" class="topBar">
+        <div class="topBar__navbar">
+          <div class="topBar__navbar___mws">
+            <div id="showMenuBar" class="menuBar">
+              <i class="fa-solid fa-bars fa-size"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-size"></i>
+              <input type="text" name="" id="" placeholder="Tìm kiếm " />
+            </div>
+          </div>
+          <div class="topBar__navbar___otw">
+            <ul class="main">
+              <li class="main__item">
+                <span class="qualityFx">14</span>
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__user">
+                <div class="main__user___avatar">
+                  <img
+                    src="../public/images/Cap-nhat-cho-cac-ban-Hinh-dai-dien-avatar-nu-cute.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main__user___name">
+                  <h4 class="wp1">DAU-NAM-PC</h4>
+                  <span>Free</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="desktop admin page">
+        <div class="page__main">
+          <div class="page__main___title">
+            <h4 class="page__main___title____name">Tạo sản phẩm</h4>
+            <ul class="page__main___title____breadcrumb">
+              <li class="page__main___title____breadcrumb_____item">
+                Trang tổng quan
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                Sản phẩm
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                Tạo sản phẩm
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="content__createProduct">
+              <div class="content__createProduct___main">
+                <form action="">
+                  <div class="left">
+                    <div class="owp">
+                      <div class="owp__cwp">
+                        <div class="owp__cwp___title">
+                          <h4 class="title">
+                            <i class="fa-solid fa-signature"></i> Tên sản phẩm
+                          </h4>
+                        </div>
+                        <div class="owp__cwp___ipn">
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Nhập tên sản phẩm "
+                          />
+                        </div>
+                      </div>
+                      <div class="owp__cwp">
+                        <div class="owp__cwp___title">
+                          <h4 class="title">
+                            <i class="fa-solid fa-signature"></i> Thông tin sản
+                            phẩm
+                          </h4>
+                        </div>
+                        <div class="owp__cwp___ipn">
+                          <div id="editor"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__cwp">
+                        <div class="owp__cwp___title">
+                          <h4 class="title">
+                            <i class="fa-solid fa-signature"></i> Các thông tin
+                            cụ thể / Hướng dẫn sử dụng
+                          </h4>
+                          <p>Chọn giá trị cần thiết cho sản phẩm</p>
+                        </div>
+                        <div class="owp__cwp___main">
+                          <div class="owp__cwp___main____item">
+                            <div class="title">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id="cbSupportUse"
+                              />
+                              <span>Hướng dẫn sử dụng</span>
+                            </div>
+                            <div class="content supportUse">
+                              <textarea name="" id=""></textarea>
+                            </div>
+                          </div>
+                          <div class="owp__cwp___main____item">
+                            <div class="title">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id="cbSupportProcess"
+                              />
+                              <span>Hướng dẫn chế biến </span>
+                            </div>
+                            <div class="content supportProcess">
+                              <textarea name="" id=""></textarea>
+                            </div>
+                          </div>
+                          <div class="owp__cwp___main____item">
+                            <div class="title">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id="ckSupportPreserve"
+                              />
+                              <span>Hướng dẫn bảo quản </span>
+                            </div>
+                            <div class="content supportPreserve">
+                              <textarea name="" id=""></textarea>
+                            </div>
+                          </div>
+                          <div class="owp__cwp___main____item">
+                            <div class="title">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id="cbSupportChange"
+                              />
+                              <span>Hướng dẫn đổi trả </span>
+                            </div>
+                            <div class="content supportChange">
+                              <textarea name="" id=""></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-images"></i> Thiết kế sản phẩm
+                        </h4>
+                      </div>
+
+                      <div class="owp__cwp">
+                        <div class="owp__cwp___title">
+                          <h4 class="title">Hình ảnh sản phẩm</h4>
+                          <p>Thêm hình sản phẩm chính cho sản phẩm</p>
+                        </div>
+                        <div class="owp__cwp___upImage">
+                          <div class="image">
+                            <div class="image__inner">
+                              <div class="image">
+                                <img
+                                  src="https://weblinhtinh.net/wp-content/uploads/2022/07/yurei-deco-250x350.jpg.webp"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="upload">
+                                <label for=""
+                                  ><i class="fa-solid fa-image fa-size"></i>
+                                  <input type="file" name="" id="" />
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owp__cwp">
+                        <div class="owp__cwp___title">
+                          <h4 class="title">Hình ảnh sản phẩm nhiều</h4>
+                          <p>Hình ảnh sản phẩm chi tiết hơn</p>
+                        </div>
+                        <div class="owp__cwp___upImage">
+                          <div class="imageCw">
+                            <div class="imageCw__inner">
+                              <div class="faw">
+                                <i class="fa-solid fa-cloud-arrow-up fa-size">
+                                  <input type="file" name="" id=""
+                                /></i>
+                              </div>
+
+                              <p>
+                                Chọn 1 hoặc nhiều hình ảnh sản phẩm để tài lên
+                              </p>
+                            </div>
+                          </div>
+                          <ul class="listImage">
+                            <li class="listImage__item">
+                              <div class="image wp">
+                                <img
+                                  src="https://weblinhtinh.net/wp-content/uploads/2022/07/yurei-deco-250x350.jpg.webp"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="nameSize wp">
+                                <p class="name">
+                                  PHIẾU ĐĂNG KÝ THỰC TẬP DOANH NGHIỆP HỌC KỲ
+                                  FALL 2022.pdf
+                                </p>
+                                <span class="size wp">0.2 MB</span>
+                              </div>
+                              <div class="btn">
+                                <button>Xóa</button>
+                              </div>
+                            </li>
+                            <li class="listImage__item">
+                              <div class="image wp">
+                                <img
+                                  src="https://weblinhtinh.net/wp-content/uploads/2022/07/yurei-deco-250x350.jpg.webp"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="nameSize wp">
+                                <p class="name">
+                                  PHIẾU ĐĂNG KÝ THỰC TẬP DOANH NGHIỆP HỌC KỲ
+                                  FALL 2022.pdf
+                                </p>
+                                <span class="size wp">0.2 MB</span>
+                              </div>
+                              <div class="btn">
+                                <button>Xóa</button>
+                              </div>
+                            </li>
+                            <li class="listImage__item">
+                              <div class="image wp">
+                                <img
+                                  src="https://weblinhtinh.net/wp-content/uploads/2022/07/yurei-deco-250x350.jpg.webp"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="nameSize wp">
+                                <p class="name">
+                                  PHIẾU ĐĂNG KÝ THỰC TẬP DOANH NGHIỆP HỌC KỲ
+                                  FALL 2022.pdf
+                                </p>
+                                <span class="size wp">0.2 MB</span>
+                              </div>
+                              <div class="btn">
+                                <button>Xóa</button>
+                              </div>
+                            </li>
+                            <li class="listImage__item">
+                              <div class="image wp">
+                                <img
+                                  src="https://weblinhtinh.net/wp-content/uploads/2022/07/yurei-deco-250x350.jpg.webp"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="nameSize wp">
+                                <p class="name">
+                                  PHIẾU ĐĂNG KÝ THỰC TẬP DOANH NGHIỆP HỌC KỲ
+                                  FALL 2022.pdf
+                                </p>
+                                <span class="size wp">0.2 MB</span>
+                              </div>
+                              <div class="btn">
+                                <button>Xóa</button>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__selectTitle">
+                        <div class="titleW active">
+                          <h4>
+                            <i class="fa-solid fa-file-lines"></i> Thông tin
+                            chung
+                          </h4>
+                        </div>
+                        <div class="titleW">
+                          <h4>
+                            <i class="fa-solid fa-file-word"></i> Thông tin phụ
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="owp__main">
+                        <div class="owp__main___row">
+                          <div class="owp__main___row____col">
+                            <div class="title">
+                              <h4>
+                                <i class="fa-solid fa-quote-left"></i> Tên nhà
+                                sản xuất
+                              </h4>
+                            </div>
+                            <div class="ipn">
+                              <input
+                                type="text"
+                                placeholder="Nhập tên nhà sản xuất "
+                              />
+                            </div>
+                          </div>
+                          <div class="owp__main___row____col">
+                            <div class="title">
+                              <h4>
+                                <i class="fa-solid fa-quote-left"></i> Thương
+                                hiệu sản xuất
+                              </h4>
+                            </div>
+                            <div class="ipn">
+                              <input
+                                type="text"
+                                placeholder="Nhập tên nhà sản xuất "
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="owp__main___row">
+                          <div class="owp__main___row____col">
+                            <div class="title">
+                              <h4>
+                                <i class="fa-solid fa-quote-left"></i> Tên nhà
+                                sản xuất
+                              </h4>
+                            </div>
+                            <div class="ipn">
+                              <input
+                                type="text"
+                                placeholder="Nhập tên nhà sản xuất "
+                              />
+                            </div>
+                          </div>
+                          <div class="owp__main___row____col">
+                            <div class="title">
+                              <h4>
+                                <i class="fa-solid fa-quote-left"></i> Thương
+                                hiệu sản xuất
+                              </h4>
+                            </div>
+                            <div class="ipn">
+                              <input
+                                type="text"
+                                placeholder="Nhập tên nhà sản xuất "
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="owp__main___row">
+                          <div class="owp__main___row____col25">
+                            <div class="title">
+                              <h4>
+                                <i class="fa-solid fa-quote-left"></i> Số lượng
+                                ( Không nhất thiết với sản phẩm chế biến )
+                              </h4>
+                            </div>
+                            <div class="ipn">
+                              <i class="fa-solid fa-list-ol fa-size"></i>
+                              <input
+                                type="text"
+                                placeholder="Nhập số lượng sản phẩm  "
+                              />
+                            </div>
+                          </div>
+                          <div class="owp__main___row____col25">
+                            <div class="title">
+                              <h4>Giá bán</h4>
+                            </div>
+                            <div class="ipn">
+                              <i class="fa-solid fa-dollar-sign fa-size"></i>
+                              <input
+                                type="text"
+                                placeholder="Nhập giá bán sản phẩm  "
+                              />
+                            </div>
+                          </div>
+                          <div class="owp__main___row____col25">
+                            <div class="title">
+                              <h4>Giảm giá</h4>
+                            </div>
+                            <div class="ipn">
+                              <i class="fa-solid fa-percent fa-size"></i>
+                              <input
+                                type="text"
+                                placeholder="Nhập giảm giá cho sản phẩm "
+                              />
+                            </div>
+                          </div>
+                          <div class="owp__main___row____col25">
+                            <div class="title">
+                              <h4>Đơn hàng ( Không nhất thiết )</h4>
+                            </div>
+                            <div class="ipn">
+                              <i class="fa-solid fa-truck-fast fa-size"></i>
+                              <input
+                                type="text"
+                                placeholder="Nhập số lượng đơn hàng tối thiểu "
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-cloud-arrow-up"></i> Công bố
+                        </h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <span class="title">Tình trạng </span>
+                          <div id="selectStatusAdmin" class="select">
+                            Phát hành
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <span class="title">Chế độ hiện thị </span>
+                          <div id="selectEyeAdmin" class="select">
+                            Công khai
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-calendar-days"></i> Lên lịch
+                          công khai
+                          <b> ( Tình trạng phát hành phải là lịch biểu )</b>
+                        </h4>
+                      </div>
+
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <span class="title">Chế độ hiện thị </span>
+                          <div class="ipnDate">
+                            <input type="text" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-brands fa-free-code-camp"></i> Giảm giá
+                          sản phẩm
+                        </h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <span class="title">Giảm giá theo mã </span>
+                          <div id="selectEyeAdmin" class="select">
+                            Chế biến sẵn
+                          </div>
+                        </div>
+                        <div class="owp__content___lw">
+                          <span class="title">Miễn phí vận chuyển </span>
+                          <div id="selectEyeAdmin" class="select">
+                            Chế biến sẵn
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4><i class="fa-solid fa-list"></i> Loại sản phẩm</h4>
+                      </div>
+
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <span class="title">Chọn loại sản phẩm </span>
+                          <div id="selectEyeAdmin" class="select">
+                            Chế biến sẵn
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-list"></i> Danh mục sản phẩm
+                        </h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <div class="title">
+                            <span>Lựa chọn danh mục</span>
+                            <span class="addNew">Thêm mới </span>
+                          </div>
+                          <div id="selectEyeAdmin" class="select">
+                            Công khai
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4><i class="fa-solid fa-tags"></i> Nhãn sản phẩm</h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <ul class="tagMain">
+                            <li class="tagMain__item">
+                              <span>Lẩu </span>
+                              <button type="button">
+                                <i class="fa-solid fa-xmark"></i>
+                              </button>
+                            </li>
+                            <li class="tagMain__item ipn">
+                              <input type="text" />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-paragraph"></i> Thành phần sản
+                          phẩm
+                        </h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <div class="title">
+                            <span>Thêm thông tin thành phần cho sản phẩm </span>
+                          </div>
+                          <textarea
+                            class="textDescription"
+                            name=""
+                            id=""
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-paragraph"></i> Thông tin sản
+                          phẩm ( Tóm tắt )
+                        </h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <div class="title">
+                            <span>Thêm mô tả về sản phẩm </span>
+                          </div>
+                          <textarea
+                            class="textDescription"
+                            name=""
+                            id=""
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owp">
+                      <div class="owp__title">
+                        <h4>
+                          <i class="fa-solid fa-paragraph"></i> Thông tin lưu ý
+                        </h4>
+                      </div>
+                      <div class="owp__content">
+                        <div class="owp__content___lw">
+                          <div class="title">
+                            <span>Thêm lưu ý cho sản phẩm </span>
+                          </div>
+                          <textarea
+                            class="textDescription"
+                            name=""
+                            id=""
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-upload">
+                      <button>
+                        <i class="fa-solid fa-file-import"></i> Đăng sản phẩm
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+      console.error(error);
+    });
+    ClassicEditor.create(document.querySelector("#editor2")).catch((error) => {
+      console.error(error);
+    });
+  </script>
+  <script src="../public/js/editor.js"></script>
+  <script src="./main.js"></script>
+  <script src="../public/js/menu.min.js"></script>
+  <script src="../public/js/main.min.js"></script>
+
+  <script src="../public/js/slider.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/animation.min.js"></script>
+</html>

@@ -799,3 +799,22 @@ tr {
     }
   }
 }
+
+/** Editor **/
+.ck-editor {
+  border-radius: 10px;
+}
+.ck-editor__editable[role="textbox"] {
+  /* editing area */
+  font-size: 0.85rem;
+  min-height: 350px;
+  font-family: "Roboto", sans-serif;
+}
+.ck.ck-toolbar.ck-toolbar_grouping {
+  background-color: #e7e7e7;
+}
+.ck-content .image {
+  /* block images */
+  max-width: 80%;
+  margin: 20px auto;
+}
