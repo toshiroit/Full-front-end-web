@@ -1,7 +1,193 @@
 /* Background Color */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+:root {
+  --data-color-success-opt-01: rgba(40, 167, 69, 0.1);
+  --data-color-success-opt-02: rgba(40, 167, 69, 0.2);
+  --data-color-success-opt-03: rgba(40, 167, 69, 0.3);
+  --data-color-success-opt-04: rgba(40, 167, 69, 0.4);
+  --data-color-success-opt-05: rgba(40, 167, 69, 0.5);
+  --data-color-success-opt-06: rgba(40, 167, 69, 0.6);
+  --data-color-success-opt-07: rgba(40, 167, 69, 0.7);
+  --data-color-success-opt-08: rgba(40, 167, 69, 0.8);
+  --data-color-success-opt-09: rgba(40, 167, 69, 0.9);
+  --data-color-success-opt-1: rgba(40, 167, 69, 1);
+  --data-color-warring-opt-1: rgba(255, 193, 7, 1);
+  --data-color-warring-opt-01: rgba(255, 193, 7, 0.1);
+  --data-color-warring-opt-02: rgba(255, 193, 7, 0.2);
+  --data-color-warring-opt-03: rgba(255, 193, 7, 0.3);
+  --data-color-warring-opt-04: rgba(255, 193, 7, 0.4);
+  --data-color-warring-opt-05: rgba(255, 193, 7, 0.5);
+  --data-color-warring-opt-06: rgba(255, 193, 7, 0.6);
+  --data-color-warring-opt-07: rgba(255, 193, 7, 0.7);
+  --data-color-warring-opt-08: rgba(255, 193, 7, 0.8);
+  --data-color-warring-opt-09: rgba(255, 193, 7, 0.9);
+  --data-color-danger-opt-01: rgba(220, 53, 69, 0.1);
+  --data-color-danger-opt-02: rgba(220, 53, 69, 0.2);
+  --data-color-danger-opt-03: rgba(220, 53, 69, 0.3);
+  --data-color-danger-opt-04: rgba(220, 53, 69, 0.4);
+  --data-color-danger-opt-05: rgba(220, 53, 69, 0.5);
+  --data-color-danger-opt-06: rgba(220, 53, 69, 0.6);
+  --data-color-danger-opt-07: rgba(220, 53, 69, 0.7);
+  --data-color-danger-opt-08: rgba(220, 53, 69, 0.8);
+  --data-color-danger-opt-09: rgba(220, 53, 69, 0.9);
+  --data-color-danger-opt-1: rgba(220, 53, 69, 1);
+  --data-color-primary-opt-01: rgba(0, 123, 255, 0.1);
+  --data-color-primary-opt-02: rgba(0, 123, 255, 0.2);
+  --data-color-primary-opt-03: rgba(0, 123, 255, 0.3);
+  --data-color-primary-opt-04: rgba(0, 123, 255, 0.4);
+  --data-color-primary-opt-05: rgba(0, 123, 255, 0.5);
+  --data-color-primary-opt-06: rgba(0, 123, 255, 0.6);
+  --data-color-primary-opt-07: rgba(0, 123, 255, 0.7);
+  --data-color-primary-opt-08: rgba(0, 123, 255, 0.8);
+  --data-color-primary-opt-09: rgba(0, 123, 255, 0.9);
+  --data-color-primary-opt-1: rgba(0, 123, 255, 1);
+  --data-color-pink-opt-01: rgba(246, 114, 167, 0.1);
+  --data-color-pink-opt-02: rgba(246, 114, 167, 0.2);
+  --data-color-pink-opt-03: rgba(246, 114, 167, 0.3);
+  --data-color-pink-opt-04: rgba(246, 114, 167, 0.4);
+  --data-color-pink-opt-05: rgba(246, 114, 167, 0.5);
+  --data-color-pink-opt-06: rgba(246, 114, 167, 0.6);
+  --data-color-pink-opt-07: rgba(246, 114, 167, 0.7);
+  --data-color-pink-opt-08: rgba(246, 114, 167, 0.8);
+  --data-color-pink-opt-09: rgba(246, 114, 167, 0.9);
+  --data-color-pink-opt-1: rgba(246, 114, 167, 1);
+  --data-color-indigo-opt-01: rgba(75, 0, 130, 0.1);
+  --data-color-indigo-opt-02: rgba(75, 0, 130, 0.2);
+  --data-color-indigo-opt-03: rgba(75, 0, 130, 0.3);
+  --data-color-indigo-opt-04: rgba(75, 0, 130, 0.4);
+  --data-color-indigo-opt-05: rgba(75, 0, 130, 0.5);
+  --data-color-indigo-opt-06: rgba(75, 0, 130, 0.6);
+  --data-color-indigo-opt-07: rgba(75, 0, 130, 0.7);
+  --data-color-indigo-opt-08: rgba(75, 0, 130, 0.8);
+  --data-color-indigo-opt-09: rgba(75, 0, 130, 0.9);
+  --data-color-indigo-opt-1: rgba(75, 0, 130, 1);
+  --data-color-orange-opt-01: rgba(241, 150, 59, 0.1);
+  --data-color-orange-opt-02: rgba(241, 150, 59, 0.2);
+  --data-color-orange-opt-03: rgba(241, 150, 59, 0.3);
+  --data-color-orange-opt-04: rgba(241, 150, 59, 0.4);
+  --data-color-orange-opt-05: rgba(241, 150, 59, 0.5);
+  --data-color-orange-opt-06: rgba(241, 150, 59, 0.6);
+  --data-color-orange-opt-07: rgba(241, 150, 59, 0.7);
+  --data-color-orange-opt-08: rgba(241, 150, 59, 0.8);
+  --data-color-orange-opt-09: rgba(241, 150, 59, 0.9);
+  --data-color-orange-opt-1: rgba(241, 150, 59, 1);
+  --data-color-background-white-opt-01: rgba(255, 255, 255, 0.1);
+  --data-color-background-white-opt-02: rgba(255, 255, 255, 0.2);
+  --data-color-background-white-opt-03: rgba(255, 255, 255, 0.3);
+  --data-color-background-white-opt-04: rgba(255, 255, 255, 0.4);
+  --data-color-background-white-opt-05: rgba(255, 255, 255, 0.5);
+  --data-color-background-white-opt-06: rgba(255, 255, 255, 0.6);
+  --data-color-background-white-opt-07: rgba(255, 255, 255, 0.7);
+  --data-color-background-white-opt-08: rgba(255, 255, 255, 0.8);
+  --data-color-background-white-opt-09: rgba(255, 255, 255, 0.9);
+  --data-color-background-white-opt-1: rgba(255, 255, 255, 1);
+  --data-color-background-primary-opt-01: rgba(0, 123, 255, 0.1);
+  --data-color-background-primary-opt-02: rgba(0, 123, 255, 0.2);
+  --data-color-background-primary-opt-03: rgba(0, 123, 255, 0.3);
+  --data-color-background-primary-opt-04: rgba(0, 123, 255, 0.4);
+  --data-color-background-primary-opt-05: rgba(0, 123, 255, 0.5);
+  --data-color-background-primary-opt-06: rgba(0, 123, 255, 0.6);
+  --data-color-background-primary-opt-07: rgba(0, 123, 255, 0.7);
+  --data-color-background-primary-opt-08: rgba(0, 123, 255, 0.8);
+  --data-color-background-primary-opt-09: rgba(0, 123, 255, 0.9);
+  --data-color-background-primary-opt-01: rgba(0, 123, 255, 1);
+}
+
 /* Background Color */
+:root {
+  --data-color-success-opt-01: rgba(40, 167, 69, 0.1);
+  --data-color-success-opt-02: rgba(40, 167, 69, 0.2);
+  --data-color-success-opt-03: rgba(40, 167, 69, 0.3);
+  --data-color-success-opt-04: rgba(40, 167, 69, 0.4);
+  --data-color-success-opt-05: rgba(40, 167, 69, 0.5);
+  --data-color-success-opt-06: rgba(40, 167, 69, 0.6);
+  --data-color-success-opt-07: rgba(40, 167, 69, 0.7);
+  --data-color-success-opt-08: rgba(40, 167, 69, 0.8);
+  --data-color-success-opt-09: rgba(40, 167, 69, 0.9);
+  --data-color-success-opt-1: rgba(40, 167, 69, 1);
+  --data-color-warring-opt-1: rgba(255, 193, 7, 1);
+  --data-color-warring-opt-01: rgba(255, 193, 7, 0.1);
+  --data-color-warring-opt-02: rgba(255, 193, 7, 0.2);
+  --data-color-warring-opt-03: rgba(255, 193, 7, 0.3);
+  --data-color-warring-opt-04: rgba(255, 193, 7, 0.4);
+  --data-color-warring-opt-05: rgba(255, 193, 7, 0.5);
+  --data-color-warring-opt-06: rgba(255, 193, 7, 0.6);
+  --data-color-warring-opt-07: rgba(255, 193, 7, 0.7);
+  --data-color-warring-opt-08: rgba(255, 193, 7, 0.8);
+  --data-color-warring-opt-09: rgba(255, 193, 7, 0.9);
+  --data-color-danger-opt-01: rgba(220, 53, 69, 0.1);
+  --data-color-danger-opt-02: rgba(220, 53, 69, 0.2);
+  --data-color-danger-opt-03: rgba(220, 53, 69, 0.3);
+  --data-color-danger-opt-04: rgba(220, 53, 69, 0.4);
+  --data-color-danger-opt-05: rgba(220, 53, 69, 0.5);
+  --data-color-danger-opt-06: rgba(220, 53, 69, 0.6);
+  --data-color-danger-opt-07: rgba(220, 53, 69, 0.7);
+  --data-color-danger-opt-08: rgba(220, 53, 69, 0.8);
+  --data-color-danger-opt-09: rgba(220, 53, 69, 0.9);
+  --data-color-danger-opt-1: rgba(220, 53, 69, 1);
+  --data-color-primary-opt-01: rgba(0, 123, 255, 0.1);
+  --data-color-primary-opt-02: rgba(0, 123, 255, 0.2);
+  --data-color-primary-opt-03: rgba(0, 123, 255, 0.3);
+  --data-color-primary-opt-04: rgba(0, 123, 255, 0.4);
+  --data-color-primary-opt-05: rgba(0, 123, 255, 0.5);
+  --data-color-primary-opt-06: rgba(0, 123, 255, 0.6);
+  --data-color-primary-opt-07: rgba(0, 123, 255, 0.7);
+  --data-color-primary-opt-08: rgba(0, 123, 255, 0.8);
+  --data-color-primary-opt-09: rgba(0, 123, 255, 0.9);
+  --data-color-primary-opt-1: rgba(0, 123, 255, 1);
+  --data-color-pink-opt-01: rgba(246, 114, 167, 0.1);
+  --data-color-pink-opt-02: rgba(246, 114, 167, 0.2);
+  --data-color-pink-opt-03: rgba(246, 114, 167, 0.3);
+  --data-color-pink-opt-04: rgba(246, 114, 167, 0.4);
+  --data-color-pink-opt-05: rgba(246, 114, 167, 0.5);
+  --data-color-pink-opt-06: rgba(246, 114, 167, 0.6);
+  --data-color-pink-opt-07: rgba(246, 114, 167, 0.7);
+  --data-color-pink-opt-08: rgba(246, 114, 167, 0.8);
+  --data-color-pink-opt-09: rgba(246, 114, 167, 0.9);
+  --data-color-pink-opt-1: rgba(246, 114, 167, 1);
+  --data-color-indigo-opt-01: rgba(75, 0, 130, 0.1);
+  --data-color-indigo-opt-02: rgba(75, 0, 130, 0.2);
+  --data-color-indigo-opt-03: rgba(75, 0, 130, 0.3);
+  --data-color-indigo-opt-04: rgba(75, 0, 130, 0.4);
+  --data-color-indigo-opt-05: rgba(75, 0, 130, 0.5);
+  --data-color-indigo-opt-06: rgba(75, 0, 130, 0.6);
+  --data-color-indigo-opt-07: rgba(75, 0, 130, 0.7);
+  --data-color-indigo-opt-08: rgba(75, 0, 130, 0.8);
+  --data-color-indigo-opt-09: rgba(75, 0, 130, 0.9);
+  --data-color-indigo-opt-1: rgba(75, 0, 130, 1);
+  --data-color-orange-opt-01: rgba(241, 150, 59, 0.1);
+  --data-color-orange-opt-02: rgba(241, 150, 59, 0.2);
+  --data-color-orange-opt-03: rgba(241, 150, 59, 0.3);
+  --data-color-orange-opt-04: rgba(241, 150, 59, 0.4);
+  --data-color-orange-opt-05: rgba(241, 150, 59, 0.5);
+  --data-color-orange-opt-06: rgba(241, 150, 59, 0.6);
+  --data-color-orange-opt-07: rgba(241, 150, 59, 0.7);
+  --data-color-orange-opt-08: rgba(241, 150, 59, 0.8);
+  --data-color-orange-opt-09: rgba(241, 150, 59, 0.9);
+  --data-color-orange-opt-1: rgba(241, 150, 59, 1);
+  --data-color-background-white-opt-01: rgba(255, 255, 255, 0.1);
+  --data-color-background-white-opt-02: rgba(255, 255, 255, 0.2);
+  --data-color-background-white-opt-03: rgba(255, 255, 255, 0.3);
+  --data-color-background-white-opt-04: rgba(255, 255, 255, 0.4);
+  --data-color-background-white-opt-05: rgba(255, 255, 255, 0.5);
+  --data-color-background-white-opt-06: rgba(255, 255, 255, 0.6);
+  --data-color-background-white-opt-07: rgba(255, 255, 255, 0.7);
+  --data-color-background-white-opt-08: rgba(255, 255, 255, 0.8);
+  --data-color-background-white-opt-09: rgba(255, 255, 255, 0.9);
+  --data-color-background-white-opt-1: rgba(255, 255, 255, 1);
+  --data-color-background-primary-opt-01: rgba(0, 123, 255, 0.1);
+  --data-color-background-primary-opt-02: rgba(0, 123, 255, 0.2);
+  --data-color-background-primary-opt-03: rgba(0, 123, 255, 0.3);
+  --data-color-background-primary-opt-04: rgba(0, 123, 255, 0.4);
+  --data-color-background-primary-opt-05: rgba(0, 123, 255, 0.5);
+  --data-color-background-primary-opt-06: rgba(0, 123, 255, 0.6);
+  --data-color-background-primary-opt-07: rgba(0, 123, 255, 0.7);
+  --data-color-background-primary-opt-08: rgba(0, 123, 255, 0.8);
+  --data-color-background-primary-opt-09: rgba(0, 123, 255, 0.9);
+  --data-color-background-primary-opt-01: rgba(0, 123, 255, 1);
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -48,15 +234,8 @@
   left: 60px;
 }
 
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
+table {
+  border-collapse: collapse;
 }
 
 .fxConfirm {
@@ -820,6 +999,11 @@ tr {
   margin: 20px auto;
 }
 
+.pageTopFix {
+  left: 230px !important;
+  width: calc(100% - 230px) !important;
+}
+
 @-webkit-keyframes slider {
   10% {
     transform: translateX(0px);
@@ -926,44 +1110,51 @@ tr {
 @-webkit-keyframes menuSlideAdm {
   from {
     transform: translateX(0px);
+    width: 100% !important;
     transition-timing-function: ease-in;
   }
   to {
-    transform: translateX(653px);
+    transform: translateX(67px);
+    width: 0% !important;
     transition-timing-function: ease-out;
   }
 }
 @keyframes menuSlideAdm {
   from {
     transform: translateX(0px);
+    width: 100% !important;
     transition-timing-function: ease-in;
   }
   to {
-    transform: translateX(653px);
+    transform: translateX(67px);
+    width: 0% !important;
     transition-timing-function: ease-out;
   }
 }
 @-webkit-keyframes menuSlideOutAdm {
   from {
-    transform: translateX(653px);
+    transform: translateX(67px);
     transition-timing-function: ease-in;
   }
   to {
     transform: translateX(0px);
+    width: 0% !important;
     transition-timing-function: ease-out;
   }
 }
 @keyframes menuSlideOutAdm {
   from {
-    transform: translateX(653px);
+    transform: translateX(67px);
     transition-timing-function: ease-in;
   }
   to {
     transform: translateX(0px);
+    width: 0% !important;
     transition-timing-function: ease-out;
   }
 }
 .slideInAdm {
+  width: 100% !important;
   -webkit-animation: menuSlideAdm 0.5s 1;
           animation: menuSlideAdm 0.5s 1;
   -webkit-animation-fill-mode: forwards;
@@ -971,8 +1162,37 @@ tr {
 }
 
 .slideOutAdm {
+  width: 0% !important;
   -webkit-animation: menuSlideOutAdm 0.5s 1;
           animation: menuSlideOutAdm 0.5s 1;
+}
+
+@-webkit-keyframes isActiveMrrTopAdm {
+  100% {
+    margin-top: -1px;
+  }
+  0% {
+    margin-top: 13px;
+  }
+}
+
+@keyframes isActiveMrrTopAdm {
+  100% {
+    margin-top: -1px;
+  }
+  0% {
+    margin-top: 13px;
+  }
+}
+.isActiveMrrTopAdm {
+  visibility: visible !important;
+  -webkit-animation-name: isActiveMrrTopAdm;
+          animation-name: isActiveMrrTopAdm;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: translateY(-1px);
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -1462,7 +1682,7 @@ tr {
     display: none;
   }
 }
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 786px) {
   .wrapperAdmin {
     width: 100% !important;
     margin-left: 0 !important;
@@ -1475,14 +1695,13 @@ tr {
     padding: 5px !important;
   }
 }
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 786px) {
   .menuFxBar {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100% !important;
-    left: -653px !important;
+    left: -67px !important;
   }
   .menuFxBar__inner {
-    width: 70%;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 554px) {
@@ -1582,7 +1801,212 @@ tr {
     margin-top: 10px;
   }
 }
+@media only screen and (max-width: 1280px) {
+  .wrapperAdmin .page__main .content__createProduct___main .left .owp__cwp___main____item {
+    flex-basis: 50% !important;
+  }
+}
+@media only screen and (max-width: 792px) {
+  .wrapperAdmin .page__main .content__createProduct___main .left .owp__cwp___main____item {
+    flex-basis: 100% !important;
+  }
+  .wrapperAdmin .page__main .content__createProduct___main .left .owp__cwp___main____item .title {
+    justify-content: flex-start !important;
+  }
+}
+@media only screen and (max-width: 1410px) {
+  .wrapperAdmin .page__main .content__createProduct___main .left .owp__main___row____col25 {
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .wrapperAdmin .page__main .content__createProduct___main .left {
+    width: 100% !important;
+  }
+  .wrapperAdmin .page__main .content__createProduct___main .right {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 538px) {
+  .wrapperAdmin .page__main .content__createProduct___main .left .owp__main___row____col {
+    width: 100% !important;
+  }
+  .wrapperAdmin .page__main .content__createProduct___main .left .owp__main___row____col25 {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 1147px) {
+  .wrapperAdmin .page__main .content__order___main .flexSearch .searchDate,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus {
+    width: 30% !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment {
+    margin-top: 10px;
+    width: 50% !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .btnFilter {
+    width: 10% !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .btnFilter button {
+    width: 50px !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .selectGift {
+    margin-top: 10px;
+    width: calc(50% - 20px) !important;
+  }
+}
+@media only screen and (max-width: 741px) {
+  .wrapperAdmin .page__main .content__order___main .flexSearch .searchDate,
+.wrapperAdmin .page__main .content__order___main .flexSearch .searchText,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment {
+    width: calc(50% - 10px) !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus {
+    margin-top: 10px;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .selectGift {
+    margin-top: 10px;
+    width: 100% !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .btnFilter {
+    margin-top: 15px;
+    width: 100% !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .flexSearch .btnFilter button {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 733px) {
+  .wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item {
+    width: calc(30% - 10px);
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item {
+    width: calc(50% - 22px);
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item {
+    width: calc(100% - 22px);
+    margin: 26px 0 0 0 !important;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .wrapperAdmin .page__main .content__order___main .titleBt__btn {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .wrapperAdmin .page__main .content__order___main .titleBt__btn .btn-add,
+.wrapperAdmin .page__main .content__order___main .titleBt__btn .btn-import {
+    margin: 5px;
+    width: calc(50% - 12px) !important;
+  }
+  .wrapperAdmin .page__main .content__order___main .titleBt__btn .btn-remove {
+    margin: 5px;
+    width: calc(100% - 10px) !important;
+  }
+}
 /* Background Color */
+:root {
+  --data-color-success-opt-01: rgba(40, 167, 69, 0.1);
+  --data-color-success-opt-02: rgba(40, 167, 69, 0.2);
+  --data-color-success-opt-03: rgba(40, 167, 69, 0.3);
+  --data-color-success-opt-04: rgba(40, 167, 69, 0.4);
+  --data-color-success-opt-05: rgba(40, 167, 69, 0.5);
+  --data-color-success-opt-06: rgba(40, 167, 69, 0.6);
+  --data-color-success-opt-07: rgba(40, 167, 69, 0.7);
+  --data-color-success-opt-08: rgba(40, 167, 69, 0.8);
+  --data-color-success-opt-09: rgba(40, 167, 69, 0.9);
+  --data-color-success-opt-1: rgba(40, 167, 69, 1);
+  --data-color-warring-opt-1: rgba(255, 193, 7, 1);
+  --data-color-warring-opt-01: rgba(255, 193, 7, 0.1);
+  --data-color-warring-opt-02: rgba(255, 193, 7, 0.2);
+  --data-color-warring-opt-03: rgba(255, 193, 7, 0.3);
+  --data-color-warring-opt-04: rgba(255, 193, 7, 0.4);
+  --data-color-warring-opt-05: rgba(255, 193, 7, 0.5);
+  --data-color-warring-opt-06: rgba(255, 193, 7, 0.6);
+  --data-color-warring-opt-07: rgba(255, 193, 7, 0.7);
+  --data-color-warring-opt-08: rgba(255, 193, 7, 0.8);
+  --data-color-warring-opt-09: rgba(255, 193, 7, 0.9);
+  --data-color-danger-opt-01: rgba(220, 53, 69, 0.1);
+  --data-color-danger-opt-02: rgba(220, 53, 69, 0.2);
+  --data-color-danger-opt-03: rgba(220, 53, 69, 0.3);
+  --data-color-danger-opt-04: rgba(220, 53, 69, 0.4);
+  --data-color-danger-opt-05: rgba(220, 53, 69, 0.5);
+  --data-color-danger-opt-06: rgba(220, 53, 69, 0.6);
+  --data-color-danger-opt-07: rgba(220, 53, 69, 0.7);
+  --data-color-danger-opt-08: rgba(220, 53, 69, 0.8);
+  --data-color-danger-opt-09: rgba(220, 53, 69, 0.9);
+  --data-color-danger-opt-1: rgba(220, 53, 69, 1);
+  --data-color-primary-opt-01: rgba(0, 123, 255, 0.1);
+  --data-color-primary-opt-02: rgba(0, 123, 255, 0.2);
+  --data-color-primary-opt-03: rgba(0, 123, 255, 0.3);
+  --data-color-primary-opt-04: rgba(0, 123, 255, 0.4);
+  --data-color-primary-opt-05: rgba(0, 123, 255, 0.5);
+  --data-color-primary-opt-06: rgba(0, 123, 255, 0.6);
+  --data-color-primary-opt-07: rgba(0, 123, 255, 0.7);
+  --data-color-primary-opt-08: rgba(0, 123, 255, 0.8);
+  --data-color-primary-opt-09: rgba(0, 123, 255, 0.9);
+  --data-color-primary-opt-1: rgba(0, 123, 255, 1);
+  --data-color-pink-opt-01: rgba(246, 114, 167, 0.1);
+  --data-color-pink-opt-02: rgba(246, 114, 167, 0.2);
+  --data-color-pink-opt-03: rgba(246, 114, 167, 0.3);
+  --data-color-pink-opt-04: rgba(246, 114, 167, 0.4);
+  --data-color-pink-opt-05: rgba(246, 114, 167, 0.5);
+  --data-color-pink-opt-06: rgba(246, 114, 167, 0.6);
+  --data-color-pink-opt-07: rgba(246, 114, 167, 0.7);
+  --data-color-pink-opt-08: rgba(246, 114, 167, 0.8);
+  --data-color-pink-opt-09: rgba(246, 114, 167, 0.9);
+  --data-color-pink-opt-1: rgba(246, 114, 167, 1);
+  --data-color-indigo-opt-01: rgba(75, 0, 130, 0.1);
+  --data-color-indigo-opt-02: rgba(75, 0, 130, 0.2);
+  --data-color-indigo-opt-03: rgba(75, 0, 130, 0.3);
+  --data-color-indigo-opt-04: rgba(75, 0, 130, 0.4);
+  --data-color-indigo-opt-05: rgba(75, 0, 130, 0.5);
+  --data-color-indigo-opt-06: rgba(75, 0, 130, 0.6);
+  --data-color-indigo-opt-07: rgba(75, 0, 130, 0.7);
+  --data-color-indigo-opt-08: rgba(75, 0, 130, 0.8);
+  --data-color-indigo-opt-09: rgba(75, 0, 130, 0.9);
+  --data-color-indigo-opt-1: rgba(75, 0, 130, 1);
+  --data-color-orange-opt-01: rgba(241, 150, 59, 0.1);
+  --data-color-orange-opt-02: rgba(241, 150, 59, 0.2);
+  --data-color-orange-opt-03: rgba(241, 150, 59, 0.3);
+  --data-color-orange-opt-04: rgba(241, 150, 59, 0.4);
+  --data-color-orange-opt-05: rgba(241, 150, 59, 0.5);
+  --data-color-orange-opt-06: rgba(241, 150, 59, 0.6);
+  --data-color-orange-opt-07: rgba(241, 150, 59, 0.7);
+  --data-color-orange-opt-08: rgba(241, 150, 59, 0.8);
+  --data-color-orange-opt-09: rgba(241, 150, 59, 0.9);
+  --data-color-orange-opt-1: rgba(241, 150, 59, 1);
+  --data-color-background-white-opt-01: rgba(255, 255, 255, 0.1);
+  --data-color-background-white-opt-02: rgba(255, 255, 255, 0.2);
+  --data-color-background-white-opt-03: rgba(255, 255, 255, 0.3);
+  --data-color-background-white-opt-04: rgba(255, 255, 255, 0.4);
+  --data-color-background-white-opt-05: rgba(255, 255, 255, 0.5);
+  --data-color-background-white-opt-06: rgba(255, 255, 255, 0.6);
+  --data-color-background-white-opt-07: rgba(255, 255, 255, 0.7);
+  --data-color-background-white-opt-08: rgba(255, 255, 255, 0.8);
+  --data-color-background-white-opt-09: rgba(255, 255, 255, 0.9);
+  --data-color-background-white-opt-1: rgba(255, 255, 255, 1);
+  --data-color-background-primary-opt-01: rgba(0, 123, 255, 0.1);
+  --data-color-background-primary-opt-02: rgba(0, 123, 255, 0.2);
+  --data-color-background-primary-opt-03: rgba(0, 123, 255, 0.3);
+  --data-color-background-primary-opt-04: rgba(0, 123, 255, 0.4);
+  --data-color-background-primary-opt-05: rgba(0, 123, 255, 0.5);
+  --data-color-background-primary-opt-06: rgba(0, 123, 255, 0.6);
+  --data-color-background-primary-opt-07: rgba(0, 123, 255, 0.7);
+  --data-color-background-primary-opt-08: rgba(0, 123, 255, 0.8);
+  --data-color-background-primary-opt-09: rgba(0, 123, 255, 0.9);
+  --data-color-background-primary-opt-01: rgba(0, 123, 255, 1);
+}
+
 .loading-ellipsis .lds-dual-ring:after {
   content: " ";
   display: block;
@@ -6593,10 +7017,30 @@ html {
   cursor: pointer;
   position: relative;
 }
+.menuFxBar__content___main____item:hover .name__wp {
+  color: #cfcfcf;
+}
+.menuFxBar__content___main____item .name {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.menuFxBar__content___main____item .name__wp {
+  margin-left: 5px;
+  overflow: hidden;
+  display: none;
+  transition: all 0.3s;
+  color: #f5f5f5;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
 .menuFxBar__content___main____item:hover > .fa-size {
   color: white;
 }
 .menuFxBar__content___main____item .fa-size {
+  width: 30px;
+  text-align: start;
   transition: all 0.3s;
   color: #6d748d;
   font-size: 1.25rem;
@@ -6748,6 +7192,7 @@ html {
   border-radius: 50%;
 }
 .wrapperAdmin .topBar__navbar___otw .main__user___name {
+  white-space: nowrap;
   margin-left: 9px;
 }
 .wrapperAdmin .topBar__navbar___otw .main__user___name .wp1 {
@@ -6876,6 +7321,7 @@ html {
 }
 .wrapperAdmin .page__main___title____name {
   font-weight: 500;
+  text-transform: uppercase;
 }
 .wrapperAdmin .page__main___title____breadcrumb {
   display: flex;
@@ -8142,11 +8588,13 @@ html {
 }
 .wrapperAdmin .page__main .content__createProduct___main .left .owp__cwp___main {
   margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .wrapperAdmin .page__main .content__createProduct___main .left .owp__cwp___main____item {
   margin-bottom: 15px;
-  display: inline-block;
-  width: 303px;
+  flex-basis: 25%;
+  transition: all 0.3s;
   vertical-align: top;
   cursor: pointer;
 }
@@ -8304,6 +8752,12 @@ html {
 .wrapperAdmin .page__main .content__createProduct___main .left .owp__cwp___upImage .listImage__item .nameSize .name {
   font-weight: 400;
   font-size: 0.9rem;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-bottom: 5px;
   color: #404040;
 }
@@ -8550,11 +9004,12 @@ html {
 .wrapperAdmin .page__main .content__order___main {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
-  padding: 15px;
   border-radius: 6px;
 }
 .wrapperAdmin .page__main .content__order___main .titleBt {
+  padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -8582,7 +9037,7 @@ html {
 }
 .wrapperAdmin .page__main .content__order___main .flexSearch {
   margin-top: 15px;
-  padding-top: 15px;
+  padding: 15px;
   border-top: 1px dashed #ddd;
   border-bottom: 1px dashed #ddd;
   padding-bottom: 15px;
@@ -8591,6 +9046,7 @@ html {
   flex-wrap: wrap;
 }
 .wrapperAdmin .page__main .content__order___main .flexSearch__item {
+  position: relative;
   margin-right: 10px;
 }
 .wrapperAdmin .page__main .content__order___main .flexSearch__item:last-child {
@@ -8621,6 +9077,34 @@ html {
   width: 15%;
   position: relative;
 }
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus__main,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment__main,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectGift__main {
+  visibility: hidden;
+  z-index: 999;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(30, 32, 37, 0.12);
+  width: 100%;
+}
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus__main .active,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment__main .active,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectGift__main .active {
+  background-color: #efefef;
+}
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus__main___item,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment__main___item,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectGift__main___item {
+  padding: 7px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus__main___item:hover,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment__main___item:hover,
+.wrapperAdmin .page__main .content__order___main .flexSearch .selectGift__main___item:hover {
+  background-color: #efefef;
+}
 .wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus__box .text,
 .wrapperAdmin .page__main .content__order___main .flexSearch .selectPayment__box .text,
 .wrapperAdmin .page__main .content__order___main .flexSearch .selectGift__box .text {
@@ -8630,6 +9114,8 @@ html {
   cursor: pointer;
   color: #747474;
   font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
   position: relative;
 }
 .wrapperAdmin .page__main .content__order___main .flexSearch .selectStatus__box .text::after,
@@ -8687,4 +9173,574 @@ html {
 }
 .wrapperAdmin .page__main .content__order___main .flexSearch .btnFilter__btn button .fa-size {
   margin-right: 5px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder {
+  margin-top: 15px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main .active .link {
+  color: #28a745;
+  position: relative;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main .active .link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #28a745;
+  bottom: 0;
+  left: 0;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item {
+  display: inline-block;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item .link {
+  padding: 1rem 1rem;
+  font-weight: 500;
+  color: #404040;
+  font-size: 0.8rem;
+  position: relative;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item .link .fa-size {
+  margin-right: 2.5px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__navbar___main____item .link .quality {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -3px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(220, 53, 69);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main {
+  margin-top: 1rem;
+  overflow-x: scroll;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(52, 58, 64);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table thead {
+  background-color: rgb(243, 243, 249);
+  border-bottom: 1px solid #ddd;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .tabItem {
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .tabItem:hover {
+  background-color: rgb(243, 243, 249);
+  cursor: pointer;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .tabItem:last-child {
+  border-bottom: 0;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-hw {
+  padding: 0.9rem 1.3rem;
+  white-space: nowrap;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-checkBox {
+  width: 30px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-checkBox input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-code {
+  width: 170px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-customer {
+  width: 150px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-product {
+  width: 160px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-product p {
+  white-space: normal;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-dateOrder {
+  width: 150px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-dateOrder .timeDate {
+  font-weight: 500;
+  color: #28a745;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-amount {
+  width: 140px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-payment {
+  width: 160px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status {
+  width: 160px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__item {
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 5px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__item .fa-size {
+  margin-right: 4px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__ship {
+  color: var(--data-color-success-opt-1);
+  background-color: var(--data-color-success-opt-02);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__pending {
+  background-color: var(--data-color-pink-opt-02);
+  color: var(--data-color-pink-opt-1);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__cancelUser,
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__cancelAdmin {
+  background-color: var(--data-color-danger-opt-02);
+  color: var(--data-color-danger-opt-1);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__success {
+  background-color: var(--data-color-primary-opt-02);
+  color: var(--data-color-primary-opt-1);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__shipError {
+  background-color: var(--data-color-warring-opt-02);
+  color: #cb9800;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-status .status__standard {
+  color: var(--data-color-indigo-opt-1);
+  background-color: var(--data-color-indigo-opt-02);
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-action {
+  width: 100px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-action .action-item {
+  margin: 3px;
+  cursor: pointer;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-action .action-setting {
+  color: #343a40;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-action .action-view {
+  color: #007bff;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-td-action .action-remove {
+  color: #dc3545;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-item {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: start;
+  color: #878a99;
+  position: relative;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .th-item:not(:last-child):not(:first-child)::after {
+  content: "\f0dc";
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .td-item {
+  font-weight: 500;
+  color: #404040;
+  font-size: 0.8rem;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder__main table .td-item-code {
+  color: #007bff;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination {
+  border-top: 1px solid #ddd;
+  padding: 7px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main .pre,
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main .next {
+  color: #051f4e;
+  padding: 5px 15px;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main .vl {
+  padding: 5px 8px;
+  color: #404040;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main .active {
+  border-radius: 2px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main___item {
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #ebebeb;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__order___main .tableOrder .tablePagination__main___item:last-child {
+  margin-right: 0;
+}
+.wrapperAdmin .page__main .content__orderDetail {
+  padding: 0.75rem 0.5rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left {
+  width: 70%;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .titleBt {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .titleBt h4 {
+  font-weight: 500;
+  color: #4c4c4c;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .titleBt button {
+  padding: 6px 10px;
+  border: none;
+  background-color: rgb(40, 167, 69);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  border-collapse: collapse;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain thead {
+  background-color: rgb(243, 243, 249);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-item {
+  font-weight: 500;
+  color: #878a99;
+  font-size: 0.95rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .td-item {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-hw {
+  padding: 0.75rem 1.2rem;
+  text-align: start;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct {
+  width: 250px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp {
+  display: flex;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__image {
+  width: 76px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__image img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name {
+  margin-left: 10px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name h4 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #404040;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name .category,
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name .group {
+  margin-top: 6px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name .category span,
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name .group span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name .category span b,
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-detailProduct .wp__name .group span b {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-priceProduct {
+  width: 100px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-ratingProduct {
+  width: 120px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-ratingProduct .rating .fa-size {
+  font-size: 0.6rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-ratingProduct .rating .fa-star-active {
+  color: #f1b500;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-ratingProduct .rating .fa-star-notActive {
+  color: #ddd;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-qualityProduct {
+  width: 80px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .tableMain .th-td-amountProduct {
+  text-align: end;
+  width: 100px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct {
+  border-top: 1px dashed #ddd;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table {
+  width: 35%;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table .pow {
+  border-top-style: dashed !important;
+  border-width: 1px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table .pow .th {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table .pow .td {
+  font-size: 1rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table tr {
+  line-height: 2;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table tr .wop {
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table tr .th,
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table tr .td {
+  padding: 0.5rem 1.2rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table tr .th {
+  text-align: start;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .detail .totalProduct__main table tr .td {
+  text-align: end;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus {
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title h4 {
+  font-weight: 500;
+  color: #404040;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title .flexChange {
+  display: flex;
+  align-items: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title .flexChange__item {
+  margin-right: 8px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title .flexChange__item button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 13px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title .flexChange__item:last-child {
+  margin-right: 0;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title .flexChange .changeAddress button {
+  background-color: var(--data-color-success-opt-02);
+  color: var(--data-color-success-opt-1);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .title .flexChange .cancelOrder button {
+  background-color: var(--data-color-danger-opt-02);
+  color: var(--data-color-danger-opt-1);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item {
+  position: relative;
+  z-index: 9;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item:not(:first-child) {
+  margin-top: 30px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-left: 2px dashed #ddd;
+  top: 30px;
+  left: 13.5px;
+  height: 100%;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header {
+  cursor: pointer;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header__wp {
+  display: flex;
+  align-items: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header__wp .ico {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 28px;
+  background-color: rgb(40, 167, 69);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header__wp .ico .fa-size {
+  font-size: 0.8rem;
+  color: white;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header__wp .name {
+  margin-left: 10px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header__wp .name h6 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .header__wp .name h6 .date {
+  font-size: 0.8rem;
+  color: #28a745;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd {
+  margin-left: 38px;
+  margin-top: 15px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd__item {
+  margin-bottom: 27px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd__item:last-child {
+  margin-bottom: 0;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd__item___name {
+  font-weight: 500;
+  color: #404040;
+  font-size: 0.95rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd__item___name .fa-size {
+  width: 25px;
+  text-align: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd__item___date {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #878a99;
+  font-weight: 500;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .left .orderStatus .content__main___item .bd__item___date .fa-size {
+  text-align: center;
+  width: 25px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right {
+  width: calc(30% - 30px);
+  margin-left: 30px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box {
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .title {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .title h4 {
+  font-weight: 500;
+  color: #404040;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .title h4 .fa-size {
+  width: 21px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .title .showDetail {
+  color: #007bff;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd {
+  padding: 17px;
+  border-top: 1px solid #ebebeb;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd .image,
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd .info {
+  text-align: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd .info__name {
+  font-weight: 500;
+  color: #404040;
+  font-size: 1.1rem;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd .info .id {
+  margin-top: 10px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd .info .w {
+  font-size: 0.87rem;
+  color: #707070;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd .info .payment {
+  margin-top: 3px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd__table {
+  width: 100%;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd__table .th-td-fr {
+  padding: 6px;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd__table .th-item {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #404040;
+  text-align: start;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd__table .th-item .fa-size {
+  width: 20px;
+  text-align: center;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd__table .td-item {
+  width: 326px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: end;
+}
+.wrapperAdmin .page__main .content__orderDetail___main .right .box .bd__table .td-item p {
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

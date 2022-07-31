@@ -263,20 +263,50 @@
                       <input type="date" name="" id="" />
                     </div>
                   </div>
-                  <div class="flexSearch__item selectStatus">
+                  <div
+                    id="selectStatusId"
+                    class="flexSearch__item selectStatus"
+                  >
                     <div class="selectStatus__box">
                       <div class="text">Tình trạng đơn nhàng</div>
                     </div>
+                    <ul class="selectStatus__main">
+                      <li class="selectStatus__main___item active">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                    </ul>
                   </div>
-                  <div class="flexSearch__item selectPayment">
+                  <div
+                    id="selectPaymentId"
+                    class="flexSearch__item selectPayment"
+                  >
                     <div class="selectPayment__box">
                       <div class="text">Loại thanh toán</div>
                     </div>
+                    <ul class="selectPayment__main">
+                      <li class="selectStatus__main___item active">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                    </ul>
                   </div>
-                  <div class="flexSearch__item selectGift">
+                  <div id="selectGiftId" class="flexSearch__item selectGift">
                     <div class="selectGift__box">
                       <div class="text">Mã giảm giá / Gift Code</div>
                     </div>
+                    <ul class="selectGift__main">
+                      <li class="selectStatus__main___item active">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                      <li class="selectStatus__main___item">Tất cả</li>
+                    </ul>
                   </div>
                   <div class="flexSearch__item btnFilter">
                     <div class="btnFilter__btn">
@@ -284,6 +314,618 @@
                         <i class="fa-solid fa-filter fa-size"></i>Lọc
                       </button>
                     </div>
+                  </div>
+                </div>
+                <div class="tableOrder">
+                  <div class="tableOrder__navbar">
+                    <ul class="tableOrder__navbar___main">
+                      <li class="tableOrder__navbar___main____item active">
+                        <a href="#" class="link">
+                          <i class="fa-solid fa-store fa-size"></i>
+                          Tất cả đơn hàng
+                        </a>
+                      </li>
+                      <li class="tableOrder__navbar___main____item">
+                        <a href="#" class="link">
+                          <i class="fa-solid fa-check-circle fa-size"></i>
+                          Đã giao hàng
+                        </a>
+                      </li>
+                      <li class="tableOrder__navbar___main____item">
+                        <a href="#" class="link">
+                          <i class="fa-solid fa-truck-fast fa-size"></i>
+                          Đang giao hàng
+                          <span class="quality">5</span>
+                        </a>
+                      </li>
+                      <li class="tableOrder__navbar___main____item">
+                        <a href="#" class="link">
+                          <i class="fa-solid fa-arrow-rotate-left fa-size"></i>
+                          Đang bị trả
+                        </a>
+                      </li>
+                      <li class="tableOrder__navbar___main____item">
+                        <a href="#" class="link">
+                          <i class="fa-solid fa-ban fa-size"></i>
+                          Bị hủy
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tableOrder__main">
+                    <table>
+                      <thead class="th-head">
+                        <th class="th-td-hw th-item th-td-checkBox">
+                          <input type="checkbox" name="" id="" />
+                        </th>
+                        <th class="th-td-hw th-item th-td-code">Mã đơn hàng</th>
+                        <th class="th-td-hw th-item th-td-customer">
+                          Khách hàng
+                        </th>
+                        <th class="th-td-hw th-item th-td-product">Sản phẩm</th>
+                        <th class="th-td-hw th-item th-td-dateOrder">
+                          Ngày đặt hàng
+                        </th>
+                        <th class="th-td-hw th-item th-td-amount">Tổng tiền</th>
+                        <th class="th-td-hw th-item th-td-payment">
+                          Thanh toán
+                        </th>
+                        <th class="th-td-hw th-item th-td-status">
+                          Trạng thái
+                        </th>
+                        <th class="th-td-hw th-item th-td-action">Hoạt động</th>
+                      </thead>
+                      <tbody>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            <p>Lẩu cay tứ xuyên</p>
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__cancelAdmin">
+                              <i class="fa-solid fa-ban fa-size"></i>Đã bị hủy (
+                              Quản trị )
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__success">
+                              <i class="fa-solid fa-circle-check fa-size"></i>Đã
+                              giao hàng
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            <p>Lẩu cay tứ xuyên</p>
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__shipError">
+                              <i
+                                class="fa-solid fa-triangle-exclamation fa-size"
+                              ></i
+                              >Giao không thành công
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__ship">
+                              <i class="fa-solid fa-truck-fast fa-size"></i>Đang
+                              giao hang
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__pending">
+                              <i class="fa-solid fa-check-to-slot fa-size"></i
+                              >Chờ xác nhận
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__cancelUser">
+                              <i class="fa-solid fa-ban fa-size"></i>Đã bị hủy
+                              (Khách hàng )
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__cancelAdmin">
+                              <i class="fa-solid fa-ban fa-size"></i>Đã bị hủy (
+                              Quản trị )
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__success">
+                              <i class="fa-solid fa-circle-check fa-size"></i>Đã
+                              giao hàng
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__shipError">
+                              <i
+                                class="fa-solid fa-triangle-exclamation fa-size"
+                              ></i
+                              >Giao không thành công
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__standard">
+                              <i class="fa-solid fa-bowl-food fa-size"></i>Đang
+                              chuẩn bị
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__standard">
+                              <i class="fa-solid fa-bowl-food fa-size"></i>Đang
+                              chuẩn bị
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__standard">
+                              <i class="fa-solid fa-bowl-food fa-size"></i>Đang
+                              chuẩn bị
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr tabindex="0" class="tabItem">
+                          <td class="th-td-hw td-item th-td-checkBox">
+                            <input type="checkbox" name="" id="" />
+                          </td>
+                          <td class="th-td-hw td-item td-item-code th-td-code">
+                            #28147817514
+                          </td>
+                          <td class="th-td-hw td-item th-td-customer">
+                            Đậu Văn Nam
+                          </td>
+                          <td class="th-td-hw td-item th-td-product">
+                            Lẩu cay tứ xuyên
+                          </td>
+                          <td class="th-td-hw td-item th-td-amount">
+                            249.000 VNĐ
+                          </td>
+                          <td class="th-td-hw td-item th-td-dateOrder">
+                            20/10/2022
+                            <small class="timeDate">10:45AM</small>
+                          </td>
+                          <td class="th-td-hw td-item th-td-payment">
+                            Thanh toán khí nhận hàng
+                          </td>
+                          <td class="th-td-hw td-item th-td-status">
+                            <span class="status__item status__standard">
+                              <i class="fa-solid fa-bowl-food fa-size"></i>Đang
+                              chuẩn bị
+                            </span>
+                          </td>
+                          <td class="th-td-hw td-item th-td-action">
+                            <a class="action-item action-setting" href="">
+                              <i class="fa-solid fa-gear"></i
+                            ></a>
+                            <a class="action-item action-view" href="">
+                              <i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a class="action-item action-remove" href="">
+                              <i class="fa-solid fa-trash-can"></i
+                            ></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="tablePagination">
+                    <ul class="tablePagination__main">
+                      <li class="tablePagination__main___item pre">Trước</li>
+                      <li class="tablePagination__main___item vl active">1</li>
+                      <li class="tablePagination__main___item vl">2</li>
+                      <li class="tablePagination__main___item vl">3</li>
+                      <li class="tablePagination__main___item vl">4</li>
+                      <li class="tablePagination__main___item vl">5</li>
+                      <li class="tablePagination__main___item next">Tiếp</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -294,15 +936,8 @@
     </div>
   </body>
 
-  <script>
-    ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
-      console.error(error);
-    });
-    ClassicEditor.create(document.querySelector("#editor2")).catch((error) => {
-      console.error(error);
-    });
-  </script>
-  <script src="../public/js/editor.js"></script>
+  <script></script>
+
   <script src="./main.js"></script>
   <script src="../public/js/menu.min.js"></script>
   <script src="../public/js/main.min.js"></script>

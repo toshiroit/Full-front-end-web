@@ -39,15 +39,20 @@ $boxShowCardBlack: 0 1px 2px rgb(56 65 74 / 15%);
 .pageTopBarW {
   left: 60px;
 }
-tbody,
+
 td,
 tfoot,
 th,
 thead,
 tr {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
+  // border-color: inherit;
+  // border-style: solid;
+  // border-width: 0;
+}
+table {
+  border-collapse: collapse;
+}
+a {
 }
 .fxConfirm {
   position: fixed;
@@ -817,4 +822,8 @@ tr {
   /* block images */
   max-width: 80%;
   margin: 20px auto;
+}
+.pageTopFix {
+  left: 230px !important;
+  width: calc(100% - 230px) !important;
 }

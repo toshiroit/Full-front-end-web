@@ -1054,7 +1054,7 @@
     }
   }
 }
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 786px) {
   #menuBarFxAdmin {
     // display: none;
   }
@@ -1074,14 +1074,14 @@
     }
   }
 }
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 786px) {
   .menuFxBar {
     // display: none;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100% !important;
-    left: -653px !important;
+    // width: 100% !important;
+    left: -67px !important;
     &__inner {
-      width: 70%;
+      width: 50%;
     }
   }
 }
@@ -1323,6 +1323,229 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__createProduct {
+            &___main {
+              .left {
+                .owp {
+                  &__cwp {
+                    &___main {
+                      &____item {
+                        flex-basis: 50% !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 792px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__createProduct {
+            &___main {
+              .left {
+                .owp {
+                  &__cwp {
+                    &___main {
+                      &____item {
+                        flex-basis: 100% !important;
+                        .title {
+                          justify-content: flex-start !important;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1410px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__createProduct {
+            &___main {
+              .left {
+                .owp {
+                  &__main {
+                    &___row {
+                      &____col25 {
+                        width: 50% !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__createProduct {
+            &___main {
+              .left {
+                width: 100% !important;
+              }
+              .right {
+                margin-top: 10px;
+                margin-left: 0 !important;
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 538px) {
+  .wrapperAdmin {
+    .page {
+      &__main {
+        .content {
+          &__createProduct {
+            &___main {
+              .left {
+                .owp {
+                  &__main {
+                    &___row {
+                      &____col {
+                        width: 100% !important;
+                      }
+                      &____col25 {
+                        width: 100% !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1147px) {
+  .wrapperAdmin .page__main .content__order___main .flexSearch {
+    .searchDate,
+    .selectStatus {
+      width: 30% !important;
+    }
+    .selectPayment {
+      margin-top: 10px;
+      width: 50% !important;
+    }
+    .btnFilter {
+      width: 10% !important;
+      button {
+        width: 50px !important;
+      }
+    }
+    .selectGift {
+      margin-top: 10px;
+      width: calc(50% - 20px) !important;
+    }
+  }
+}
+@media only screen and (max-width: 741px) {
+  .wrapperAdmin .page__main .content__order___main .flexSearch {
+    .searchDate,
+    .searchText,
+    .selectStatus,
+    .selectPayment {
+      width: calc(50% - 10px) !important;
+    }
+    .selectStatus {
+      margin-top: 10px;
+    }
+    .selectGift {
+      margin-top: 10px;
+      width: calc(100%) !important;
+    }
+    .btnFilter {
+      margin-top: 15px;
+      width: 100% !important;
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 733px) {
+  .wrapperAdmin
+    .page__main
+    .content__order___main
+    .tableOrder__navbar___main____item {
+    width: calc(30% - 10px);
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .wrapperAdmin
+    .page__main
+    .content__order___main
+    .tableOrder__navbar___main____item {
+    width: calc(50% - 22px);
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .wrapperAdmin
+    .page__main
+    .content__order___main
+    .tableOrder__navbar___main____item {
+    width: calc(100% - 22px);
+    margin: 26px 0 0 0 !important;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .wrapperAdmin .page__main .content__order___main .titleBt {
+    &__btn {
+      margin-top: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 384px) {
+  .wrapperAdmin .page__main .content__order___main .titleBt {
+    &__btn {
+      .btn-add,
+      .btn-import {
+        margin: 5px;
+        width: calc(50% - 12px) !important;
+      }
+      .btn-remove {
+        margin: 5px;
+        width: calc(100% - 10px) !important;
       }
     }
   }

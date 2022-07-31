@@ -5,6 +5,7 @@
 @import "./animation";
 @import "./responsive";
 @import "./loading";
+@import "./function";
 li,
 a,
 ul {
@@ -5246,10 +5247,30 @@ html {
         text-align: center;
         cursor: pointer;
         position: relative;
+        &:hover .name__wp {
+          color: #cfcfcf;
+        }
+        .name {
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s;
+          &__wp {
+            margin-left: 5px;
+            overflow: hidden;
+            display: none;
+            transition: all 0.3s;
+            color: #f5f5f5;
+            font-weight: 500;
+            font-size: 0.95rem;
+          }
+        }
         &:hover > .fa-size {
           color: $sp-color-text-white;
         }
         .fa-size {
+          width: 30px;
+          text-align: start;
           transition: all 0.3s;
           color: #6d748d;
           font-size: 1.25rem;
@@ -5406,6 +5427,7 @@ html {
               }
             }
             &___name {
+              white-space: nowrap;
               margin-left: 9px;
               .wp1 {
                 font-weight: 500;
@@ -5541,6 +5563,7 @@ html {
         padding: 14px;
         &____name {
           font-weight: 500;
+          text-transform: uppercase;
         }
         &____breadcrumb {
           display: flex;
@@ -6845,10 +6868,12 @@ html {
                   padding: 15px;
                   &___main {
                     margin-top: 35px;
+                    display: flex;
+                    flex-wrap: wrap;
                     &____item {
                       margin-bottom: 15px;
-                      display: inline-block;
-                      width: 303px;
+                      flex-basis: 25%;
+                      transition: all 0.3s;
                       vertical-align: top;
                       cursor: pointer;
                       .title {
@@ -6979,6 +7004,7 @@ html {
                         }
                         p {
                           margin-top: 8px;
+
                           font-size: 0.89rem;
                           font-weight: 500;
                           color: $sp-color-text-dark-admin-2;
@@ -7008,6 +7034,7 @@ html {
                           .name {
                             font-weight: 400;
                             font-size: 0.9rem;
+                            @include textOverflow(2);
                             margin-bottom: 5px;
                             color: $sp-color-text-dark-admin-2;
                           }
@@ -7284,10 +7311,12 @@ html {
           &___main {
             background-color: $sp-background-color-white;
             box-shadow: $boxShowCardBlack;
-            padding: 15px;
+
             border-radius: 6px;
             .titleBt {
+              padding: 15px;
               display: flex;
+              flex-wrap: wrap;
               justify-content: space-between;
               align-items: center;
               &__name {
@@ -7317,7 +7346,7 @@ html {
             }
             .flexSearch {
               margin-top: 15px;
-              padding-top: 15px;
+              padding: 15px;
               border-top: 1px dashed #ddd;
               border-bottom: 1px dashed #ddd;
               padding-bottom: 15px;
@@ -7325,6 +7354,7 @@ html {
               align-items: center;
               flex-wrap: wrap;
               &__item {
+                position: relative;
                 margin-right: 10px;
                 &:last-child {
                   margin-right: 0;
@@ -7352,11 +7382,33 @@ html {
                   }
                 }
               }
+              .selectStatus {
+              }
               .selectStatus,
               .selectPayment,
               .selectGift {
                 width: 15%;
                 position: relative;
+                &__main {
+                  visibility: hidden;
+                  z-index: 999;
+                  position: absolute;
+                  background-color: $sp-background-color-white;
+                  box-shadow: 0 5px 10px rgb(30 32 37 / 12%);
+                  width: 100%;
+                  .active {
+                    background-color: #efefef;
+                  }
+                  &___item {
+                    padding: 7px;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: #efefef;
+                    }
+                  }
+                }
                 &__box {
                   .text {
                     border: 1px solid #ddd;
@@ -7365,6 +7417,8 @@ html {
                     cursor: pointer;
                     color: #747474;
                     font-size: 0.8rem;
+                    white-space: nowrap;
+                    overflow: hidden;
                     position: relative;
                     &::after {
                       position: absolute;
@@ -7425,6 +7479,601 @@ html {
                     cursor: pointer;
                     .fa-size {
                       margin-right: 5px;
+                    }
+                  }
+                }
+              }
+            }
+            .tableOrder {
+              margin-top: 15px;
+              &__navbar {
+                &___main {
+                  .active {
+                    .link {
+                      color: $sp-color-text-success;
+                      position: relative;
+                      &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $sp-color-text-success;
+                        bottom: 0;
+                        left: 0;
+                      }
+                    }
+                  }
+                  &____item {
+                    display: inline-block;
+                    .link {
+                      padding: 1rem 1rem;
+                      font-weight: 500;
+                      color: $sp-color-text-dark-admin-2;
+                      font-size: 0.8rem;
+                      position: relative;
+                      .fa-size {
+                        margin-right: 2.5px;
+                      }
+                      .quality {
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        right: -3px;
+                        text-align: center;
+                        color: $sp-color-text-white;
+                        border-radius: 5px;
+                        background-color: $sp-background-color-danger;
+                      }
+                    }
+                  }
+                }
+              }
+              &__main {
+                margin-top: 1rem;
+                overflow-x: scroll;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                  height: 8px;
+                }
+                &::-webkit-scrollbar-thumb {
+                  border-radius: 4px;
+                  background-color: $sp-background-color-dark;
+                }
+                table {
+                  border-collapse: collapse;
+                  width: 100%;
+
+                  thead {
+                    background-color: $sp-background-color-white-admin-2;
+                    border-bottom: 1px solid #ddd;
+                  }
+                  .tabItem {
+                    border-bottom: 1px solid #ddd;
+                    transition: all 0.3s;
+                    &:hover {
+                      background-color: $sp-background-color-white-admin-2;
+                      cursor: pointer;
+                    }
+                    &:last-child {
+                      border-bottom: 0;
+                    }
+                  }
+                  .th {
+                    &-td {
+                      &-hw {
+                        padding: 0.9rem 1.3rem;
+                        white-space: nowrap;
+                      }
+                      &-checkBox {
+                        width: 30px;
+                        input[type="checkbox"] {
+                          width: 15px;
+                          height: 15px;
+                        }
+                      }
+                      &-code {
+                        width: 170px;
+                      }
+                      &-customer {
+                        width: 150px;
+                      }
+                      &-product {
+                        width: 160px;
+                        p {
+                          white-space: normal;
+                          @include textOverflow(2);
+                        }
+                      }
+                      &-dateOrder {
+                        width: 150px;
+                        .timeDate {
+                          font-weight: 500;
+                          color: $sp-color-text-success;
+                        }
+                      }
+                      &-amount {
+                        width: 140px;
+                      }
+                      &-payment {
+                        width: 160px;
+                      }
+                      &-status {
+                        width: 160px;
+                        .status__item {
+                          font-weight: 500;
+                          padding: 5px;
+                          border-radius: 5px;
+                          .fa-size {
+                            margin-right: 4px;
+                          }
+                        }
+                        .status__ship {
+                          color: color(success-opt-1);
+                          background-color: color(success-opt-02);
+                        }
+                        .status__pending {
+                          background-color: color(pink-opt-02);
+                          color: color(pink-opt-1);
+                        }
+                        .status__cancelUser,
+                        .status__cancelAdmin {
+                          background-color: color(danger-opt-02);
+                          color: color(danger-opt-1);
+                        }
+                        .status__success {
+                          background-color: color(primary-opt-02);
+                          color: color(primary-opt-1);
+                        }
+                        .status__shipError {
+                          background-color: color(warring-opt-02);
+                          color: #cb9800;
+                        }
+                        .status__standard {
+                          color: color(indigo-opt-1);
+                          background-color: color(indigo-opt-02);
+                        }
+                      }
+                      &-action {
+                        width: 100px;
+                        .action-item {
+                          margin: 3px;
+                          cursor: pointer;
+                        }
+                        .action-setting {
+                          color: $sp-color-text-dark;
+                        }
+                        .action-view {
+                          color: $sp-color-text-primary;
+                        }
+                        .action-remove {
+                          color: $sp-color-text-danger;
+                        }
+                      }
+                    }
+                  }
+
+                  .th-item {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    text-align: start;
+                    color: #878a99;
+                    position: relative;
+
+                    &:not(:last-child):not(:first-child)::after {
+                      content: "\f0dc";
+                      position: absolute;
+                      top: 18px;
+
+                      right: 8px;
+                      font-family: "Font Awesome 6 Free";
+                      font-size: 0.8rem;
+                      font-weight: 900;
+                    }
+                  }
+                  .td-item {
+                    font-weight: 500;
+                    color: $sp-color-text-dark-admin-2;
+                    font-size: 0.8rem;
+                  }
+                  .td-item-code {
+                    color: $sp-color-text-primary;
+                    font-weight: 500;
+                  }
+                }
+              }
+              .tablePagination {
+                border-top: 1px solid #ddd;
+                padding: 7px;
+                &__main {
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  .pre,
+                  .next {
+                    color: #051f4e;
+                    padding: 5px 15px;
+                  }
+                  .vl {
+                    padding: 5px 8px;
+                    color: $sp-color-text-dark-admin-2;
+                  }
+                  .active {
+                    border-radius: 2px;
+                    background-color: $sp-background-color-primary;
+                    color: $sp-color-text-white;
+                  }
+                  &___item {
+                    cursor: pointer;
+                    border-radius: 2px;
+                    border: 1px solid #ebebeb;
+                    margin-right: 5px;
+                    font-weight: 500;
+                    &:last-child {
+                      margin-right: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &__orderDetail {
+          padding: 0.75rem 0.5rem;
+          &___main {
+            display: flex;
+            flex-wrap: wrap;
+            .left {
+              width: 70%;
+              .detail {
+                border-radius: 4px;
+                background-color: $sp-background-color-white;
+                box-shadow: $boxShowCardBlack;
+
+                .titleBt {
+                  padding: 15px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  h4 {
+                    font-weight: 500;
+                    color: #4c4c4c;
+                  }
+                  button {
+                    padding: 6px 10px;
+                    border: none;
+                    background-color: $sp-background-color-success;
+                    border-radius: 4px;
+                    color: $sp-color-text-white;
+                    font-weight: 500;
+                    cursor: pointer;
+                  }
+                }
+                .tableMain {
+                  border-top: 1px solid #ddd;
+                  width: 100%;
+                  border-collapse: collapse;
+                  thead {
+                    background-color: $sp-background-color-white-admin-2;
+                  }
+
+                  .th-item {
+                    font-weight: 500;
+                    color: #878a99;
+                    font-size: 0.95rem;
+                  }
+                  .td-item {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                  }
+                  .th-td {
+                    &-hw {
+                      padding: 0.75rem 1.2rem;
+                      text-align: start;
+                    }
+                    &-detailProduct {
+                      width: 250px;
+                      .wp {
+                        display: flex;
+                        &__image {
+                          width: 76px;
+                          img {
+                            border-radius: 4px;
+                            max-width: 100%;
+                          }
+                        }
+                        &__name {
+                          margin-left: 10px;
+                          h4 {
+                            font-weight: 500;
+                            font-size: 1rem;
+                            color: $sp-color-text-dark-admin-2;
+                          }
+                          .category,
+                          .group {
+                            margin-top: 6px;
+                            span {
+                              font-size: 0.8rem;
+                              font-weight: 400;
+                              b {
+                                font-size: 0.85rem;
+                                font-weight: 500;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    &-priceProduct {
+                      width: 100px;
+                    }
+                    &-ratingProduct {
+                      width: 120px;
+                      .rating {
+                        .fa-size {
+                          // & path {
+                          //   stroke: red;
+                          //   stroke-width: 30px;
+                          // }
+
+                          font-size: 0.6rem;
+                        }
+                        .fa-star-active {
+                          color: $sp-color-star-yellow;
+                        }
+                        .fa-star-notActive {
+                          color: #ddd;
+                        }
+                      }
+                    }
+                    &-qualityProduct {
+                      width: 80px;
+                    }
+                    &-amountProduct {
+                      text-align: end;
+                      width: 100px;
+                    }
+                  }
+                }
+                .totalProduct {
+                  border-top: 1px dashed #ddd;
+                  margin-top: 10px;
+                  padding-top: 15px;
+                  &__main {
+                    display: flex;
+                    justify-content: flex-end;
+                    table {
+                      width: 35%;
+                      .pow {
+                        border-top-style: dashed !important;
+                        border-width: 1px;
+                        .th {
+                          font-size: 1rem;
+                          font-weight: 500;
+                        }
+                        .td {
+                          font-size: 1rem;
+                        }
+                      }
+                      tr {
+                        line-height: 2;
+                        .wop {
+                          font-size: 0.84rem;
+                          font-weight: 500;
+                        }
+                        .th,
+                        .td {
+                          padding: 0.5rem 1.2rem;
+                        }
+                        .th {
+                          text-align: start;
+                        }
+                        .td {
+                          text-align: end;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .orderStatus {
+                margin-top: 10px;
+                border-radius: 4px;
+                background-color: $sp-background-color-white;
+                box-shadow: $boxShowCardBlack;
+                .title {
+                  padding: 15px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  h4 {
+                    font-weight: 500;
+                    color: $sp-color-text-dark-admin-2;
+                  }
+                  .flexChange {
+                    display: flex;
+                    align-items: center;
+                    &__item {
+                      margin-right: 8px;
+                      button {
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 4px;
+                        padding: 7px 13px;
+                      }
+                      &:last-child {
+                        margin-right: 0;
+                      }
+                    }
+                    .changeAddress {
+                      button {
+                        background-color: color(success-opt-02);
+                        color: color(success-opt-1);
+                      }
+                    }
+                    .cancelOrder {
+                      button {
+                        background-color: color(danger-opt-02);
+                        color: color(danger-opt-1);
+                      }
+                    }
+                  }
+                }
+                .content {
+                  &__main {
+                    &___item {
+                      position: relative;
+                      z-index: 9;
+                      &:not(:first-child) {
+                        margin-top: 30px;
+                      }
+                      &:not(:last-child)::before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        border-left: 2px dashed #ddd;
+                        top: 30px;
+                        left: 13.5px;
+                        height: 100%;
+                      }
+                      .header {
+                        cursor: pointer;
+                        &__wp {
+                          display: flex;
+                          align-items: center;
+                          .ico {
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            line-height: 28px;
+                            background-color: $sp-background-color-success;
+                            .fa-size {
+                              font-size: 0.8rem;
+                              color: $sp-color-text-white;
+                            }
+                          }
+                          .name {
+                            margin-left: 10px;
+                            h6 {
+                              font-weight: 500;
+                              font-size: 1.1rem;
+                              .date {
+                                font-size: 0.8rem;
+                                color: $sp-color-text-success;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .bd {
+                        margin-left: 38px;
+                        margin-top: 15px;
+                        &__item {
+                          margin-bottom: 27px;
+                          &:last-child {
+                            margin-bottom: 0;
+                          }
+                          &___name {
+                            font-weight: 500;
+                            color: $sp-color-text-dark-admin-2;
+                            font-size: 0.95rem;
+                            .fa-size {
+                              width: 25px;
+                              text-align: center;
+                            }
+                          }
+                          &___date {
+                            margin-top: 5px;
+                            font-size: 0.8rem;
+                            color: #878a99;
+                            font-weight: 500;
+                            .fa-size {
+                              text-align: center;
+                              width: 25px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .right {
+              width: calc(30% - 30px);
+              margin-left: 30px;
+              .box {
+                margin-top: 20px;
+                border-radius: 4px;
+                background-color: $sp-background-color-white;
+                box-shadow: $boxShowCardBlack;
+
+                .title {
+                  padding: 15px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  h4 {
+                    font-weight: 500;
+                    color: $sp-color-text-dark-admin-2;
+                    .fa-size {
+                      width: 21px;
+                      text-align: center;
+                      font-size: 0.8rem;
+                    }
+                  }
+                  .showDetail {
+                    color: $sp-color-text-primary;
+                  }
+                }
+                .bd {
+                  padding: 17px;
+                  border-top: 1px solid #ebebeb;
+                  .image,
+                  .info {
+                    text-align: center;
+                  }
+
+                  .info {
+                    &__name {
+                      font-weight: 500;
+                      color: $sp-color-text-dark-admin-2;
+                      font-size: 1.1rem;
+                    }
+                    .id {
+                      margin-top: 10px;
+                    }
+                    .w {
+                      font-size: 0.87rem;
+                      color: #707070;
+                    }
+                    .payment {
+                      margin-top: 3px;
+                    }
+                  }
+                  &__table {
+                    width: 100%;
+                    .th-td-fr {
+                      padding: 6px;
+                    }
+                    .th-item {
+                      font-size: 0.95rem;
+                      font-weight: 400;
+                      color: $sp-color-text-dark-admin-2;
+                      text-align: start;
+                      .fa-size {
+                        width: 20px;
+                        text-align: center;
+                      }
+                    }
+                    .td-item {
+                      width: 326px;
+                      font-size: 0.9rem;
+                      font-weight: 500;
+                      text-align: end;
+                      p {
+                        @include textOverflow(1);
+                      }
                     }
                   }
                 }

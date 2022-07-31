@@ -59,30 +59,51 @@
 @keyframes menuSlideAdm {
   from {
     transform: translateX(0px);
+    width: 100% !important;
     transition-timing-function: ease-in;
   }
   to {
-    transform: translateX(653px);
+    transform: translateX(67px);
+    width: 0% !important;
     transition-timing-function: ease-out;
   }
 }
 
 @keyframes menuSlideOutAdm {
   from {
-    transform: translateX(653px);
+    transform: translateX(67px);
+
     transition-timing-function: ease-in;
   }
   to {
     transform: translateX(0px);
+    width: 0% !important;
     transition-timing-function: ease-out;
   }
 }
 
 .slideInAdm {
+  width: 100% !important;
   animation: menuSlideAdm 0.5s 1;
   animation-fill-mode: forwards;
 }
 
 .slideOutAdm {
+  width: 0% !important;
   animation: menuSlideOutAdm 0.5s 1;
+}
+@keyframes isActiveMrrTopAdm {
+  100% {
+    margin-top: -1px;
+  }
+  0% {
+    margin-top: 13px;
+  }
+}
+.isActiveMrrTopAdm {
+  visibility: visible !important;
+  animation-name: isActiveMrrTopAdm;
+  animation-fill-mode: both;
+  transform: translateY(-1px);
+  animation-duration: 0.3s;
 }

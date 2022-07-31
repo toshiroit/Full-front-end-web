@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="../public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="../public/plugins/lordicon/xdjxvujz.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script src="../public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Đơn hàng</title>
+  </head>
+  <body>
+    <div id="menuBarFxAdmin" class="menuFxBar">
+      <div class="menuFxBar__inner">
+        <div class="logoBox">
+          <img src="../public/images/logo-sm.png" alt="" />
+        </div>
+        <div class="menuFxBar__content">
+          <ul class="menuFxBar__content___main">
+            <div class="opw">
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gauge fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-shop fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-user fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-ramp-box fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-layer-group fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-fast fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-tags fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-comment-dots fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bell fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-basket-shopping fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bug fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-address-book fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-headset fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gear fa-size"></i>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperAdmin" id="bodyAdmin">
+      <header id="page__topbar" class="topBar">
+        <div class="topBar__navbar">
+          <div class="topBar__navbar___mws">
+            <div id="showMenuBar" class="menuBar">
+              <i class="fa-solid fa-bars fa-size"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-size"></i>
+              <input type="text" name="" id="" placeholder="Tìm kiếm " />
+            </div>
+          </div>
+          <div class="topBar__navbar___otw">
+            <ul class="main">
+              <li class="main__item">
+                <span class="qualityFx">14</span>
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__user">
+                <div class="main__user___avatar">
+                  <img
+                    src="../public/images/Cap-nhat-cho-cac-ban-Hinh-dai-dien-avatar-nu-cute.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main__user___name">
+                  <h4 class="wp1">DAU-NAM-PC</h4>
+                  <span>Free</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="desktop admin page">
+        <div class="page__main">
+          <div class="page__main___title">
+            <h4 class="page__main___title____name">Thông tin đơn hàng</h4>
+            <ul class="page__main___title____breadcrumb">
+              <li class="page__main___title____breadcrumb_____item">
+                Trang tổng quan
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                đơn hàng
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                danh sách đơn hàng
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="content__orderDetail">
+              <div class="content__orderDetail___main">
+                <div class="left">
+                  <div class="detail">
+                    <div class="titleBt">
+                      <h4>Đơn hàng #VL266781748818SS</h4>
+                      <button>Tải đơn hàng</button>
+                    </div>
+                    <table class="tableMain">
+                      <thead>
+                        <th class="th-item th-td-hw th-td-detailProduct">
+                          Thông tin sản phẩm
+                        </th>
+                        <th class="th-item th-td-hw th-td-priceProduct">
+                          Giá sản phẩm
+                        </th>
+                        <th class="th-item th-td-hw th-td-qualityProduct">
+                          Số lượng
+                        </th>
+                        <th class="th-item th-td-hw th-td-ratingProduct">
+                          Đánh giá
+                        </th>
+                        <th class="th-item th-td-hw th-td-amountProduct">
+                          Tổng tiền
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td-item th-td-hw th-td-detailProduct">
+                            <div class="wp">
+                              <div class="wp__image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/8141/s400x400/b6c04acc-b125-4fc2-b82d-097395358c14.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="wp__name">
+                                <h4>Lẩu Bò Sa Tế (Gồm Nước Cốt Lẩu)</h4>
+                                <div class="category">
+                                  <span>Danh mục : <b>Lẩu </b></span>
+                                </div>
+                                <div class="group">
+                                  <span>Loại : <b>Không cay </b></span>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="td-item th-td-hw th-td-priceProduct">
+                            240.000 VNĐ
+                          </td>
+                          <td class="td-item th-td-hw th-td-qualityProduct">
+                            13
+                          </td>
+                          <td class="td-item th-td-hw th-td-ratingProduct">
+                            <div class="rating">
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-notActive"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="td-item th-td-hw th-td-amountProduct">
+                            9.981.294 VNĐ
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td-item th-td-hw th-td-detailProduct">
+                            <div class="wp">
+                              <div class="wp__image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/8141/s400x400/b6c04acc-b125-4fc2-b82d-097395358c14.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="wp__name">
+                                <h4>Lẩu Bò Sa Tế (Gồm Nước Cốt Lẩu)</h4>
+                                <div class="category">
+                                  <span>Danh mục : <b>Lẩu </b></span>
+                                </div>
+                                <div class="group">
+                                  <span>Loại : <b>Không cay </b></span>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="td-item th-td-hw th-td-priceProduct">
+                            240.000 VNĐ
+                          </td>
+                          <td class="td-item th-td-hw th-td-qualityProduct">
+                            13
+                          </td>
+                          <td class="td-item th-td-hw th-td-ratingProduct">
+                            <div class="rating">
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-notActive"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="td-item th-td-hw th-td-amountProduct">
+                            9.981.294 VNĐ
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td-item th-td-hw th-td-detailProduct">
+                            <div class="wp">
+                              <div class="wp__image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/8141/s400x400/b6c04acc-b125-4fc2-b82d-097395358c14.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="wp__name">
+                                <h4>Lẩu Bò Sa Tế (Gồm Nước Cốt Lẩu)</h4>
+                                <div class="category">
+                                  <span>Danh mục : <b>Lẩu </b></span>
+                                </div>
+                                <div class="group">
+                                  <span>Loại : <b>Không cay </b></span>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="td-item th-td-hw th-td-priceProduct">
+                            240.000 VNĐ
+                          </td>
+                          <td class="td-item th-td-hw th-td-qualityProduct">
+                            13
+                          </td>
+                          <td class="td-item th-td-hw th-td-ratingProduct">
+                            <div class="rating">
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-active"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star fa-size fa-star-notActive"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="td-item th-td-hw th-td-amountProduct">
+                            9.981.294 VNĐ
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="totalProduct">
+                      <div class="totalProduct__main">
+                        <table>
+                          <tr>
+                            <th class="wop th">
+                              <i class="fa-brands fa-gg"></i> Tổng phụ :
+                            </th>
+                            <td class="wop td total">359.000VNĐ</td>
+                          </tr>
+                          <tr>
+                            <th class="wop th">
+                              <i class="fa-brands fa-gg"></i> Phí ship :
+                            </th>
+                            <td class="wop td total">359.000VNĐ</td>
+                          </tr>
+
+                          <tr>
+                            <th class="wop th">
+                              <i class="fa-brands fa-gg"></i> Giảm giá ( Mã code
+                              ) :
+                            </th>
+                            <td class="wop td total">-40.000VNĐ</td>
+                          </tr>
+                          <tr>
+                            <th class="wop th">
+                              <i class="fa-brands fa-gg"></i> FreeShip :
+                            </th>
+                            <td class="wop td total">-40.000VNĐ</td>
+                          </tr>
+                          <tr>
+                            <th class="wop th">
+                              <i class="fa-brands fa-gg"></i> Thuế ( VAT ) :
+                            </th>
+                            <td class="wop td total">100.000VNĐ</td>
+                          </tr>
+                          <tr class="pow">
+                            <th class="wop th">
+                              <i class="fa-solid fa-money-bill"></i> Tổng tiền :
+                            </th>
+                            <td class="wop td total">999.000VNĐ</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="orderStatus">
+                    <div class="title">
+                      <h4>Tình trang đơn hàng</h4>
+                      <div class="flexChange">
+                        <div class="flexChange__item changeAddress">
+                          <button>
+                            <i class="fa-solid fa-location-dot"></i> Chọn địa
+                            chỉ
+                          </button>
+                        </div>
+                        <div class="flexChange__item cancelOrder">
+                          <button>
+                            <i class="fa-solid fa-ban"></i> Hủy đơn hàng
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <ul class="content__main">
+                        <li class="content__main___item">
+                          <div class="header">
+                            <div class="header__wp">
+                              <div class="ico">
+                                <i class="fa-solid fa-bag-shopping fa-size"></i>
+                              </div>
+                              <div class="name">
+                                <h6>
+                                  Đã đặt hàng
+                                  <span class="date"
+                                    >- 26/10/2020 - 16:40
+                                  </span>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bd">
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Một đơn hàng đã được đặt
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Hệ thống đang xử lí
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="content__main___item">
+                          <div class="header">
+                            <div class="header__wp">
+                              <div class="ico">
+                                <i
+                                  class="fa-solid fa-clipboard-check fa-size"
+                                ></i>
+                              </div>
+                              <div class="name">
+                                <h6>
+                                  Đơn hàng đã xử lí
+                                  <span class="date"
+                                    >- 26/10/2020 - 16:40
+                                  </span>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bd">
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Đang kiểm tra thông tin
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Thông tin đã kiểm tra
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="content__main___item">
+                          <div class="header">
+                            <div class="header__wp">
+                              <div class="ico">
+                                <i
+                                  class="fa-solid fa-clipboard-check fa-size"
+                                ></i>
+                              </div>
+                              <div class="name">
+                                <h6>
+                                  Đang chuẩn bị
+                                  <span class="date"
+                                    >- 26/10/2020 - 16:40
+                                  </span>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bd">
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Đang chế biến
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Đã giao cho Shipper
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="content__main___item">
+                          <div class="header">
+                            <div class="header__wp">
+                              <div class="ico">
+                                <i
+                                  class="fa-solid fa-clipboard-check fa-size"
+                                ></i>
+                              </div>
+                              <div class="name">
+                                <h6>
+                                  Đang giao hàng
+                                  <span class="date"
+                                    >- 26/10/2020 - 16:40
+                                  </span>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bd">
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Shipper đang giao hàng
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Đang liên hệ
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="content__main___item">
+                          <div class="header">
+                            <div class="header__wp">
+                              <div class="ico">
+                                <i
+                                  class="fa-solid fa-clipboard-check fa-size"
+                                ></i>
+                              </div>
+                              <div class="name">
+                                <h6>
+                                  Đã giao hàng
+                                  <span class="date"
+                                    >- 26/10/2020 - 16:40
+                                  </span>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bd">
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Shipper đang giao hàng
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                            <div class="bd__item">
+                              <h6 class="bd__item___name">
+                                <i class="fa-solid fa-signature fa-size"></i>
+                                Đang liên hệ
+                              </h6>
+                              <p class="bd__item___date">
+                                <i class="fa-solid fa-clock fa-size"></i>
+                                20/10/2002 - 10:46AM
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="title">
+                      <h4>
+                        <i class="fa-solid fa-truck-fast fa-size"></i> Chi tiết
+                        quá trình
+                      </h4>
+                      <a href="#" class="showDetail">Xem chi tiết</a>
+                    </div>
+                    <div class="bd">
+                      <div class="image">
+                        <lord-icon
+                          src="https://cdn.lordicon.com/poblyvkl.json"
+                          trigger="loop"
+                          style="width: 100px; height: 100px"
+                        >
+                        </lord-icon>
+                      </div>
+                      <div class="info">
+                        <h5 class="info__name">ĐANG GIAO HÀNG</h5>
+                        <p class="id w">ID : 214812477WQISKXW</p>
+                        <p class="payment w">
+                          Thanh toán : Thành toán khi nhận hàng
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="title">
+                      <h4>
+                        <i class="fa-solid fa-user fa-size"></i> Thông tin người
+                        mua
+                      </h4>
+                      <a href="#" class="showDetail">Xem chi tiết</a>
+                    </div>
+                    <div class="bd">
+                      <table class="bd__table">
+                        <tbody>
+                          <tr>
+                            <th class="th-item th-td-fr">
+                              <i class="fa-solid fa-signature fa-size"></i> Họ
+                              và tên :
+                            </th>
+                            <td class="td-item th-td-fr">Đậu Văn Nam</td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">
+                              <i class="fa-solid fa-phone fa-size"></i> Số điện
+                              thoại :
+                            </th>
+                            <td class="td-item th-td-fr">0947151274</td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">
+                              <i class="fa-solid fa-envelope fa-size"></i> Email
+                              :
+                            </th>
+                            <td class="td-item th-td-fr">daunam4@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">
+                              <i class="fa-solid fa-location-dot fa-size"></i>
+                              Địa chỉ
+                            </th>
+                            <td class="td-item th-td-fr">
+                              <p>
+                                245 8 , Hà huy tập , Buôn ma thuột , Tình Đăk
+                                Lăk
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="title">
+                      <h4>
+                        <i class="fa-solid fa-credit-card fa-size"></i> Thông
+                        tin thanh toán
+                      </h4>
+                      <a href="#" class="showDetail">Xem chi tiết</a>
+                    </div>
+                    <div class="bd">
+                      <table class="bd__table">
+                        <tbody>
+                          <tr>
+                            <th class="th-item th-td-fr">Mã thanh toán</th>
+                            <td class="td-item th-td-fr">#VLZ124561278124</td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">Loại thanh toán</th>
+                            <td class="td-item th-td-fr">VISA CARD</td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">Tên chủ thẻ</th>
+                            <td class="td-item th-td-fr">DAU VAN NAM</td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">Mã thẻ</th>
+                            <td class="td-item th-td-fr">
+                              xxxx xxxx xxxx 2482
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="th-item th-td-fr">Tổng tiền</th>
+                            <td class="td-item th-td-fr">948.000 VNĐ</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+      console.error(error);
+    });
+    ClassicEditor.create(document.querySelector("#editor2")).catch((error) => {
+      console.error(error);
+    });
+  </script>
+  <script src="../public/js/editor.js"></script>
+  <script src="./main.js"></script>
+  <script src="../public/js/menu.min.js"></script>
+  <script src="../public/js/main.min.js"></script>
+
+  <script src="../public/js/slider.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/animation.min.js"></script>
+</html>
