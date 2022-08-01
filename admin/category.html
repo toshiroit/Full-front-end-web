@@ -234,58 +234,70 @@
                 <div class="left">
                   <div class="content">
                     <form action="">
-                      <div class="title">
+                      <div id="showAddCategoryAdmin" class="title">
                         <h4>Tạo thêm danh mục</h4>
+                        <div class="show">
+                          <i class="fa-solid fa-angles-down fa-size"></i>
+                        </div>
                       </div>
-                      <div class="wp">
-                        <div class="wp__item">
-                          <label class="wp__item___name" for=""
-                            >Tên danh mục</label
-                          >
-                          <input type="text" name="" id="" />
-                          <p class="w">
-                            Tên danh mục sẽ hiện tìm kiếm sản phẩm theo sản phẩm
-                            của cữa hàn bạn
-                          </p>
+                      <div class="" id="formAddCategoryAdmin">
+                        <div class="wp">
+                          <div class="wp__item">
+                            <label class="wp__item___name" for=""
+                              >Tên danh mục</label
+                            >
+                            <input type="text" name="" id="" />
+                            <p class="w">
+                              Tên danh mục sẽ hiện tìm kiếm sản phẩm theo sản
+                              phẩm của cữa hàn bạn
+                            </p>
+                          </div>
+                          <div class="wp__item">
+                            <label class="wp__item___name" for=""
+                              >Đường dẫn
+                            </label>
+                            <input type="text" name="" id="" />
+                            <p class="w">
+                              Tên đường dẫn này sẽ được dùng thi tìm kiếm sản
+                              phẩm theo URL của bạn
+                            </p>
+                          </div>
+                          <div class="wp__item">
+                            <label class="wp__item___name" for=""
+                              >Thông tin
+                            </label>
+                            <textarea
+                              class="textDetailCategory"
+                              id=""
+                            ></textarea>
+                          </div>
+                          <div class="wp__item">
+                            <label class="wp__item___name" for=""
+                              >Tình trạng
+                            </label>
+                            <select name="" id="">
+                              <option value="">Chọn tình trạng</option>
+                            </select>
+                          </div>
+                          <div class="wp__item">
+                            <label class="wp__item___name" for=""
+                              >Hình ảnh
+                            </label>
+                            <select name="" id="">
+                              <option value="">Chọn tình trạng</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="wp__item">
-                          <label class="wp__item___name" for=""
-                            >Đường dẫn
-                          </label>
-                          <input type="text" name="" id="" />
-                          <p class="w">
-                            Tên đường dẫn này sẽ được dùng thi tìm kiếm sản phẩm
-                            theo URL của bạn
-                          </p>
-                        </div>
-                        <div class="wp__item">
-                          <label class="wp__item___name" for=""
-                            >Thông tin
-                          </label>
-                          <textarea class="textDetailCategory" id=""></textarea>
-                        </div>
-                        <div class="wp__item">
-                          <label class="wp__item___name" for=""
-                            >Tình trạng
-                          </label>
-                          <select name="" id="">
-                            <option value="">Chọn tình trạng</option>
-                          </select>
-                        </div>
-                        <div class="wp__item">
-                          <label class="wp__item___name" for=""
-                            >Hình ảnh
-                          </label>
-                          <select name="" id="">
-                            <option value="">Chọn tình trạng</option>
-                          </select>
+                        <div class="btn">
+                          <button class="reload">Đặt lại</button>
+                          <button class="submit">Từ khóa</button>
                         </div>
                       </div>
                     </form>
                   </div>
                 </div>
                 <div class="right">
-                  <div class="content">
+                  <div class="contentCt">
                     <div class="title">
                       <h4>Danh sách danh mục</h4>
                     </div>
@@ -301,20 +313,303 @@
                             <option value="">Chọn tình trạng</option>
                           </select>
                         </div>
+                        <button class="btn-filter">Áp dụng</button>
                       </div>
                       <div class="filter__search">
                         <div class="filter__search___ipn">
                           <input type="text" />
-                          <button>Tìm kiếm</button>
+                          <button class="search">Tìm kiếm</button>
                         </div>
                       </div>
                     </div>
                     <div class="table">
                       <table>
                         <thead>
-                          <th class="th-item th-td-item"></th>
+                          <th class="th-item th-td-item th-td-checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </th>
+                          <th class="th-item th-td-item th-td-image">
+                            Hình ảnh
+                          </th>
+                          <th class="th-item th-td-item th-td-description">
+                            Thông tin
+                          </th>
+                          <th class="th-item th-td-item th-td-slug">
+                            Đường dẫn
+                          </th>
+
+                          <th class="th-item th-td-item th-td-status">
+                            Tình trạng
+                          </th>
+                          <th class="th-item th-td-item th-td-action">
+                            Công cụ
+                          </th>
                         </thead>
+                        <tbody>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text success"> Hoạt động </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text disable">
+                                Không hoạt động
+                              </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text success"> Hoạt động </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text disable">
+                                Không hoạt động
+                              </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text success"> Hoạt động </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text disable">
+                                Không hoạt động
+                              </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-item th-td-item th-td-checkbox">
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-image">
+                              <img src="../public/images/4813075.png" alt="" />
+                            </td>
+                            <td class="td-item th-td-item th-td-description">
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ad facilis excepturi ducimus
+                                perspiciatis est, modi neque deserunt fuga
+                                laudantium vel incidunt quo sunt eaque nobis
+                                praesentium mollitia corrupti illo iste.
+                              </p>
+                            </td>
+                            <td class="td-item th-td-item th-td-slug">
+                              food-sales
+                            </td>
+                            <td class="td-item th-td-item th-td-status">
+                              <span class="text success"> Hoạt động </span>
+                            </td>
+                            <td class="td-item th-td-item th-td-action">
+                              <button class="show">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <button class="edit">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="remove">
+                                <i class="fa-solid fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
                       </table>
+
+                      <div class="tablePagination">
+                        <ul class="tablePagination__main">
+                          <li class="tablePagination__main___item pre">
+                            Trước
+                          </li>
+                          <li class="tablePagination__main___item vl active">
+                            1
+                          </li>
+                          <li class="tablePagination__main___item vl">2</li>
+                          <li class="tablePagination__main___item vl">3</li>
+                          <li class="tablePagination__main___item vl">4</li>
+                          <li class="tablePagination__main___item vl">5</li>
+                          <li class="tablePagination__main___item next">
+                            Tiếp
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
