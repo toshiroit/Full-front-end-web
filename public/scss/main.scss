@@ -5064,6 +5064,259 @@ html {
       }
     }
     .shop {
+      &__content {
+        &___inner {
+          .shopIf {
+            background-color: $sp-background-color-white;
+            border-radius: 4px;
+
+            box-shadow: $boxShowCardBlack;
+            position: relative;
+
+            &__flex {
+              padding: 10px;
+              display: flex;
+              justify-content: space-between;
+              &___logo {
+                display: flex;
+                align-items: center;
+                .logo {
+                  width: 73px;
+                  border-radius: 50%;
+                  border: 1px solid #ddd;
+                  img {
+                    border-radius: 50%;
+                    width: 100%;
+                  }
+                }
+                .nameWp {
+                  margin-left: 10px;
+
+                  &__hw {
+                    font-weight: 500;
+                    color: $sp-color-text-dark-admin-2;
+                  }
+                  .ticker__sc {
+                    margin-top: 6px;
+                    font-size: 0.8rem;
+                    color: color(success-opt-1);
+                    font-weight: 500;
+                  }
+                  .star {
+                    margin-top: 0;
+                    span {
+                      font-size: 0.8rem;
+                      font-weight: 500;
+                      .fa-size {
+                        color: $sp-color-star-yellow;
+                      }
+                    }
+                  }
+                }
+              }
+              &___wp {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                button {
+                  cursor: pointer;
+                  border-radius: 4px;
+                  background-color: $sp-background-color-primary;
+                  color: $sp-color-text-white;
+                  font-weight: 500;
+                  border: none;
+                  outline: none;
+                  width: 120px;
+                  padding: 8px 20px;
+                }
+              }
+            }
+            &__menu {
+              padding: 0px 10px 0 10px;
+
+              display: flex;
+              justify-content: space-between;
+              .menu {
+                display: flex;
+                align-items: center;
+                .active {
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    width: 18px;
+                    border-radius: 6px;
+                    height: 4px;
+                    background-color: $sp-background-color-primary;
+                    bottom: -1px;
+                    right: 0;
+                    left: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+                }
+                &__item {
+                  cursor: pointer;
+                  padding: 8px 20px;
+                  position: relative;
+                  font-size: 0.9rem;
+                  // border: 1px solid #ddd;
+                }
+              }
+              .ipnSearch {
+                display: flex;
+                align-items: center;
+                width: 270px;
+                border: 1px solid #d9d9d9;
+                padding: 6px 13px;
+                border-radius: 8px;
+                .fa-size {
+                  padding-left: 3px;
+                  font-size: 0.8rem;
+                  color: #7e7777;
+                  line-height: 13px;
+                }
+                input {
+                  padding: 3px 10px;
+                  border: none;
+                  width: 100%;
+                  outline: none;
+                }
+              }
+            }
+            .backgroundShop {
+              margin-top: 15px;
+              height: 100%;
+              .image {
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+            .productSlider {
+              // margin-top: 10px;
+              border-top: 1px solid #ddd;
+              // margin-top: 10px;
+              overflow: hidden;
+              padding-top: 10px;
+              &__title {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h4 {
+                  font-size: 1rem;
+                  font-weight: 500;
+                }
+                .Arrow {
+                  display: flex;
+                  align-items: center;
+                  .left {
+                    margin-right: 5px;
+                  }
+                  &__item {
+                    cursor: pointer;
+                    padding: 3px 7px;
+                    border-radius: 4px;
+                    border: 1px solid #e3e3e3;
+                    i {
+                      color: #787171;
+                    }
+                  }
+                }
+              }
+              #productSliderShop {
+                transition: all 0.3s;
+              }
+              .product__wp {
+                flex-wrap: nowrap !important;
+                // overflow: hidden;
+              }
+            }
+            .allProduct {
+              margin-top: 10px;
+              &__main {
+                display: flex;
+                &___left {
+                  width: 15%;
+                  border-top: 1px solid #e9e9e9;
+                  border-right: 1px solid #e9e9e9;
+                  .title {
+                    padding: 10px;
+                    h4 {
+                      font-weight: 600;
+                      color: rgb(36, 36, 36);
+                    }
+                  }
+                  .list {
+                    &__item {
+                      padding: 7px 10px 7px 10px;
+
+                      cursor: pointer;
+                      font-size: 0.9rem;
+                      color: $sp-color-text-dark-admin-2;
+                      display: flex;
+                      align-items: center;
+                      span {
+                        @include textOverflow(1);
+                      }
+                      .fa-size {
+                        margin-right: 2px;
+                        // line-height: 18px;
+                        font-weight: 300;
+                        font-size: 0.8rem;
+                      }
+                      &:hover {
+                        background-color: #f3f3f3;
+                      }
+                    }
+                  }
+                }
+                &___right {
+                  border-top: 1px solid #e9e9e9;
+                  width: 85%;
+                }
+              }
+            }
+            .shopCategory {
+              margin-top: 10px;
+              &__main {
+                border-top: 1px solid #e9e9e9;
+                .categoryMain {
+                  display: flex;
+                  flex-wrap: wrap;
+                  padding: 2.25rem;
+                  &__item {
+                    cursor: pointer;
+                    margin: 11px;
+                    border: 1px solid #ebebeb;
+                    border-radius: 4px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+                    flex-basis: calc(16.6666667% - 22px);
+                    img {
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 5px;
+                    }
+                    .name {
+                      margin-top: 6px;
+                      text-align: center;
+                      span {
+                        font-weight: 400;
+                        font-size: 0.9rem;
+                        @include textOverflow(2);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   .bannerFooter {

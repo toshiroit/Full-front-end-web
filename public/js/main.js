@@ -9,5 +9,7 @@ if (widthWebIdx <= 654) {
     document.getElementById("userMenuRightIdx")
   ).display;
 }
-const widthMenuAdminFixBar =
-  document.getElementById("menuBarFxAdmin").clientWidth;
+if (document.getElementById("menuBarFxAdmin")) {
+  const widthMenuAdminFixBar =
+    document.getElementById("menuBarFxAdmin").clientWidth;
+}

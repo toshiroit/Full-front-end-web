@@ -419,7 +419,7 @@ a {
 }
 .breadcrumb {
   &__content {
-    padding: 10px;
+    padding: 5px;
     .main {
       &__item {
         display: inline-block;
@@ -674,15 +674,17 @@ a {
       }
       .image {
         overflow: hidden;
-
+        width: 174px;
+        max-width: 100%;
         &:hover > img {
           transform: scale(1.1);
         }
         img {
           transition: all 0.3s;
-
+          object-fit: cover;
           width: 100%;
-          height: 160px;
+          max-width: 100%;
+          height: 100%;
         }
       }
       .sellable {

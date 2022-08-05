@@ -81,7 +81,16 @@
     transition-timing-function: ease-out;
   }
 }
-
+@keyframes SliderProduct {
+  from {
+    transform: translateX(195px);
+    transition-timing-function: ease-in;
+  }
+  to {
+    transform: translateX(0px);
+    transition-timing-function: ease-out;
+  }
+}
 .slideInAdm {
   width: 100% !important;
   animation: menuSlideAdm 0.5s 1;
@@ -142,6 +151,12 @@
 
   max-height: 100% !important;
 }
+
+.sliderProductAnimation {
+  animation-name: SliderProduct;
+  transition: all 0.3s;
+  animation-duration: 0.3s;
+}
 .hideAddCategoryAdmin {
   visibility: hidden !important;
   animation-name: hideAddCategoryAdmin;
@@ -154,4 +169,7 @@
   visibility: hidden;
   // transition: all 0.3s;
   max-height: 0;
+}
+.SliderLeftProductShop {
+  transform: translateX(-195px);
 }

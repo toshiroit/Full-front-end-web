@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="./public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="body" class="wrapper">
+      <div class="desktop supership">
+        <div class="navbar">
+          <div class="navbar__top">
+            <div class="container">
+              <ul class="topbar">
+                <li class="topbar__item">
+                  <p class="topbar__item___text">
+                    Trở thành đổi tác với Super Shipping
+                  </p>
+                  <i class="fa-solid fa-handshake fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Tiết kiệp hơn với ứng dụng</p>
+                  <i class="fa-solid fa-mobile-screen fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Chăm sóc khách hàng</p>
+                  <i class="fa-solid fa-mug-hot fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Khám phá</p>
+                  <i class="fa-solid fa-basket-shopping fa-size"></i>
+                </li>
+                <li class="topbar__item">
+                  <p class="topbar__item___text">Trợ giúp</p>
+                  <i class="fa-solid fa-circle-question fa-size"></i>
+                </li>
+                <li class="topbar__item language">
+                  <img
+                    src="./public/images/vi_VN.png"
+                    class="img-language"
+                    alt=""
+                  />
+                  <p class="topbar__item___text">Việt nam</p>
+                  <i class="fa-solid fa-caret-down fa-size fa-scale-1"></i>
+                  <ul class="list">
+                    <li class="list__item">
+                      <img
+                        src="./public/images/vi_VN.png"
+                        class="img-language"
+                        alt=""
+                      />
+                      <p>Tiếng việt</p>
+                      <i class="fa-solid fa-check fa-size"></i>
+                    </li>
+                    <li class="list__item">
+                      <img
+                        src="./public/images/en_US.png"
+                        class="img-language"
+                        alt=""
+                      />
+                      <p>Tiếng anh</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar__bottom">
+            <div class="container">
+              <div class="bottombar">
+                <div class="bottombar__left">
+                  <div class="logo">
+                    <img src="./public/images/logo1.jpg" alt="" />
+                  </div>
+                  <div class="bottombar__left___group">
+                    <ul class="menu">
+                      <li class="menu__item address">
+                        <h4 class="info">Địa chỉ</h4>
+                        <p>Đăk Lăk</p>
+                        <i class="fa-solid fa-angle-down fa-size"></i>
+                      </li>
+                      <li class="menu__item">
+                        <p>Bộ sưu tập</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Ăn uống</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Khám phá</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Tin tức</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Giao hàng</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Chi nhánh</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Hõ trợ</p>
+                      </li>
+                      <li class="menu__item">
+                        <p>Báo lỗi</p>
+                      </li>
+                    </ul>
+                    <div class="search">
+                      <input
+                        type="search"
+                        name=""
+                        placeholder="Tìm kiếm sản phẩm ........... "
+                        id=""
+                      />
+                      <i
+                        class="fa-solid fa-magnifying-glass fa-size fa-search-sett"
+                      ></i>
+                      <div class="search__list" style="display: none">
+                        <div class="wp">
+                          <div class="title">
+                            <i class="fa-solid fa-signature"></i>Tìm kiếm sản
+                            phẩm
+                          </div>
+                          <ul class="search__list___wp">
+                            <li class="search__list___wp____item">
+                              <div class="text">
+                                <i
+                                  class="fa-solid fa-magnifying-glass fa-size"
+                                ></i>
+                                <p>Tai nghe chơi game gaming</p>
+                              </div>
+                              <i class="fa-solid fa-xmark"></i>
+                            </li>
+                            <div class="search__list___wp____show">
+                              <p>Xem thêm</p>
+                              <i class="fa-solid fa-chevron-down fa-size"></i>
+                            </div>
+                          </ul>
+                        </div>
+                        <div class="wp">
+                          <div class="title">
+                            <i class="fa-solid fa-font"></i>Từ khóa tìm kiếm phổ
+                            biến
+                          </div>
+                          <ul class="keyword">
+                            <li class="keyword__item">Sản phẩm hot</li>
+                            <li class="keyword__item">Sản phẩm hot</li>
+                            <li class="keyword__item">
+                              Sản phẩm đang bán chạy
+                            </li>
+                            <li class="keyword__item">Gà đông tảo</li>
+                            <li class="keyword__item">Trà sữa</li>
+                            <li class="keyword__item">Cơm chiên</li>
+                            <li class="keyword__item">Cơm sinh viên</li>
+                            <li class="keyword__item">Cơm 0đ</li>
+                          </ul>
+                        </div>
+                        <div class="wp">
+                          <div class="title">
+                            <i class="fa-solid fa-list"></i> Danh mục phổ biến
+                          </div>
+                          <ul class="category">
+                            <li class="category__item">
+                              <span>Lẩu gia đình </span>
+                            </li>
+                            <li class="category__item">
+                              <span>Lẩu gia đình </span>
+                            </li>
+                            <li class="category__item">
+                              <span>Lẩu gia đình </span>
+                            </li>
+                            <li class="category__item">
+                              <span>Lẩu gia đình </span>
+                            </li>
+                            <li class="category__item">
+                              <span>Lẩu gia đình </span>
+                            </li>
+                            <li class="category__item">
+                              <span>Lẩu gia đình </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottombar__right">
+                  <div class="bottombar__right___userMobile">
+                    <div id="menuFixedRootIdx" class="menu">
+                      <i class="fa-solid fa-bars fa-size"></i>
+                    </div>
+                  </div>
+                  <div class="bottombar__right___user">
+                    <div class="text cart">
+                      <i class="fa-solid fa-basket-shopping fa-size"></i>
+                      <p>Giỏ hàng</p>
+                      <h4 class="quality">14</h4>
+                    </div>
+                    <div class="text user">
+                      <div class="owp-w1" style="display: none">
+                        <i class="fa-size fa-solid fa-user"></i>
+                        <p>Tài khoản</p>
+                      </div>
+                      <div class="owp-w1 login-active">
+                        <i class="fa-size fa-solid fa-user"></i>
+                        <div class="inner">
+                          <span class="name">Đâu Văn Nam </span>
+                          <div class="woi">
+                            <li class="woi__item">Số dư : 0</li>
+                          </div>
+                        </div>
+                        <ul class="info">
+                          <li class="info__item">
+                            <i class="fa-solid fa-info fa-size-1"></i>
+                            <p>Thông tin tài khoản</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí thanh toán</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí địa chỉ</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí thông tin</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Đồng bộ</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Nạp tiền +</p>
+                          </li>
+                          <li class="info__item">
+                            <i class="fa-solid fa-credit-card fa-size-1"></i>
+                            <p>Quản lí thanh toán</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop">
+          <div class="container">
+            <div class="shop__content___breadcrumb breadcrumb__content">
+              <ul class="main">
+                <li class="main__item">SuperFood</li>
+                <li class="main__item">Tài khoản</li>
+                <li class="main__item">Thông tin</li>
+              </ul>
+            </div>
+            <div class="shop__content">
+              <div class="shop__content___inner">
+                <div class="shopIf">
+                  <div class="shopIf__flex">
+                    <div class="shopIf__flex___logo">
+                      <div class="logo">
+                        <img
+                          src="./public/images/avatar-cute-anime.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="nameWp">
+                        <h4 class="nameWp__hw">Lẩu thái nhà làm</h4>
+                        <div class="ticker">
+                          <span class="ticker__sc"
+                            >Đang tin cậy
+                            <i class="fa-solid fa-square-check"></i
+                          ></span>
+                        </div>
+                        <div class="star">
+                          <span>
+                            <i class="fa-solid fa-star fa-size"></i>
+                            4.8/5
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shopIf__flex___wp">
+                      <button class="follow">
+                        <i class="fa-solid fa-user-plus"></i> Theo dõi
+                      </button>
+                    </div>
+                  </div>
+                  <div class="shopIf__menu">
+                    <ul class="menu">
+                      <li class="menu__item">Cửa hàng</li>
+                      <li class="menu__item active">Tất cả sản phẩm</li>
+                      <li class="menu__item">Danh mục</li>
+                      <li class="menu__item">Thông tin cửa hàng</li>
+                    </ul>
+                    <div class="ipnSearch">
+                      <i class="fa-solid fa-magnifying-glass fa-size"></i>
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Tìm sản phẩm tại cửa hàng này "
+                        id=""
+                      />
+                    </div>
+                  </div>
+                  <div class="allProduct">
+                    <div class="allProduct__main">
+                      <div class="allProduct__main___left">
+                        <div class="title">
+                          <h4>Danh mục sản phẩm</h4>
+                        </div>
+                        <li class="list__item">
+                          <span>Lẩu </span>
+                        </li>
+                        <li class="list__item">
+                          <span>Cơm gia đình , bạn bè , họp lớp </span>
+                        </li>
+                        <li class="list__item">
+                          <span>Lẩu </span>
+                        </li>
+                        <ul class="list">
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Cơm gia đình , bạn bè , họp lớp </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Cơm gia đình , bạn bè , họp lớp </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Cơm gia đình , bạn bè , họp lớp </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Cơm gia đình , bạn bè , họp lớp </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Cơm gia đình , bạn bè , họp lớp </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Cơm gia đình , bạn bè , họp lớp </span>
+                          </li>
+                          <li class="list__item">
+                            <span>Lẩu </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="allProduct__main___right">
+                        <div class="product">
+                          <ul class="product__wp">
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                            <li class="product__wp___item">
+                              <div class="point">
+                                <span>9.4</span>
+                              </div>
+                              <div class="image">
+                                <img
+                                  src="https://image.cooky.vn/posproduct/g0/17280/s400x400/5048d46e-2b7e-430d-a750-6c99929f76cd.jpeg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name">
+                                <p>Set cơm việt buổi trưa</p>
+                              </div>
+                              <div class="price">
+                                <span class="t1 text">300.000đ</span>
+                                <span class="t2 text">120.000đ</span>
+                              </div>
+                              <div class="sellable">
+                                <h4>Đã bán :</h4>
+                                <b>465K</b>
+                              </div>
+
+                              <div class="btn">
+                                <button type="button">
+                                  <i
+                                    class="fa-solid fa-basket-shopping fa-size"
+                                  ></i>
+                                  Chọn mua
+                                </button>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="btnShow">
+                            <a href="#" class="show">
+                              Xem tất cả
+                              <i class="fa-solid fa-chevron-right fa-size"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./public/js/slider.js"></script>
+  <script src="./public/js/main.js"></script>
+  <script src="./public/js/animation.min.js"></script>
+  <script src="./public/js/menu.min.js"></script>
+</html>
