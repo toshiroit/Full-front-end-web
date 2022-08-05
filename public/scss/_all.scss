@@ -827,3 +827,113 @@ a {
   left: 230px !important;
   width: calc(100% - 230px) !important;
 }
+
+.tablePagination {
+  border-top: 1px solid #ddd;
+  padding: 7px;
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .pre,
+    .next {
+      color: #051f4e;
+      padding: 5px 15px;
+    }
+    .vl {
+      padding: 5px 8px;
+      color: $sp-color-text-dark-admin-2;
+    }
+    .active {
+      border-radius: 2px;
+      background-color: $sp-background-color-primary;
+      color: $sp-color-text-white;
+    }
+    &___item {
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid #ebebeb;
+      margin-right: 5px;
+      font-weight: 500;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.containerNotifyAdmin {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.bodyAdmin {
+  background-color: $sp-background-color-white-admin-2;
+}
+.formConfirmPassword {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__inner {
+    padding: 1.25rem 2.75rem;
+    background-color: $sp-background-color-white-admin-2;
+    box-shadow: $boxShowCardBlack;
+    margin: auto;
+    border-radius: 7px;
+    .header {
+      padding: 10px;
+
+      h4 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1rem;
+        i {
+          margin-right: 3px;
+        }
+      }
+      p {
+        margin-top: 5px;
+        font-size: 0.9rem;
+      }
+    }
+    .body {
+      .ipn {
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+
+        .fa-size {
+          margin-left: 6px;
+          color: $sp-color-text-danger;
+        }
+        input {
+          padding: 7px;
+          border-radius: 6px;
+          border: none;
+          outline: none;
+          background: none;
+          width: calc(100% - 72px);
+          &::-webkit-input-placeholder {
+            font-size: 0.8rem;
+          }
+        }
+        button {
+          padding: 7px;
+          width: 50px;
+          border: none;
+          outline: none;
+          background-color: $sp-background-color-success;
+          i {
+            color: $sp-color-text-white;
+          }
+        }
+      }
+    }
+  }
+}

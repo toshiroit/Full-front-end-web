@@ -100,10 +100,58 @@
     margin-top: 13px;
   }
 }
+
+@keyframes showAddCategoryAdmin {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes hideAddCategoryAdmin {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes showFormConfirmPass {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
 .isActiveMrrTopAdm {
   visibility: visible !important;
   animation-name: isActiveMrrTopAdm;
   animation-fill-mode: both;
   transform: translateY(-1px);
   animation-duration: 0.3s;
+}
+.showAddCategoryAdmin {
+  visibility: visible !important;
+  animation-name: showAddCategoryAdmin;
+  animation-fill-mode: both;
+  transition: all 0.3s;
+  animation-duration: 0.3s;
+
+  max-height: 100% !important;
+}
+.hideAddCategoryAdmin {
+  visibility: hidden !important;
+  animation-name: hideAddCategoryAdmin;
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+  // animation: showAddCategoryAdmin 0.3s;
+  max-height: 0 !important;
+}
+.hideAddBCategoryAdminFk {
+  visibility: hidden;
+  // transition: all 0.3s;
+  max-height: 0;
 }

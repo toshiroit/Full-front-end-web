@@ -1550,3 +1550,151 @@
     }
   }
 }
+@media only screen and(max-width:1388px) {
+  .wrapperAdmin {
+    .page__main {
+      .content__category___main {
+        .right {
+          .contentCt {
+            .filter {
+              &__select {
+                width: 100%;
+              }
+              &__search {
+                margin-top: 10px;
+                width: 100%;
+                &___ipn {
+                  input {
+                    width: calc(100% - 100px) !important;
+                  }
+                  button {
+                    width: 100px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 902px) {
+  .wrapperAdmin {
+    .page__main {
+      .content {
+        &__category {
+          &___main {
+            .left {
+              width: 100% !important;
+            }
+            .right {
+              margin-top: 30px;
+              margin-left: 0 !important;
+              width: 100% !important;
+              .contentCt {
+                .filter {
+                  &__select {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 383px) {
+  .wrapperAdmin {
+    .page__main {
+      .content {
+        &__category {
+          &___main {
+            .left {
+              .content {
+                .btn {
+                  button {
+                    width: 100% !important;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+            }
+            .right {
+              .contentCt {
+                .filter {
+                  &__select {
+                    &___item {
+                      margin-bottom: 10px;
+                      width: 100%;
+                      margin-right: 0 !important;
+                      &:last-child {
+                        margin-bottom: 0 !important;
+                      }
+                      select {
+                        width: calc(100%);
+                      }
+                    }
+                  }
+                  .btn-filter {
+                    width: 100% !important;
+                  }
+                  &__search {
+                    margin-top: 15px;
+                    padding-top: 15px;
+                    border-top: 1px dashed #ddd;
+                    &___ipn {
+                      width: 100%;
+                      input {
+                        width: 100% !important;
+                      }
+                      button {
+                        margin-top: 10px;
+                        width: 100% !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .wrapperAdmin {
+    .page__main {
+      .content {
+        &__chat {
+          &___main {
+            .left {
+              width: 100% !important;
+            }
+            .right {
+              display: none;
+              width: 100% !important;
+              margin-left: 0 !important;
+              .chatInfo {
+                &__header {
+                  .avatarName {
+                    .arrowR {
+                      display: block !important;
+                    }
+                  }
+                }
+                &__content {
+                  &___message {
+                    height: calc(100vh - 325px) !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

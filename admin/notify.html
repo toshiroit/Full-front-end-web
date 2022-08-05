@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="../public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script src="../public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Đơn hàng</title>
+  </head>
+  <body class="bodyAdmin">
+    <div id="menuBarFxAdmin" class="menuFxBar">
+      <div class="menuFxBar__inner">
+        <div class="logoBox">
+          <img src="../public/images/logo-sm.png" alt="" />
+        </div>
+        <div class="menuFxBar__content">
+          <ul class="menuFxBar__content___main">
+            <div class="opw">
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gauge fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-shop fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-user fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-ramp-box fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-layer-group fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-fast fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-tags fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-comment-dots fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bell fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-basket-shopping fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bug fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-address-book fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-headset fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gear fa-size"></i>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperAdmin" id="bodyAdmin">
+      <header id="page__topbar" class="topBar">
+        <div class="topBar__navbar">
+          <div class="topBar__navbar___mws">
+            <div id="showMenuBar" class="menuBar">
+              <i class="fa-solid fa-bars fa-size"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-size"></i>
+              <input type="text" name="" id="" placeholder="Tìm kiếm " />
+            </div>
+          </div>
+          <div class="topBar__navbar___otw">
+            <ul class="main">
+              <li class="main__item">
+                <span class="qualityFx">14</span>
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__user">
+                <div class="main__user___avatar">
+                  <img
+                    src="../public/images/Cap-nhat-cho-cac-ban-Hinh-dai-dien-avatar-nu-cute.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main__user___name">
+                  <h4 class="wp1">DAU-NAM-PC</h4>
+                  <span>Free</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="desktop admin page">
+        <div class="page__main">
+          <div class="page__main___title">
+            <h4 class="page__main___title____name">Thông báo</h4>
+            <ul class="page__main___title____breadcrumb">
+              <li class="page__main___title____breadcrumb_____item">
+                Trang tổng quan
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                đơn hàng
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                danh sách đơn hàng
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="content__notify">
+              <div class="content__notify___main">
+                <div class="left">
+                  <div class="sliderBar">
+                    <div class="sliderBar__title">
+                      <h4>Lọc</h4>
+                    </div>
+                    <div class="sliderBar__filter">
+                      <div class="sliderBar__filter___main">
+                        <div class="sliderBar__filter___main____item">
+                          <select name="" id="">
+                            <option value="">Thông báo mới nhất</option>
+                            <option value="">Thông báo cũ nhất</option>
+                          </select>
+                        </div>
+                        <div class="sliderBar__filter___main____item">
+                          <select name="" id="">
+                            <option value="">Thông báo từ quản trị</option>
+                            <option value="">Thông báo hệ thống</option>
+                          </select>
+                        </div>
+                        <div class="btn">
+                          <button>Áp dụng</button>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="sliderBar__main">
+                      <li class="sliderBar__main___item">
+                        <div class="avatar">
+                          <img src="../public/images/wop.jpg" alt="" />
+                          <span class="quality">+14</span>
+                        </div>
+                        <div class="name">
+                          <span>Thông báo từ hệ thống </span>
+                        </div>
+                      </li>
+                      <li class="sliderBar__main___item newNotify">
+                        <div class="avatar">
+                          <img src="../public/images/wop.jpg" alt="" />
+                          <span class="quality">+14</span>
+                        </div>
+                        <div class="name">
+                          <span>Thông báo từ quản trị </span>
+                        </div>
+                      </li>
+                      <li class="sliderBar__main___item">
+                        <div class="avatar">
+                          <img src="../public/images/wop.jpg" alt="" />
+                          <span class="quality">+14</span>
+                        </div>
+                        <div class="name">
+                          <span>Thông báo bảo mật </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="contentNt">
+                    <div class="contentNt__header">
+                      <h4>
+                        <i class="fa-solid fa-list"></i> Danh sách thông báo
+                      </h4>
+                      <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                    </div>
+                    <div class="contentNt__nw">
+                      <ul class="contentNt__nw___main">
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                        <li class="contentNt__nw___main____item">
+                          <div class="avatar gor">
+                            <img
+                              src="../public/images/avatar-cute-anime.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="new gor">
+                            <p>
+                              Có thông báo mới dành cho bạn đây nè bạn vui lòng
+                              gấp nhé bạn tui ơi
+                            </p>
+                            <div class="time">
+                              <span>14:30 AM </span>
+                            </div>
+                          </div>
+                          <div class="menu gor">
+                            <i
+                              class="fa-solid fa-ellipsis-vertical fa-size"
+                            ></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tablePagination">
+                      <ul class="tablePagination__main">
+                        <li class="tablePagination__main___item pre">Trước</li>
+                        <li class="tablePagination__main___item vl active">
+                          1
+                        </li>
+                        <li class="tablePagination__main___item vl">2</li>
+                        <li class="tablePagination__main___item vl">3</li>
+                        <li class="tablePagination__main___item vl">4</li>
+                        <li class="tablePagination__main___item vl">5</li>
+                        <li class="tablePagination__main___item next">Tiếp</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="wpRight"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script></script>
+
+  <script src="./main.js"></script>
+  <script src="../public/js/menu.min.js"></script>
+  <script src="../public/js/main.min.js"></script>
+
+  <script src="../public/js/slider.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/animation.min.js"></script>
+</html>

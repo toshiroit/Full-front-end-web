@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="../public/plugins/fontawesome.6.1.1/css/all.css"
+    />
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+    <script src="../public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
+    <title>Đơn hàng</title>
+  </head>
+  <body class="bodyAdmin">
+    <div id="menuBarFxAdmin" class="menuFxBar">
+      <div class="menuFxBar__inner">
+        <div class="logoBox">
+          <img src="../public/images/logo-sm.png" alt="" />
+        </div>
+        <div class="menuFxBar__content">
+          <ul class="menuFxBar__content___main">
+            <div class="opw">
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gauge fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-shop fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-user fa-size"></i>
+                <ul class="menu">
+                  <div class="menu__title">
+                    <h4>Cửa hàng</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="bd">
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <div>
+                        <span>Lorem ipsum</span>
+                      </div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-ramp-box fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-layer-group fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-truck-fast fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-tags fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-comment-dots fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bell fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-basket-shopping fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-bug fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-address-book fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-headset fa-size"></i>
+              </li>
+              <li class="menuFxBar__content___main____item">
+                <i class="fa-solid fa-gear fa-size"></i>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperAdmin" id="bodyAdmin">
+      <header id="page__topbar" class="topBar">
+        <div class="topBar__navbar">
+          <div class="topBar__navbar___mws">
+            <div id="showMenuBar" class="menuBar">
+              <i class="fa-solid fa-bars fa-size"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-size"></i>
+              <input type="text" name="" id="" placeholder="Tìm kiếm " />
+            </div>
+          </div>
+          <div class="topBar__navbar___otw">
+            <ul class="main">
+              <li class="main__item">
+                <span class="qualityFx">14</span>
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__item">
+                <i class="fa-solid fa-shop fa-size"></i>
+              </li>
+              <li class="main__user">
+                <div class="main__user___avatar">
+                  <img
+                    src="../public/images/Cap-nhat-cho-cac-ban-Hinh-dai-dien-avatar-nu-cute.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main__user___name">
+                  <h4 class="wp1">DAU-NAM-PC</h4>
+                  <span>Free</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="desktop admin page">
+        <div class="page__main">
+          <div class="page__main___title">
+            <h4 class="page__main___title____name">Thông báo</h4>
+            <ul class="page__main___title____breadcrumb">
+              <li class="page__main___title____breadcrumb_____item">
+                Trang tổng quan
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                đơn hàng
+              </li>
+              <li class="page__main___title____breadcrumb_____item">
+                danh sách đơn hàng
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="containerNotifyAdmin">
+              <div class="content__notifyDetail">
+                <div class="content__notifyDetail___header">
+                  <h4>Thông tin thông báo : #421721461269WLK14LW</h4>
+                  <button>Xóa</button>
+                </div>
+                <div class="content__notifyDetail___now">
+                  <div class="title">
+                    <h4>Tiều đề : Lorem ipsum dolor sit amet consectetur,</h4>
+                  </div>
+                  <div class="nd">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facere nesciunt rerum officia, deleniti similique in
+                      doloremque nam incidunt facilis libero dignissimos
+                      praesentium aliquam vero dolorum eum. Quas eos nobis
+                      dolorum. Necessitatibus earum, error dolores itaque optio,
+                      perferendis rerum accusamus asperiores sed consequuntur
+                      aperiam officiis numquam. Facere enim voluptates tenetur
+                      eius perferendis libero eligendi quibusdam atque dolor
+                      expedita? Sequi, corrupti quibusdam?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footerAdmin" class="footer">
+        <h4>HOW TO EDIT FOOTER</h4>
+      </footer>
+    </div>
+  </body>
+
+  <script></script>
+
+  <script src="./main.js"></script>
+  <script src="../public/js/menu.min.js"></script>
+  <script src="../public/js/main.min.js"></script>
+
+  <script src="../public/js/slider.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/animation.min.js"></script>
+</html>
