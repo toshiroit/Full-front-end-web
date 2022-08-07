@@ -22,7 +22,7 @@
           }
         }
         &__right {
-          margin-top: 8px;
+          margin-top: 10px;
           &___userMobile {
             display: block !important;
           }
@@ -459,7 +459,7 @@
       &___content {
         .food {
           &__item {
-            width: calc(24.6% - 12px) !important;
+            width: calc(24% - 12px) !important;
           }
         }
       }
@@ -489,7 +489,7 @@
       &___content {
         .food {
           &__item {
-            width: calc(49.4% - 12px) !important;
+            width: calc(49% - 12px) !important;
           }
         }
       }
@@ -1694,6 +1694,17 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__bottom {
+    .bottombar__left {
+      padding: 5px;
+      .logo {
+        display: none;
       }
     }
   }

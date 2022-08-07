@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/scss/main.css" />
+
     <link
       rel="stylesheet"
       href="./public/plugins/fontawesome.6.1.1/css/all.css"
     />
+    <script src="./public/plugins/lordicon/xdjxvujz.js"></script>
     <script src="./public/plugins/jquery.3.6.0/query-3.6.0.min.js"></script>
     <title>Trang chủ</title>
   </head>
-  <body>
+  <body class="bodyWebUser">
     <div class="menuFixedIdx" style="">
       <div class="menuFixedIdx__inner">
         <div id="closeMenuFixedRootIdx" class="close">
@@ -379,7 +381,7 @@
                       <i
                         class="fa-solid fa-magnifying-glass fa-size fa-search-sett"
                       ></i>
-                      <div class="search__list" style="display: none">
+                      <div class="search__list" style="">
                         <div class="wp">
                           <div class="title">
                             <i class="fa-solid fa-signature"></i>Tìm kiếm sản
@@ -513,7 +515,7 @@
         </div>
         <div class="bodyIdx">
           <div class="container">
-            <div class="category">
+            <!-- <div class="category">
               <ul class="category__list">
                 <li class="category__list___item">Cơm gà</li>
 
@@ -527,25 +529,59 @@
 
                 <li class="category__list___item">Cơm gà</li>
               </ul>
-            </div>
+            </div> -->
             <div class="banner">
               <div class="banner__inner">
                 <div class="btnLeft btnSlider">
-                  <button>
+                  <button id="sliderIdxWebLeft" type="button">
                     <i class="fa-solid fa-angle-left fa-size"></i>
                   </button>
                 </div>
                 <div class="btnRight btnSlider">
-                  <button>
+                  <button id="sliderIdxWebRight" type="button">
                     <i class="fa-solid fa-angle-right fa-size"></i>
                   </button>
                 </div>
-                <ul class="banner__inner___main">
-                  <li class="banner__inner___main____item">
-                    <img
-                      src="https://www.creativechinese.com/wp-content/uploads/2017/04/default-pasta.jpg"
-                      alt=""
-                    />
+                <ul id="bannerSliderWebIdxUser" class="banner__inner___main">
+                  <li class="banner__inner___main____item bannerItemIdxWebUser">
+                    <div class="image">
+                      <img
+                        src="https://img.freepik.com/free-vector/flat-design-breakfast-offer-sale-background_23-2149191949.jpg?w=2000"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                  <li class="banner__inner___main____item bannerItemIdxWebUser">
+                    <div class="image">
+                      <img
+                        src="https://img.freepik.com/free-vector/flat-design-breakfast-offer-sale-background_23-2149191949.jpg?w=2000"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                  <li class="banner__inner___main____item bannerItemIdxWebUser">
+                    <div class="image">
+                      <img
+                        src="https://img.freepik.com/free-vector/flat-design-breakfast-offer-sale-background_23-2149191949.jpg?w=2000"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                  <li class="banner__inner___main____item bannerItemIdxWebUser">
+                    <div class="image">
+                      <img
+                        src="https://img.freepik.com/free-vector/flat-design-breakfast-offer-sale-background_23-2149191949.jpg?w=2000"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                  <li class="banner__inner___main____item bannerItemIdxWebUser">
+                    <div class="image">
+                      <img
+                        src="https://img.freepik.com/free-vector/flat-design-breakfast-offer-sale-background_23-2149191949.jpg?w=2000"
+                        alt=""
+                      />
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -555,8 +591,13 @@
               <div class="gift__content">
                 <div class="gift__content___title">
                   <h4>
-                    <img src="./public/images/discountCode.png" alt="" />Mã giảm
-                    giá
+                    <lord-icon
+                      src="https://cdn.lordicon.com/nkmsrxys.json"
+                      trigger="hover"
+                      style="width: 40px; height: 40px"
+                    >
+                    </lord-icon
+                    >Mã giảm giá
                   </h4>
                   <div class="btn">
                     <div class="btn btnLeft">
@@ -626,8 +667,13 @@
                 <div class="top">
                   <div class="main__wp1___title">
                     <h4>
-                      <img src="./public/images/4813075.png" alt="" />Gợi ý Menu
-                      hôm nay
+                      <lord-icon
+                        src="https://cdn.lordicon.com/fkytfmrm.json"
+                        trigger="hover"
+                        style="width: 40px; height: 40px"
+                      >
+                      </lord-icon
+                      >Gợi ý Menu hôm nay
                     </h4>
                   </div>
                   <div class="main__wp1___content">
@@ -1742,5 +1788,7 @@
   </body>
   <script src="./public/js/slider.js"></script>
   <script src="./public/js/main.js"></script>
+  <script src="./public/js/menu.min.js"></script>
+  <script src="./public/js/main.min.js"></script>
   <script src="./public/js/animation.min.js"></script>
 </html>

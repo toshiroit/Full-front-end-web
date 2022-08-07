@@ -5,6 +5,7 @@ const btnRight = document.querySelector(".fa-w-right");
 const giftContent = document.querySelector(".gift__content");
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", function () {
+    console.log(window.innerWidth);
     if (window.innerWidth >= 1180) {
       make_slide(4);
     } else if (window.innerWidth < 1180) {

@@ -1435,7 +1435,7 @@ table {
     width: 100%;
   }
   .navbar__bottom .bottombar__right {
-    margin-top: 8px;
+    margin-top: 10px;
   }
   .navbar__bottom .bottombar__right___userMobile {
     display: block !important;
@@ -1676,7 +1676,7 @@ table {
 }
 @media only screen and (max-width: 849px) {
   .main__wp1___content .food__item {
-    width: calc(24.6% - 12px) !important;
+    width: calc(24% - 12px) !important;
   }
 }
 @media only screen and (max-width: 679px) {
@@ -1686,7 +1686,7 @@ table {
 }
 @media only screen and (max-width: 513px) {
   .main__wp1___content .food__item {
-    width: calc(49.4% - 12px) !important;
+    width: calc(49% - 12px) !important;
   }
 }
 @media only screen and (max-width: 942px) {
@@ -2212,6 +2212,14 @@ table {
     height: calc(100vh - 325px) !important;
   }
 }
+@media only screen and (max-width: 600px) {
+  .navbar__bottom .bottombar__left {
+    padding: 5px;
+  }
+  .navbar__bottom .bottombar__left .logo {
+    display: none;
+  }
+}
 /* Background Color */
 :root {
   --data-color-success-opt-01: rgba(40, 167, 69, 0.1);
@@ -2351,6 +2359,10 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.bodyWebUser {
+  background-color: #f5f5f5;
 }
 
 .wrapper .supership {
@@ -2501,13 +2513,12 @@ html {
   width: 100%;
   resize: horizontal;
   padding: 15px 10px;
-  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   outline: none;
   border: none;
   border-radius: 10px;
   border-right: 0;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .wrapper .supership .navbar__bottom .bottombar__left .search input[type=search]::-webkit-search-decoration,
@@ -2515,14 +2526,16 @@ html {
 .wrapper .supership .navbar__bottom .bottombar__left .search input[type=search]::-webkit-search-results-button,
 .wrapper .supership .navbar__bottom .bottombar__left .search input[type=search]::-webkit-search-results-decoration {
   -webkit-appearance: none;
+  font-weight: 500;
 }
 .wrapper .supership .navbar__bottom .bottombar__left .search .search__list {
   position: absolute;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
   background-color: rgb(255, 255, 255);
   width: 100%;
   z-index: 999;
-  top: 47px;
+  top: 45px;
 }
 .wrapper .supership .navbar__bottom .bottombar__left .search .search__list .wp .category {
   padding: 10px;
@@ -2613,7 +2626,7 @@ html {
   color: rgb(41, 143, 251);
   cursor: pointer;
   border-top-right-radius: 10px;
-  border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 10px;
 }
 .wrapper .supership .navbar__bottom .bottombar__right___userMobile {
   color: #007bff;
@@ -2750,8 +2763,12 @@ html {
   background-color: rgb(41, 143, 251);
   color: white;
 }
+.wrapper .supership .bodyIdx .banner {
+  margin-top: 15px;
+}
 .wrapper .supership .bodyIdx .banner__inner {
   position: relative;
+  overflow: hidden;
 }
 .wrapper .supership .bodyIdx .banner__inner .btnSlider {
   position: absolute;
@@ -2776,12 +2793,24 @@ html {
 .wrapper .supership .bodyIdx .banner__inner .btnRight {
   right: 0;
 }
+.wrapper .supership .bodyIdx .banner__inner #bannerSliderWebIdxUser {
+  transition: all 1s;
+}
+.wrapper .supership .bodyIdx .banner__inner___main {
+  display: flex;
+}
 .wrapper .supership .bodyIdx .banner__inner___main____item {
   position: relative;
+  width: 100%;
   border-radius: 10px;
-  height: 450px;
 }
-.wrapper .supership .bodyIdx .banner__inner___main____item img {
+.wrapper .supership .bodyIdx .banner__inner___main____item .image {
+  max-width: 100%;
+  width: 1180px;
+  height: auto;
+  position: relative;
+}
+.wrapper .supership .bodyIdx .banner__inner___main____item .image img {
   max-width: 100%;
   width: 100%;
   height: 100%;
@@ -2789,7 +2818,7 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wrapper .supership .bodyIdx .banner__inner___main____item::after {
+.wrapper .supership .bodyIdx .banner__inner___main____item .image::after {
   content: "";
   border-radius: 10px;
   position: absolute;
@@ -2799,7 +2828,13 @@ html {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrapper .supership .bodyIdx .banner__inner___main____item .text {
+  border-radius: 6px;
+  padding: 10px;
+  top: 0;
+  position: absolute;
+  margin-top: 5px;
 }
 .wrapper .supership .bodyIdx .gift {
   background-color: rgb(255, 255, 255);
@@ -2808,8 +2843,6 @@ html {
   border-radius: 6px;
 }
 .wrapper .supership .bodyIdx .gift__content {
-  padding-top: 15px;
-  border-top: 1px solid #ddd;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -2822,7 +2855,7 @@ html {
 .wrapper .supership .bodyIdx .gift__content___title h4 {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .wrapper .supership .bodyIdx .gift__content___title h4 img {
   width: 40px;
@@ -2893,13 +2926,12 @@ html {
   justify-content: space-between;
 }
 .wrapper .supership .bodyIdx .main__wp1___title h4 {
-  line-height: 26px;
   display: flex;
-  font-weight: 500;
+  font-weight: 600;
   align-items: center;
   font-style: normal;
   color: #333333;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .wrapper .supership .bodyIdx .main__wp1___title h4 img {
   width: 47px;
@@ -2927,7 +2959,7 @@ html {
   padding: 10px 25px;
   border-radius: 8px;
   text-align: center;
-  width: calc(19.7% - 12px);
+  width: calc(20% - 16px);
   display: inline-block;
 }
 .wrapper .supership .bodyIdx .main__wp1___content .food__item img {

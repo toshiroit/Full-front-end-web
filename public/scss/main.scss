@@ -22,6 +22,9 @@ html {
   box-sizing: border-box;
   @include fontAllWeb;
 }
+.bodyWebUser {
+  background-color: #f5f5f5;
+}
 .wrapper {
   .supership {
     background-color: #f5f5f5;
@@ -170,14 +173,15 @@ html {
                 width: 100%;
                 resize: horizontal;
                 padding: 15px 10px;
-                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+
                 outline: none;
                 // border: 1px solid $sp-background-color-primary-2;
                 border: none;
                 border-radius: 10px;
                 border-right: 0;
                 border-top-right-radius: 0;
-                border-bottom-left-radius: 0;
+                // border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
               }
               input[type="search"]::-webkit-search-decoration,
@@ -185,14 +189,16 @@ html {
               input[type="search"]::-webkit-search-results-button,
               input[type="search"]::-webkit-search-results-decoration {
                 -webkit-appearance: none;
+                font-weight: 500;
               }
               .search__list {
                 position: absolute;
-                box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+                border-radius: 4px;
                 background-color: $sp-background-color-white;
                 width: 100%;
                 z-index: 999;
-                top: 47px;
+                top: 45px;
                 .wp {
                   .category {
                     padding: 10px;
@@ -290,7 +296,7 @@ html {
               color: $sp-background-color-primary-2;
               cursor: pointer;
               border-top-right-radius: 10px;
-              border-bottom-right-radius: 0px;
+              border-bottom-right-radius: 10px;
             }
           }
           &__right {
@@ -444,8 +450,11 @@ html {
         }
       }
       .banner {
+        margin-top: 15px;
+
         &__inner {
           position: relative;
+          overflow: hidden;
           .btnSlider {
             position: absolute;
             top: 49%;
@@ -469,29 +478,50 @@ html {
           .btnRight {
             right: 0;
           }
+          #bannerSliderWebIdxUser {
+            transition: all 1s;
+          }
           &___main {
+            display: flex;
+
             &____item {
               position: relative;
+              width: 100%;
               border-radius: 10px;
-              height: 450px;
-              img {
+              .image {
                 max-width: 100%;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                object-fit: cover;
+                width: 1180px;
+                height: auto;
+                position: relative;
+                img {
+                  max-width: 100%;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+                  object-fit: cover;
+                }
+                &::after {
+                  content: "";
+                  border-radius: 10px;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  bottom: 0;
+                  right: 0;
+                  width: 100%;
+                  height: 100%;
+                  // background-color: rgba(0, 0, 0, 0.2);
+                }
               }
-              &::after {
-                content: "";
-                border-radius: 10px;
-                position: absolute;
-                left: 0;
+              .text {
+                border-radius: 6px;
+                padding: 10px;
                 top: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.2);
+                position: absolute;
+                margin-top: 5px;
+
+                button {
+                }
               }
             }
           }
@@ -503,8 +533,8 @@ html {
         margin-top: 8px;
         border-radius: 6px;
         &__content {
-          padding-top: 15px;
-          border-top: 1px solid #ddd;
+          // padding-top: 15px;
+          // border-top: 1px solid #ddd;
           width: 100%;
           overflow: hidden;
           position: relative;
@@ -518,7 +548,7 @@ html {
               img {
                 width: 40px;
               }
-              font-size: 1.4rem;
+              font-size: 1.3rem;
             }
             .btn {
               display: flex;
@@ -591,13 +621,12 @@ html {
             padding: 8px;
             justify-content: space-between;
             h4 {
-              line-height: 26px;
               display: flex;
-              font-weight: 500;
+              font-weight: 600;
               align-items: center;
               font-style: normal;
               color: #333333;
-              font-size: 1.1rem;
+              font-size: 1rem;
               img {
                 width: 47px;
               }
@@ -630,7 +659,7 @@ html {
 
                 border-radius: 8px;
                 text-align: center;
-                width: calc(19.7% - 12px);
+                width: calc(20% - 16px);
                 display: inline-block;
                 img {
                   width: 100%;
